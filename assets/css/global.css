@@ -90,3 +90,14 @@ div.lazy {
     font-family: Source Code Pro, monospace;
 }
 
+
+/* Publication entries: match the bio text (Lato, 1rem) */
+.pub-item h5 {
+    font-size: 1rem;
+    font-weight: 700 !important;
+    line-height: 1.5;
+}
+
+.pub-item p.small {
+    font-size: 1rem;
+}
