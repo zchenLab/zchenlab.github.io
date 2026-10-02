@@ -4,6 +4,8 @@ date:           2022-12-15 00:01:00 +0800
 selected:       false
 pub:            "J Med Internet Res"
 pub_date:       "2022"
+cover:          /assets/images/covers/topics/care.svg
+doi:            "10.2196/33061"
 authors:
   - "Peng Y"
   - "Wu T"

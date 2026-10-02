@@ -1,8 +1,9 @@
 # Content for the Teaching page (teaching.html), taken from the CV.
+# Set `developed: true` on a course that was developed or significantly revised.
 
 courses_undergraduate:
 - code: FYOS 1001
-  title: "First-Year Odyssey Seminar: Social Determinants of Health & Disparities; Regulatory Impact Analysis"
+  title: First-Year Odyssey Seminar
   developed: true
 - code: HPAM 3500 / 3500E
   title: Introduction to Healthcare Management
@@ -14,7 +15,7 @@ courses_undergraduate:
 - code: HPAM 4600
   title: Advanced Health Policy
   developed: true
-- code: HPAM 4960R–4980R
+- code: HPAM 4960R / 4970R / 4980R
   title: Faculty-Mentored Undergraduate Research I–III
 - code: HPAM 4990R
   title: Undergraduate Research Thesis
@@ -34,7 +35,7 @@ courses_graduate:
 - code: HPAM 8700
   title: Management of Public Health Organizations
 - code: HPAM 8900
-  title: "Special Topics in Health Administration (incl. Economic Evaluation)"
+  title: Special Topics in Health Administration (Economic Evaluation)
   developed: true
 - code: HPAM 9000
   title: Doctoral Research
@@ -88,3 +89,25 @@ mentoring:
 - Supervised undergraduate research for six students (2019–2021)
 - Supervised MPH internships (2020–2022)
 - Academic advisor for first- and second-year DrPH students (about 25–32 per year)
+- course: "HMP 677: Health Care Organization: An International Perspective (Instructor: Jersey Liang), University of Michigan"
+  date: Oct 2020, Jan 2023
+
+recognitions:
+- name: New Leader Program, University of Georgia Office of the Provost
+  date: "2024"
+- name: Aspire Fellowship, University of Georgia Office of the Provost
+  date: "2024"
+- name: Recognition by the UGA Career Center for contribution to student careers
+  date: 2019, 2021
+- name: Teaching Academy Fellowship Program, University of Georgia
+  date: 2018–2019
+- name: "UGA Enrichment Fund instructional grants (Spring 2018, Fall 2018, Spring 2019, Fall 2021, Spring 2022, Fall 2022, Fall 2023, Fall 2024)"
+  date: 2018–2024
+
+mentoring:
+- Primary mentor for DrPH, PhD and MPH students
+- "Doctoral advisory committee member: DrPH and PhD (Epidemiology) students"
+- Supervised undergraduate research for six students (2019–2021)
+- Supervised MPH internships (2020–2022)
+- Academic advisor for first- and second-year DrPH students without an assigned advisor (about 25 per year)
+- Hosted visiting scholar Jianliang Li, University of Nottingham Ningbo China (2022)

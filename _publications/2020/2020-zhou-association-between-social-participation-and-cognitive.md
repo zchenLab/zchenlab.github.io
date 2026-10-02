@@ -4,6 +4,8 @@ date:           2020-12-27 00:01:00 +0800
 selected:       false
 pub:            "Journal of Global Health"
 pub_date:       "2020"
+cover:          /assets/images/covers/topics/mental.svg
+doi:            "10.7189/jogh.10.020801"
 authors:
   - "Zhou Y"
   - "Chen Z"

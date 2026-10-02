@@ -4,6 +4,8 @@ date:           2020-12-19 00:01:00 +0800
 selected:       false
 pub:            "Glob Health Res Policy"
 pub_date:       "2020"
+cover:          /assets/images/covers/topics/covid.svg
+doi:            "10.1186/s41256-020-00150-7"
 authors:
   - "Chen Z"
   - "Cao C"

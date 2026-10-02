@@ -4,6 +4,8 @@ date:           2023-12-17 00:01:00 +0800
 selected:       false
 pub:            "J Am Heart Assoc"
 pub_date:       "2023"
+cover:          /assets/images/covers/topics/chronic.svg
+doi:            "10.1161/JAHA.122.026940"
 authors:
   - "Son H"
   - "Zhang D"

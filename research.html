@@ -1,0 +1,20 @@
+---
+layout: default
+title : Research
+navbar_title: Research
+---
+
+{% for theme in site.data.research.themes %}
+<h2 class="pt-4"><i class="{{ theme.icon }}"></i> {{ theme.name }}</h2>
+<p>{{ theme.description }}</p>
+<div class="my-0 p-0 bg-white shadow-sm rounded-xl">
+    {% for title in theme.papers %}
+    {% assign item = site.publications | where: "title", title | first %}
+    {% if item %}
+        {% include widgets/publication_item.html item=item hide_bottom_border=forloop.last first=forloop.first last=forloop.last %}
+    {% endif %}
+    {% endfor %}
+</div>
+{% endfor %}
+
+<p class="pt-4">See <a href="{{ '/publications' | relative_url }}">Publications</a> for the full list.</p>

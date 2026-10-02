@@ -4,6 +4,8 @@ date:           2023-12-15 00:01:00 +0800
 selected:       false
 pub:            "Adv Ther"
 pub_date:       "2023"
+cover:          /assets/images/covers/topics/genomics.svg
+doi:            "10.1007/s12325-023-02450-z"
 authors:
   - "Jiang J"
   - "Jiang S"

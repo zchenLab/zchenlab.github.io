@@ -5,7 +5,11 @@ selected:       false
 pub:            "Journal of Family and Economic Issues"
 pub_last:       ' <span class="badge badge-pill badge-publication badge-secondary">Commentary</span>'
 pub_date:       "2009"
+cover:          /assets/images/covers/topics/econ.svg
+doi:            "10.1007/s10834-009-9150-2"
 authors:
   - "Chen Z"
   - "Hou JW"
+links:
+  Paper: https://doi.org/10.1007/s10834-009-9150-2
 ---

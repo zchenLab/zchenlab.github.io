@@ -1,42 +1,98 @@
 # Group members shown on the Group page (group.html).
-# Each person can have: name, program, institution, logo, photo, year, note.
-# `photo` is optional (e.g. /assets/images/photos/jane.jpg); without it, initials are shown.
+# Current students can have: name, program, institution, logo, photo, thesis, note.
+# Alumni can have: name, degree, year, thesis, role.
+# `photo` is optional; replace the placeholder with a real picture (e.g. /assets/images/photos/jane.jpg).
+# Without a `photo` line, initials are shown.
 
 uga_logo: &uga /assets/images/badges/uga-logo.png
+unnc_logo: &unnc /assets/images/badges/unnc-logo.svg
+placeholder_photo: &placeholder /assets/images/photos/placeholder.svg
 
 current:
-- name: Susan Fuller
-  program: DrPH Student
+- name: Xinyi Liu
+  photo: *placeholder
+  program: PhD Student
   institution: University of Georgia
   logo: *uga
+  thesis: Dissertation/Thesis
+- name: Yunjie Liu
+  photo: *placeholder
+  program: PhD Student
+  institution: University of Georgia
+  logo: *uga
+  thesis: Dissertation/Thesis
+- name: Anika Rahman
+  photo: *placeholder
+  program: PhD Student
+  institution: University of Georgia
+  logo: *uga
+  thesis: Dissertation/Thesis
 - name: Sonh Patrick Chong
+  photo: *placeholder
   program: DrPH Student
   institution: University of Georgia
   logo: *uga
-- name: Betelihem Getachew
+  thesis: Dissertation/Thesis
+- name: Stephanie Lombard
+  photo: *placeholder
   program: DrPH Student
   institution: University of Georgia
   logo: *uga
-- name: Oluwasegun Joel Adegoke
+  thesis: Dissertation/Thesis
+- name: Shelby Rentmeester
+  photo: *placeholder
   program: DrPH Student
   institution: University of Georgia
   logo: *uga
-- name: Jessica Amal Tarabay
+  thesis: Dissertation/Thesis
+- name: Ivy Oyegun
+  photo: *placeholder
   program: DrPH Student
   institution: University of Georgia
   logo: *uga
+  thesis: Dissertation/Thesis
+- name: Hannah Schoon
+  photo: *placeholder
+  program: DrPH Student
+  institution: University of Georgia
+  logo: *uga
+  thesis: Dissertation/Thesis
 - name: Xuening Cheng
+  photo: *placeholder
   program: PhD Student (Economics)
   institution: University of Nottingham Ningbo China
+  logo: *unnc
+  thesis: Dissertation/Thesis
 - name: Jiangshan Ji
+  photo: *placeholder
   program: PhD Student (Economics)
   institution: University of Nottingham Ningbo China
+  logo: *unnc
+  thesis: Dissertation/Thesis
 - name: Fei Zhao
+  photo: *placeholder
   program: PhD Student (Economics)
   institution: University of Nottingham Ningbo China
+  logo: *unnc
+  thesis: Dissertation/Thesis
 - name: Chenyuan Yan
+  photo: *placeholder
   program: PhD Student (Economics)
   institution: University of Nottingham Ningbo China
+  logo: *unnc
+  thesis: Dissertation/Thesis
+- name: Jianhong Xu
+  photo: *placeholder
+  program: PhD Student
+  institution: University of Nottingham Ningbo China
+  logo: *unnc
+  thesis: Dissertation/Thesis
+- name: Chijie Cui
+  photo: *placeholder
+  program: PhD Student
+  institution: University of Nottingham Ningbo China
+  logo: *unnc
+  thesis: Dissertation/Thesis
 
 alumni:
 - name: Jiayi Zhao
@@ -71,16 +127,40 @@ alumni:
   program: Undergraduate
   institution: University of Nottingham Ningbo China
   year: July 2025
+- name: Susan Fuller
+  degree: DrPH, University of Georgia
+  year: Spring 2026
+  thesis: Dissertation/Thesis
+  role: US CDC
+- name: Betelihem Getachew
+  degree: DrPH, University of Georgia
+  year: Spring 2026
+  thesis: Dissertation/Thesis
+  role: US CDC
+- name: Oluwasegun Joel Adegoke
+  degree: DrPH, University of Georgia
+  year: Spring 2026
+  thesis: Dissertation/Thesis
+  role: Current role, Affiliation
+- name: Jessica Amal Tarabay
+  degree: DrPH, University of Georgia
+  year: Spring 2026
+  thesis: Dissertation/Thesis
+  role: Current role, Affiliation
 - name: Kristen Landrum McNiff
   program: DrPH
   institution: University of Georgia
   logo: *uga
   year: Fall 2024
+  thesis: Dissertation/Thesis
+  role: Current role, Affiliation
 - name: Xiaolong (Chris) Hou
   program: MPH
   institution: University of Georgia
   logo: *uga
   year: Fall 2024
+  thesis: Dissertation/Thesis
+  role: Current role, Affiliation
 - name: Wei Jiang
   program: PhD (Economics)
   institution: University of Nottingham Ningbo China
@@ -97,36 +177,50 @@ alumni:
   program: Undergraduate
   institution: University of Nottingham Ningbo China
   year: July 2024
+  thesis: Dissertation/Thesis
+  role: Current role, Affiliation
 - name: Lia Koski
   program: DrPH
   institution: University of Georgia
   logo: *uga
   year: Spring 2023
+  thesis: Dissertation/Thesis
+  role: Current role, Affiliation
 - name: George Vaughn
   program: DrPH
   institution: University of Georgia
   logo: *uga
   year: Spring 2023
+  thesis: Dissertation/Thesis
+  role: Current role, Affiliation
 - name: Victoria Burse
   program: MPH
   institution: University of Georgia
   logo: *uga
   year: Fall 2022
+  thesis: Dissertation/Thesis
+  role: Current role, Affiliation
 - name: Von McClee
   program: DrPH
   institution: University of Georgia
   logo: *uga
   year: December 2021
+  thesis: Dissertation/Thesis
+  role: Current role, Affiliation
 - name: Leisel Talley
   program: DrPH
   institution: University of Georgia
   logo: *uga
   year: July 2021
+  thesis: Dissertation/Thesis
+  role: Current role, Affiliation
 - name: Gibril Njie
   program: DrPH
   institution: University of Georgia
   logo: *uga
   year: May 2021
+  thesis: Dissertation/Thesis
+  role: Current role, Affiliation
 - name: Yuanhang Xi
   program: MPH
   institution: University of Georgia
@@ -140,3 +234,5 @@ alumni:
   program: Undergraduate
   institution: University of Nottingham Ningbo China
   year: July 2020
+  thesis: Dissertation/Thesis
+  role: Current role, Affiliation

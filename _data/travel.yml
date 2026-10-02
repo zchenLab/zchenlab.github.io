@@ -1,0 +1,37 @@
+# Travel photo page (/travel), linked from the Showcase page.
+#
+# To add your own photos:
+#   1. Put the image files in assets/images/travel/ (JPG or PNG; ~1600px wide is plenty).
+#   2. Replace the placeholder `src` paths below with your file names.
+#   3. Edit the trip names, places, dates, notes and captions. Add or remove trips freely;
+#      the first trip's first photo is also used as the cover on the Showcase page.
+intro: >-
+  A few snapshots from conferences, fieldwork and teaching trips over the years.
+  (Sample page: the photos below are placeholders.)
+
+trips:
+  - name: Sample trip one
+    place: City, Country
+    date: Summer 2026
+    note: A sentence or two about the trip, such as the conference, field site or course.
+    photos:
+      - src: assets/images/travel/placeholder-1.svg
+        caption: Caption for the first photo
+      - src: assets/images/travel/placeholder-2.svg
+        caption: Caption for the second photo
+      - src: assets/images/travel/placeholder-3.svg
+        caption: Caption for the third photo
+
+  - name: Sample trip two
+    place: City, Country
+    date: Spring 2025
+    note: Another short note about where you went and why.
+    photos:
+      - src: assets/images/travel/placeholder-2.svg
+        caption: Caption for the first photo
+      - src: assets/images/travel/placeholder-3.svg
+        caption: Caption for the second photo
+      - src: assets/images/travel/placeholder-1.svg
+        caption: Caption for the third photo
+      - src: assets/images/travel/placeholder-2.svg
+        caption: Caption for the fourth photo

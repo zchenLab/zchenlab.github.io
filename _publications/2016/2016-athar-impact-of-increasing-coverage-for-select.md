@@ -4,6 +4,8 @@ date:           2016-12-31 00:01:00 +0800
 selected:       false
 pub:            "Journal of Public Health Management and Practice"
 pub_date:       "2016"
+cover:          /assets/images/covers/topics/tobacco.svg
+doi:            "10.1097/PHH.0000000000000302"
 authors:
   - "Athar H"
   - "Chen Z"
@@ -11,4 +13,6 @@ authors:
   - "Xu X"
   - "Dube SR"
   - "Chang MH"
+links:
+  Paper: https://doi.org/10.1097/PHH.0000000000000302
 ---

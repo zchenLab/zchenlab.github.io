@@ -4,6 +4,8 @@ date:           2019-12-28 00:01:00 +0800
 selected:       false
 pub:            "BMC Geriatrics"
 pub_date:       "2019"
+cover:          /assets/images/covers/topics/chronic.svg
+doi:            "10.1186/s12877-019-1176-1"
 authors:
   - "Song H"
   - "Zhang D"

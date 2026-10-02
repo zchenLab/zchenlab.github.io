@@ -4,6 +4,8 @@ date:           2022-12-29 00:01:00 +0800
 selected:       false
 pub:            "Telemed Rep"
 pub_date:       "2022"
+cover:          /assets/images/covers/topics/digital.svg
+doi:            "10.1089/tmr.2022.0021"
 authors:
   - "Yu Y"
   - "Chen Z"

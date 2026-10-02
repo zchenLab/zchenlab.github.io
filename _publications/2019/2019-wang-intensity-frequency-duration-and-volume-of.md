@@ -4,6 +4,8 @@ date:           2019-12-29 00:01:00 +0800
 selected:       false
 pub:            "PLoS ONE"
 pub_date:       "2019"
+cover:          /assets/images/covers/topics/mental.svg
+doi:            "10.1371/journal.pone.0221430"
 authors:
   - "Wang R"
   - "Bishwajit G"

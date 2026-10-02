@@ -4,6 +4,8 @@ date:           2021-12-14 00:01:00 +0800
 selected:       false
 pub:            "Research on Aging"
 pub_date:       "2021"
+cover:          /assets/images/covers/topics/aging.svg
+doi:            "10.1177/0164027520938764"
 authors:
   - "Yang W"
   - "Wu B"

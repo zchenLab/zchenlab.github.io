@@ -4,6 +4,8 @@ date:           2020-12-24 00:01:00 +0800
 selected:       false
 pub:            "Clinical Obesity"
 pub_date:       "2020"
+cover:          /assets/images/covers/topics/obesity.svg
+doi:            "10.1111/cob.12385"
 authors:
   - "Rajbhandari-Thapa J"
   - "Ingels J"

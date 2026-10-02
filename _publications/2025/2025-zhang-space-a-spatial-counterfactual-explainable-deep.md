@@ -4,6 +4,8 @@ date:           2025-12-22 00:01:00 +0800
 selected:       false
 pub:            "International Journal of Geographical Information Science"
 pub_date:       "2025"
+cover:          /assets/images/covers/topics/digital.svg
+doi:            "10.1080/13658816.2024.2443757"
 authors:
   - "Zhang J"
   - "Mu L"

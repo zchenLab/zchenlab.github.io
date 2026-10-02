@@ -4,6 +4,8 @@ date:           2021-12-30 00:01:00 +0800
 selected:       false
 pub:            "J Occup Environ Med"
 pub_date:       "2021"
+cover:          /assets/images/covers/topics/covid.svg
+doi:            "10.1097/JOM.0000000000002325"
 authors:
   - "Matthews TA"
   - "Chen L"

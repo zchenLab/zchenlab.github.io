@@ -4,6 +4,8 @@ date:           2026-12-31 00:01:00 +0800
 selected:       false
 pub:            "Diabetes Res Clin Pract"
 pub_date:       "2026"
+cover:          /assets/images/covers/topics/chronic.svg
+doi:            "10.1016/j.diabres.2026.113489"
 authors:
   - "Li WJ"
   - "Tao SS"

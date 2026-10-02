@@ -4,6 +4,8 @@ date:           2023-12-24 00:01:00 +0800
 selected:       false
 pub:            "BMC Public Health"
 pub_date:       "2023"
+cover:          /assets/images/covers/topics/racism.svg
+doi:            "10.1186/s12889-023-15912-4"
 authors:
   - "Wen M"
   - "Shi L"

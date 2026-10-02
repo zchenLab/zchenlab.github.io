@@ -5,6 +5,7 @@ selected:       false
 pub:            "China’s Agricultural Development: Challenges and Prospects (Dong X-Y, Song S, Zhang X, eds.), Ashgate"
 pub_pre:        "Book chapter in "
 pub_date:       "2006"
+cover:          /assets/images/covers/topics/agri.svg
 authors:
   - "Chen Z"
   - "Huffman WE"

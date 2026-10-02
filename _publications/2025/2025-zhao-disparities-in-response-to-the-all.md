@@ -4,6 +4,8 @@ date:           2025-12-23 00:01:00 +0800
 selected:       false
 pub:            "Serican Journal of Medicine"
 pub_date:       "2025"
+cover:          /assets/images/covers/topics/covid.svg
+doi:            "10.17161/sjm.v2i2.23570"
 authors:
   - "Zhao S"
   - "Chen Z"

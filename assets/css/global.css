@@ -102,10 +102,18 @@ div.lazy {
     font-size: 1rem;
 }
 
+.pub-item h5 a.pub-title-link {
+    color: inherit;
+}
+
+.pub-item h5 a.pub-title-link:hover {
+    color: #007bff;
+}
+
 /* Group page */
 .group-avatar {
-    width: 56px;
-    height: 56px;
+    width: 96px;
+    height: 96px;
     flex-shrink: 0;
     object-fit: cover;
 }
@@ -117,7 +125,12 @@ div.lazy {
     background-color: #ba0c2f;
     color: #fff;
     font-weight: 700;
-    font-size: 1.1rem;
+    font-size: 1.75rem;
+}
+
+/* Nottingham blue for University of Nottingham Ningbo China students */
+.group-initials-unnc {
+    background-color: #10263B;
 }
 
 /* Teaching page */

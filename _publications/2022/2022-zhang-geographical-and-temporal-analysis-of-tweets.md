@@ -4,6 +4,8 @@ date:           2022-12-31 00:01:00 +0800
 selected:       false
 pub:            "Annals of GIS"
 pub_date:       "2022"
+cover:          /assets/images/covers/topics/covid.svg
+doi:            "10.1080/19475683.2022.2133167"
 authors:
   - "Zhang X"
   - "Mu L"

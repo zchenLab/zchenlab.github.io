@@ -4,6 +4,8 @@ date:           2021-12-26 00:01:00 +0800
 selected:       false
 pub:            "BMC Health Serv Res"
 pub_date:       "2021"
+cover:          /assets/images/covers/topics/aging.svg
+doi:            "10.1186/s12913-021-06908-0"
 authors:
   - "Li C"
   - "Chen Z"

@@ -4,6 +4,8 @@ date:           2021-12-25 00:01:00 +0800
 selected:       false
 pub:            "Cancer"
 pub_date:       "2021"
+cover:          /assets/images/covers/topics/obesity.svg
+doi:            "10.1002/cncr.33842"
 authors:
   - "Han X"
   - "Jemal A"

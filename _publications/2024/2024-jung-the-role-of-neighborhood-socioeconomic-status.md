@@ -4,6 +4,8 @@ date:           2024-12-28 00:01:00 +0800
 selected:       false
 pub:            "J Am Med Dir Assoc"
 pub_date:       "2024"
+cover:          /assets/images/covers/topics/care.svg
+doi:            "10.1016/j.jamda.2024.105170"
 authors:
   - "Jung D"
   - "Jarrín OF"

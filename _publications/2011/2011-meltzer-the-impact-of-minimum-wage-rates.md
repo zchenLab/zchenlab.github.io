@@ -5,6 +5,7 @@ selected:       false
 pub:            "Economic Aspects of Obesity (Grossman M, Mocan N, eds.), The University of Chicago Press"
 pub_pre:        "Book chapter in "
 pub_date:       "2011"
+cover:          /assets/images/covers/topics/obesity.svg
 authors:
   - "Meltzer DO"
   - "Chen Z"
