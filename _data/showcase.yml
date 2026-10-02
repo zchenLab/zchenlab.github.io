@@ -1,0 +1,70 @@
+# Content for the Showcase page cards.
+
+# Conference and Meetings slideshow. Replace the placeholder images with your photos
+# (e.g. put files in assets/images/conferences/) and edit the titles and descriptions.
+conference_photos:
+- src: assets/images/conferences/placeholder-1.svg
+  title: Conference or meeting name
+  desc: Place, year
+- src: assets/images/conferences/placeholder-2.svg
+  title: Conference or meeting name
+  desc: Place, year
+- src: assets/images/conferences/placeholder-3.svg
+  title: Conference or meeting name
+  desc: Place, year
+
+# Conferences and meetings organized (from the CV). Replace each `program_book: "#"`
+# with a link to the program book (a URL, or a PDF you add under assets/).
+# Leave `program_book` out to hide the link.
+conferences_organized:
+- name: Workshop on Applications of AI/ML in Health Disparities Research and Workforce Diversity (NIH AIM-AHEAD)
+  role: Organizer
+  year: "2023"
+  program_book: "#"
+- name: "Webinars: Lessons Learned from Wuhan and Shanghai in COVID-19 Treatment and Prevention"
+  role: Organizer
+  year: "2020"
+  program_book: "#"
+- name: "Preventing a Devastating Pandemic, Committee of 100"
+  role: Organizer and host
+  program_book: "#"
+- name: Chinese Economists Society Presidents’ Forum
+  role: Organizer
+  year: "2018"
+  program_book: "#"
+- name: "Regulatory Impact Analysis: Methods, Applications, and Implications for Emerging Economies, University of Georgia"
+  role: Co-organizer
+  year: "2018"
+  program_book: "#"
+- name: Health Policy Forum, Belt &amp; Road Initiative Global Health International Congress
+  role: Co-host
+  year: "2017"
+  program_book: "#"
+- name: Westlake Youth Forum, Hangzhou, China
+  role: Planning committee
+  year: "2012"
+  program_book: "#"
+- name: CDC Economic Forum
+  role: Steering committee
+  year: "2012"
+  program_book: "#"
+- name: "Westlake Forum III: Healthcare Reform in China and the US, Emory University"
+  role: Planning committee
+  year: "2011"
+  program_book: "#"
+- name: Chinese Economists Society Annual Meeting, Tianjin, China
+  role: Conference organizer
+  year: "2008"
+  program_book: "#"
+
+# Favorite projects (placeholders). Edit the title, description, image and link for each.
+favorite_projects:
+- title: Project title
+  description: One or two sentences on what the project is and why it matters to you.
+  link: "#"
+- title: Project title
+  description: One or two sentences on what the project is and why it matters to you.
+  link: "#"
+- title: Project title
+  description: One or two sentences on what the project is and why it matters to you.
+  link: "#"
