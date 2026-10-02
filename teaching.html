@@ -34,12 +34,17 @@ navbar_title: Teaching
     <h6 class="p-3 mb-0 border-bottom border-gray"><i class="fas fa-globe-asia"></i> Study Abroad</h6>
     <ul class="list-unstyled px-3 py-2 mb-0">
         {% for s in t.study_abroad %}
-        <li class="d-flex py-1 {% unless forloop.first %}border-top border-gray{% endunless %}">
-            <div>
-                <a class="font-weight-bold" target="_blank" href="{{ s.url }}">{{ s.name }}</a>
-                {% if s.description %}<div class="text-muted">{{ s.description }}</div>{% endif %}
+        <li class="py-2 {% unless forloop.first %}border-top border-gray{% endunless %}">
+            <div class="d-flex flex-wrap">
+                <a class="font-weight-bold mr-2" target="_blank" href="{{ s.url }}">{{ s.name }}</a>
+                <span class="ml-auto text-muted no-break"><i>{{ s.term }}</i></span>
             </div>
-            <div class="ml-auto pl-3 no-break"><a target="_blank" href="{{ s.url }}">Apply <i class="fas fa-external-link-alt"></i></a></div>
+            <div class="text-muted"><i class="fas fa-map-marker-alt"></i> {{ s.location }}{% if s.credits %} &middot; {{ s.credits }}{% endif %}</div>
+            {% if s.description %}<div class="mt-1">{{ s.description }}</div>{% endif %}
+            <div class="mt-1">
+                <a class="pr-3 no-break" target="_blank" href="{{ s.url }}"><i class="fas fa-external-link-alt"></i> Details &amp; apply</a>
+                {% if s.flyer %}<a class="no-break" target="_blank" href="{{ s.flyer | relative_url }}"><i class="fas fa-file-pdf"></i> Flyer</a>{% endif %}
+            </div>
         </li>
         {% endfor %}
     </ul>
