@@ -1,7 +1,7 @@
 ---
 title:          "Prevalence, frequency, intensity, and location of cigarette use among adolescents in China from 2013-14 to 2019: Findings from two repeated cross-sectional studies"
 date:           2022-12-25 00:01:00 +0800
-selected:       false
+selected:       true
 pub:            "Lancet Reg Health West Pac"
 pub_date:       "2022"
 cover:          /assets/images/covers/topics/tobacco.svg
