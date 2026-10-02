@@ -85,3 +85,80 @@ themes:
   - "Trends in Utilization and Costs of BRCA Testing among Women Ages 18-64 Years in the United States, 2003-2014"
   - "BRCA Genetic Testing and Receipt of Preventive Interventions among Women Aged 18–64 Years with Employer-Sponsored Health Insurance in Nonmetropolitan and Metropolitan Areas — United States, 2009–2014"
   - "Precision Public Health in China: Opportunities and Challenges"
+
+# Key collaborators shown on the Research page. Listed in order of joint publications;
+# `keys` are the author names as written in _publications, and the count and years
+# are computed from those entries when the site builds. `featured: true` keeps a
+# collaborator on the list regardless of the number of joint papers.
+collaborators:
+- name: "Jeff Koplan"
+  keys: ["Koplan J", "Koplan JP"]
+  featured: true
+- name: "D. Zhang"
+  keys: ["Zhang D"]
+- name: "Y. Li"
+  keys: ["Li Y", "LI Y"]
+- name: "J. Rajbhandari-Thapa"
+  keys: ["Rajbhandari-Thapa J", "Rajbhandari-Thapa", "Thapa J"]
+- name: "J. Li"
+  keys: ["Li J"]
+- name: "L. Shi"
+  keys: ["Shi L"]
+- name: "X. Han"
+  keys: ["Han X"]
+- name: "H. Li"
+  keys: ["Li H"]
+- name: "D. Su"
+  keys: ["Su D"]
+- name: "Y. Wang"
+  keys: ["Wang Y"]
+- name: "T. Wu"
+  keys: ["Wu T"]
+- name: "L. Chen"
+  keys: ["Chen L"]
+- name: "M. Wen"
+  keys: ["Wen M"]
+- name: "L. Mu"
+  keys: ["Mu L"]
+- name: "S. T. Yen"
+  keys: ["Yen ST"]
+- name: "J. A. Pagán"
+  keys: ["Pagán JA", "Pagan J", "Pagan H"]
+- name: "K. Roy"
+  keys: ["Roy K"]
+- name: "R. Wang"
+  keys: ["Wang R"]
+- name: "B. Chen"
+  keys: ["Chen B"]
+- name: "G. Li"
+  keys: ["Li G"]
+- name: "D. B. Eastwood"
+  keys: ["Eastwood DB"]
+- name: "S. Jiang"
+  keys: ["Jiang S"]
+- name: "H. Son"
+  keys: ["Son H"]
+- name: "S.-H. Cho"
+  keys: ["Cho S-H"]
+- name: "C. A. Gotway Crawford"
+  keys: ["Gotway Crawford CA", "Crawford Gotway CA"]
+- name: "D. Feng"
+  keys: ["Feng D"]
+- name: "Z. Feng"
+  keys: ["Feng Z"]
+- name: "J. Zhang"
+  keys: ["Zhang J"]
+- name: "J. Liu"
+  keys: ["Liu J"]
+- name: "X. Chen"
+  keys: ["Chen X"]
+- name: "S. Tang"
+  keys: ["Tang S"]
+- name: "Z. Deng"
+  keys: ["Deng Z"]
+- name: "X. Wu"
+  keys: ["Wu X"]
+- name: "Y. Shen"
+  keys: ["Shen Y"]
+- name: "Y. Ma"
+  keys: ["Ma Y"]
