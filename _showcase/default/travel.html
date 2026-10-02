@@ -1,0 +1,13 @@
+---
+show: true
+width: 4
+date: 2026-10-02 00:01:00 -0400
+---
+{% assign cover = site.data.travel.trips.first.photos.first %}
+<a href="{{ '/travel' | relative_url }}" class="text-reset text-decoration-none">
+    <img src="{{ cover.src | relative_url }}" alt="Travel photos" class="img-fluid rounded-xl-top">
+    <div class="p-3">
+        <h4 class="mb-1"><i class="fas fa-plane"></i> Travel</h4>
+        <p class="mb-0 text-muted">Photos from conferences, fieldwork and teaching trips. <span class="text-primary">View the gallery &rarr;</span></p>
+    </div>
+</a>
