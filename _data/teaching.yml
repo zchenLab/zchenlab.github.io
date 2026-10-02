@@ -1,0 +1,95 @@
+# Content for the Teaching page (teaching.html), taken from the CV.
+# Set `developed: true` on a course that was developed or significantly revised.
+
+courses_undergraduate:
+- code: FYOS 1001
+  title: First-Year Odyssey Seminar
+  developed: true
+- code: HPAM 3500 / 3500E
+  title: Introduction to Healthcare Management
+  developed: true
+- code: HPAM 3600E
+  title: Introduction to Health Policy
+- code: HPAM 3750
+  title: Special Problems in HPAM
+- code: HPAM 4600
+  title: Advanced Health Policy
+  developed: true
+- code: HPAM 4960R / 4970R / 4980R
+  title: Faculty-Mentored Undergraduate Research I–III
+- code: HPAM 4990R
+  title: Undergraduate Research Thesis
+
+courses_graduate:
+- code: HPAM 7001
+  title: Foundations in HPAM
+- code: HPAM 7005
+  title: Graduate Student Seminar
+- code: HPAM 8000
+  title: Directed Research in HPAM
+- code: HPAM 8300
+  title: Research Methods in Health Policy
+- code: HPAM 8340
+  title: Social Determinants of Health and Health Disparities
+  developed: true
+- code: HPAM 8700
+  title: Management of Public Health Organizations
+- code: HPAM 8900
+  title: Special Topics in Health Administration (Economic Evaluation)
+  developed: true
+- code: HPAM 9000
+  title: Doctoral Research
+- code: HPAM 9005
+  title: Doctoral Seminar
+- code: HPAM 9300
+  title: Doctoral Dissertation
+- code: PBHL 7560
+  title: Applied Practice and Integrative Learning Experience in Public Health
+- code: PBHL 7800
+  title: Capstone Project in Public Health
+- code: PBHL 9560
+  title: DrPH Residency
+
+course_development:
+- title: Introduction to Healthcare Management (HPAM 3500)
+  credits: 3 cr
+- title: Advanced Health Policy (HPAM 4600)
+  credits: 3 cr
+- title: Economic Evaluation (HPAM 8900)
+  credits: 3 cr
+- title: Social Determinants of Health (HPAM 8340)
+  credits: 3 cr
+- title: "First-Year Odyssey Seminar (FYOS 1001): Social Determinants of Health & Disparities"
+  credits: 1 cr
+- title: "First-Year Odyssey Seminar (FYOS 1001): Regulatory Impact Analysis"
+  credits: 1 cr
+
+guest_lectures:
+- title: Principles and Applications of Economic Evaluation
+  course: "GLOB 8900: Foundation of Global Health (Instructor: Sekandi), University of Georgia"
+  date: Oct 2017
+- title: "US Health Regulatory Impact Analysis: Why and How"
+  course: "HPAM 8900: Economic Evaluation (Instructor: Ingels), University of Georgia"
+  date: Apr 2018
+- course: "HMP 677: Health Care Organization: An International Perspective (Instructor: Jersey Liang), University of Michigan"
+  date: Oct 2020, Jan 2023
+
+recognitions:
+- name: New Leader Program, University of Georgia Office of the Provost
+  date: "2024"
+- name: Aspire Fellowship, University of Georgia Office of the Provost
+  date: "2024"
+- name: Recognition by the UGA Career Center for contribution to student careers
+  date: 2019, 2021
+- name: Teaching Academy Fellowship Program, University of Georgia
+  date: 2018–2019
+- name: "UGA Enrichment Fund instructional grants (Spring 2018, Fall 2018, Spring 2019, Fall 2021, Spring 2022, Fall 2022, Fall 2023, Fall 2024)"
+  date: 2018–2024
+
+mentoring:
+- Primary mentor for DrPH, PhD and MPH students
+- "Doctoral advisory committee member: DrPH and PhD (Epidemiology) students"
+- Supervised undergraduate research for six students (2019–2021)
+- Supervised MPH internships (2020–2022)
+- Academic advisor for first- and second-year DrPH students without an assigned advisor (about 25 per year)
+- Hosted visiting scholar Jianliang Li, University of Nottingham Ningbo China (2022)
