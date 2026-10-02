@@ -9,7 +9,7 @@ date: 2026-10-03 00:01:00 -0400
     <hr />
     <p>
         This page collects some of the moments and work behind the research: photos from travel and fieldwork,
-        conferences and meetings I have organized or joined, and a few projects I am especially proud of.
+        conferences and meetings I have organized or joined, media coverage, and a few projects I am especially proud of.
     </p>
     <p class="mb-0">
         For the research itself, see <a href="{{ '/research' | relative_url }}">Research</a> and
