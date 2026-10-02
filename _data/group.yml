@@ -1,71 +1,119 @@
 # Group members shown on the Group page (group.html).
-# Each person can have: name, program, institution, logo, photo, note.
+# Current students can have: name, program, institution, logo, photo, thesis, note.
+# Alumni can have: name, degree, year, thesis, role.
 # `photo` is optional (e.g. /assets/images/photos/jane.jpg); without it, initials are shown.
 
 uga_logo: &uga /assets/images/badges/uga-logo.png
 
 current:
-- name: Susan Fuller
-  program: DrPH Student
+- name: Xinyi Liu
+  program: PhD Student
   institution: University of Georgia
   logo: *uga
-- name: Sonh Patrick Chong
-  program: DrPH Student
+  thesis: Dissertation/Thesis
+- name: Yunjie Liu
+  program: PhD Student
   institution: University of Georgia
   logo: *uga
-- name: Betelihem Getachew
-  program: DrPH Student
-  institution: University of Georgia
-  logo: *uga
-- name: Oluwasegun Joel Adegoke
-  program: DrPH Student
-  institution: University of Georgia
-  logo: *uga
-- name: Jessica Amal Tarabay
-  program: DrPH Student
-  institution: University of Georgia
-  logo: *uga
+  thesis: Dissertation/Thesis
 - name: Xuening Cheng
   program: PhD Student (Economics)
   institution: University of Nottingham Ningbo China
+  thesis: Dissertation/Thesis
 - name: Jiangshan Ji
   program: PhD Student (Economics)
   institution: University of Nottingham Ningbo China
+  thesis: Dissertation/Thesis
 - name: Fei Zhao
   program: PhD Student (Economics)
   institution: University of Nottingham Ningbo China
+  thesis: Dissertation/Thesis
 - name: Chenyuan Yan
   program: PhD Student (Economics)
   institution: University of Nottingham Ningbo China
+  thesis: Dissertation/Thesis
+- name: Jianhong Xu
+  program: PhD Student
+  institution: University of Nottingham Ningbo China
+  thesis: Dissertation/Thesis
+- name: Chijie Cui
+  program: PhD Student
+  institution: University of Nottingham Ningbo China
+  thesis: Dissertation/Thesis
 
 alumni:
+- name: Susan Fuller
+  degree: DrPH, University of Georgia
+  year: Spring 2026
+  thesis: Dissertation/Thesis
+  role: Current role, Affiliation
+- name: Sonh Patrick Chong
+  degree: DrPH, University of Georgia
+  year: Spring 2026
+  thesis: Dissertation/Thesis
+  role: Current role, Affiliation
+- name: Betelihem Getachew
+  degree: DrPH, University of Georgia
+  year: Spring 2026
+  thesis: Dissertation/Thesis
+  role: Current role, Affiliation
+- name: Oluwasegun Joel Adegoke
+  degree: DrPH, University of Georgia
+  year: Spring 2026
+  thesis: Dissertation/Thesis
+  role: Current role, Affiliation
+- name: Jessica Amal Tarabay
+  degree: DrPH, University of Georgia
+  year: Spring 2026
+  thesis: Dissertation/Thesis
+  role: Current role, Affiliation
 - name: Kristen Landrum McNiff
   degree: DrPH, University of Georgia
   year: Fall 2024
+  thesis: Dissertation/Thesis
+  role: Current role, Affiliation
 - name: Xiaolong (Chris) Hou
   degree: MPH, University of Georgia
   year: Fall 2024
+  thesis: Dissertation/Thesis
+  role: Current role, Affiliation
 - name: Wei Jiang
   degree: PhD (Economics), University of Nottingham Ningbo China
   year: Fall 2024
+  thesis: Dissertation/Thesis
+  role: Current role, Affiliation
 - name: Lia Koski
   degree: DrPH, University of Georgia
   year: Spring 2023
+  thesis: Dissertation/Thesis
+  role: Current role, Affiliation
 - name: George Vaughn
   degree: DrPH, University of Georgia
   year: Spring 2023
+  thesis: Dissertation/Thesis
+  role: Current role, Affiliation
 - name: Victoria Burse
   degree: MPH, University of Georgia
   year: Fall 2022
+  thesis: Dissertation/Thesis
+  role: Current role, Affiliation
 - name: Von McClee
   degree: DrPH, University of Georgia
   year: December 2021
+  thesis: Dissertation/Thesis
+  role: Current role, Affiliation
 - name: Leisel Talley
   degree: DrPH, University of Georgia
   year: July 2021
+  thesis: Dissertation/Thesis
+  role: Current role, Affiliation
 - name: Gibril Njie
   degree: DrPH, University of Georgia
   year: May 2021
+  thesis: Dissertation/Thesis
+  role: Current role, Affiliation
 - name: Yuanhang Xi
   degree: MPH, University of Georgia
   year: May 2021
+  thesis: Dissertation/Thesis
+  role: Current role, Affiliation
