@@ -8,46 +8,32 @@ navbar_title: Teaching
 <!-- Courses taught -->
 <div class="my-3 bg-white shadow-sm rounded-xl">
     <h6 class="p-3 mb-0 border-bottom border-gray"><i class="fas fa-chalkboard-teacher"></i> Courses Taught at the University of Georgia
-        <small class="text-muted font-weight-normal ml-2"><span class="badge badge-pill badge-success">New</span> = developed or significantly revised</small>
+        <span class="badge badge-pill badge-success ml-1 font-weight-normal">Developed</span> <small class="text-muted font-weight-normal">= course developed or significantly revised</small>
     </h6>
     <div class="row no-gutters p-2">
-        {% assign levels = "Undergraduate,Graduate" | split: "," %}
-        {% for level in levels %}
-        {% if level == "Undergraduate" %}{% assign courses = t.courses_undergraduate %}{% else %}{% assign courses = t.courses_graduate %}{% endif %}
         <div class="col-lg-6 p-2">
-            <div class="font-weight-bold mb-2">{{ level }}</div>
+            <div class="font-weight-bold mb-2">Undergraduate</div>
             <ul class="list-unstyled mb-0">
-                {% for c in courses %}
-                <li class="d-flex py-1 {% unless forloop.first %}border-top border-gray{% endunless %}">
-                    <span class="text-muted pr-3" style="flex: 0 0 9.5em;">{{ c.code }}</span>
-                    <span>{{ c.title }}{% if c.developed %} <span class="badge badge-pill badge-success">New</span>{% endif %}</span>
+                {% for c in t.courses_undergraduate %}
+                <li class="media py-1 {% unless forloop.first %}border-top border-gray{% endunless %}">
+                    <span class="teaching-code mr-3">{{ c.code }}</span>
+                    <span class="media-body">{{ c.title }}{% if c.developed %} <span class="badge badge-pill badge-success">Developed</span>{% endif %}</span>
                 </li>
                 {% endfor %}
             </ul>
         </div>
-        {% endfor %}
+        <div class="col-lg-6 p-2">
+            <div class="font-weight-bold mb-2">Graduate</div>
+            <ul class="list-unstyled mb-0">
+                {% for c in t.courses_graduate %}
+                <li class="media py-1 {% unless forloop.first %}border-top border-gray{% endunless %}">
+                    <span class="teaching-code mr-3">{{ c.code }}</span>
+                    <span class="media-body">{{ c.title }}{% if c.developed %} <span class="badge badge-pill badge-success">Developed</span>{% endif %}</span>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
     </div>
-</div>
-
-<!-- Study abroad -->
-<div class="my-3 bg-white shadow-sm rounded-xl">
-    <h6 class="p-3 mb-0 border-bottom border-gray"><i class="fas fa-globe-asia"></i> Study Abroad</h6>
-    <ul class="list-unstyled px-3 py-2 mb-0">
-        {% for s in t.study_abroad %}
-        <li class="py-2 {% unless forloop.first %}border-top border-gray{% endunless %}">
-            <div class="d-flex flex-wrap">
-                <a class="font-weight-bold mr-2" target="_blank" href="{{ s.url }}">{{ s.name }}</a>
-                <span class="ml-auto text-muted no-break"><i>{{ s.term }}</i></span>
-            </div>
-            <div class="text-muted"><i class="fas fa-map-marker-alt"></i> {{ s.location }}{% if s.credits %} &middot; {{ s.credits }}{% endif %}</div>
-            {% if s.description %}<div class="mt-1">{{ s.description }}</div>{% endif %}
-            <div class="mt-1">
-                <a class="pr-3 no-break" target="_blank" href="{{ s.url }}"><i class="fas fa-external-link-alt"></i> Details &amp; apply</a>
-                {% if s.flyer %}<a class="no-break" target="_blank" href="{{ s.flyer | relative_url }}"><i class="fas fa-file-pdf"></i> Flyer</a>{% endif %}
-            </div>
-        </li>
-        {% endfor %}
-    </ul>
 </div>
 
 <div class="row">
@@ -88,7 +74,7 @@ navbar_title: Teaching
     <ul class="list-unstyled px-3 py-2 mb-0">
         {% for g in t.guest_lectures %}
         <li class="d-flex py-1 {% unless forloop.first %}border-top border-gray{% endunless %}">
-            <div>{% if g.title %}<span class="font-weight-bold">“{{ g.title }}”</span> &middot; {% endif %}{{ g.course }}</div>
+            <div>{% if g.title != "Guest lecture" %}<span class="font-weight-bold">“{{ g.title }}”</span> &middot; {% endif %}{{ g.course }}</div>
             <div class="ml-auto pl-3 text-muted no-break"><i>{{ g.date }}</i></div>
         </li>
         {% endfor %}

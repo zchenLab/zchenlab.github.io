@@ -132,3 +132,10 @@ div.lazy {
 .group-initials-unnc {
     background-color: #10263B;
 }
+
+/* Teaching page */
+.teaching-code {
+    flex: 0 0 9.5rem;
+    color: #6c757d;
+    font-weight: 700;
+}
