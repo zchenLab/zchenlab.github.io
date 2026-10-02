@@ -1,23 +1,20 @@
 ---
 show: true
 width: 8
-date: 2024-01-12 00:01:00 +0800
+date: 2026-10-03 00:01:00 -0400
 ---
 
 <div class="p-4">
-    <h2>Welcome to Showcase!</h2>
+    <h2>Welcome to Showcase</h2>
     <hr />
     <p>
-        <code>Showcase</code> is a page where you can show off almost anything you want. It can be the photo of your pets, your favorite books, your favorite projects, or anything else you want to show to the world.
+        This page collects some of the moments and work behind the research: photos from travel and fieldwork,
+        conferences and meetings I have organized or joined, and a few projects I am especially proud of.
     </p>
-    <p>
-        You can create a new showcase item by creating a new file in the <code>_showcase</code> folder. It gives you the highest flexibility to customize the item using any HTML code.
-    </p>
-    <p>
-        Cards are ordered by the <code>date</code> field in the front matter in descending order. The <code>width</code> field is used to determine the width of the card, ranging from 1 to 12.
-        Layout is done by the <a href="https://masonry.desandro.com/" target="_blank">Masonry</a> library.
-    </p>
-    <p>
-        For a tidy layout, it is recommended to set the width of the cards to be either multiple of 3 or multiple of 4 for all cards, except for small badges that do not take up much space (width=1).
+    <p class="mb-0">
+        For the research itself, see <a href="{{ '/research' | relative_url }}">Research</a> and
+        <a href="{{ '/publications' | relative_url }}">Publications</a>; for teaching, mentoring and service, see
+        <a href="{{ '/teaching' | relative_url }}">Teaching</a>, <a href="{{ '/group' | relative_url }}">Group</a> and
+        <a href="{{ '/service' | relative_url }}">Service</a>.
     </p>
 </div>
