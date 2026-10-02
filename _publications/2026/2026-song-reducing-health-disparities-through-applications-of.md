@@ -6,6 +6,7 @@ pub:            "The Palgrave Handbook of Communication and Health Disparities"
 pub_pre:        "Book chapter in "
 pub_post:       " (Accepted)"
 pub_date:       "2026"
+cover:          /assets/images/covers/topics/digital.svg
 authors:
   - "Song S*"
   - "Li F*"

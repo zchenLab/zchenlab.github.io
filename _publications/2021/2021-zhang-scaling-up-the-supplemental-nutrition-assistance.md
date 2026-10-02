@@ -4,6 +4,7 @@ date:           2021-12-24 00:01:00 +0800
 selected:       false
 pub:            "Annual Modeling and Simulation Conference (ANNSIM)"
 pub_date:       "2021"
+cover:          /assets/images/covers/topics/obesity.svg
 doi:            "10.23919/ANNSIM52504.2021.9552136"
 authors:
   - "Zhang D"

@@ -4,6 +4,7 @@ date:           2021-12-17 00:01:00 +0800
 selected:       false
 pub:            "Health Equity"
 pub_date:       "2021"
+cover:          /assets/images/covers/topics/racism.svg
 doi:            "10.1089/heq.2020.0139"
 authors:
   - "Zhang D"

@@ -4,6 +4,7 @@ date:           2021-12-19 00:01:00 +0800
 selected:       false
 pub:            "Int J Equity Health"
 pub_date:       "2021"
+cover:          /assets/images/covers/topics/covid.svg
 doi:            "10.1186/s12939-021-01448-9"
 authors:
   - "Nie P*"

@@ -5,6 +5,7 @@ selected:       false
 pub:            "American Journal of Agricultural Economics"
 pub_last:       ' <span class="badge badge-pill badge-publication badge-secondary">Commentary</span>'
 pub_date:       "2011"
+cover:          /assets/images/covers/topics/obesity.svg
 authors:
   - "Chen Z"
 ---

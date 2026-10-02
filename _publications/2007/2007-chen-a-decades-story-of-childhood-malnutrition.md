@@ -4,6 +4,7 @@ date:           2007-12-27 00:01:00 +0800
 selected:       false
 pub:            "China Economic Review"
 pub_date:       "2007"
+cover:          /assets/images/covers/topics/obesity.svg
 doi:            "10.1016/j.chieco.2006.12.004"
 authors:
   - "Chen Z"

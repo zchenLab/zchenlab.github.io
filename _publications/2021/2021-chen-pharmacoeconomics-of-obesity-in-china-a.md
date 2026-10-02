@@ -4,6 +4,7 @@ date:           2021-12-15 00:01:00 +0800
 selected:       false
 pub:            "Expert Review of Pharmacoeconomics & Outcomes Research"
 pub_date:       "2021"
+cover:          /assets/images/covers/topics/obesity.svg
 doi:            "10.1080/14737167.2021.1882306"
 authors:
   - "Chen Z"

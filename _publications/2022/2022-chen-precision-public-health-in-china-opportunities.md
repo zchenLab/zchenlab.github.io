@@ -5,6 +5,7 @@ selected:       false
 pub:            "China CDC Weekly"
 pub_last:       ' <span class="badge badge-pill badge-publication badge-secondary">Commentary</span>'
 pub_date:       "2022"
+cover:          /assets/images/covers/topics/genomics.svg
 doi:            "10.46234/ccdcw2022.145"
 authors:
   - "Chen Z"

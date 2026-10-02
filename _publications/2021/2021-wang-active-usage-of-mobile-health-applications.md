@@ -4,6 +4,7 @@ date:           2021-12-31 00:01:00 +0800
 selected:       false
 pub:            "J Med Internet Res"
 pub_date:       "2021"
+cover:          /assets/images/covers/topics/digital.svg
 doi:            "10.2196/25330"
 authors:
   - "Wang Y"

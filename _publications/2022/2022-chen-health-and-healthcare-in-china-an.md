@@ -5,6 +5,7 @@ selected:       false
 pub:            "The Chinese Economy"
 pub_last:       ' <span class="badge badge-pill badge-publication badge-secondary">Commentary</span>'
 pub_date:       "2022"
+cover:          /assets/images/covers/topics/care.svg
 doi:            "10.1080/10971475.2021.1996549"
 authors:
   - "Chen Z"

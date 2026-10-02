@@ -4,6 +4,7 @@ date:           2022-12-22 00:01:00 +0800
 selected:       false
 pub:            "JMIR Public Health and Surveillance"
 pub_date:       "2022"
+cover:          /assets/images/covers/topics/covid.svg
 doi:            "10.2196/35266"
 authors:
   - "Li J"

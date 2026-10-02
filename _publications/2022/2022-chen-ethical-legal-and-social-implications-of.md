@@ -4,6 +4,7 @@ date:           2022-12-27 00:01:00 +0800
 selected:       false
 pub:            "China CDC Weekly"
 pub_date:       "2022"
+cover:          /assets/images/covers/topics/genomics.svg
 doi:            "10.46234/ccdcw2022.147"
 authors:
   - "Chen Z"

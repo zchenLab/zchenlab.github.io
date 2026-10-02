@@ -4,6 +4,7 @@ date:           2024-12-31 00:01:00 +0800
 selected:       false
 pub:            "China Economic Review"
 pub_date:       "2024"
+cover:          /assets/images/covers/topics/care.svg
 doi:            "10.1016/J.CHIECO.2024.102250"
 authors:
   - "Jiang W"

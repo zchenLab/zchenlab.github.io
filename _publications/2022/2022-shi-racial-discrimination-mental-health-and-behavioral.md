@@ -4,6 +4,7 @@ date:           2022-12-13 00:01:00 +0800
 selected:       false
 pub:            "Journal of General Internal Medicine"
 pub_date:       "2022"
+cover:          /assets/images/covers/topics/racism.svg
 doi:            "10.1007/s11606-022-07540-2"
 authors:
   - "Shi L"

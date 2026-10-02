@@ -4,6 +4,7 @@ date:           2023-12-21 00:01:00 +0800
 selected:       false
 pub:            "Toxics"
 pub_date:       "2023"
+cover:          /assets/images/covers/topics/care.svg
 doi:            "10.3390/toxics11020166"
 authors:
   - "Wang Q"

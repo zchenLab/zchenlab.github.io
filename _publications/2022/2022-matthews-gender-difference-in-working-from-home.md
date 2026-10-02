@@ -4,6 +4,7 @@ date:           2022-12-10 00:01:00 +0800
 selected:       false
 pub:            "Ind Health"
 pub_date:       "2022"
+cover:          /assets/images/covers/topics/covid.svg
 doi:            "10.2486/indhealth.2022-0077"
 authors:
   - "Matthews TA"

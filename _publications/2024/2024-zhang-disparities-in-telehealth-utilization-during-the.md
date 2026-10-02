@@ -4,6 +4,7 @@ date:           2024-12-24 00:01:00 +0800
 selected:       false
 pub:            "Journal of Telemedicine and Telecare"
 pub_date:       "2024"
+cover:          /assets/images/covers/topics/covid.svg
 doi:            "10.1177/1357633X211051677"
 authors:
   - "Zhang D"

@@ -4,6 +4,7 @@ date:           2010-12-31 00:01:00 +0800
 selected:       false
 pub:            "American Journal of Public Health"
 pub_date:       "2010"
+cover:          /assets/images/covers/topics/inequality.svg
 doi:            "10.2105/AJPH.2008.156190"
 authors:
   - "Chen Z"

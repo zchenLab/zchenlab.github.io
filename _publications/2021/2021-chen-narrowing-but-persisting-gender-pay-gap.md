@@ -4,6 +4,7 @@ date:           2021-12-20 00:01:00 +0800
 selected:       false
 pub:            "Hum Resour Health"
 pub_date:       "2021"
+cover:          /assets/images/covers/topics/inequality.svg
 doi:            "10.1186/s12960-021-00608-w"
 authors:
   - "Chen Z"

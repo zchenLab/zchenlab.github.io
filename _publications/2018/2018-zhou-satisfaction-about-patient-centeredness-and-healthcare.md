@@ -4,6 +4,7 @@ date:           2018-12-31 00:01:00 +0800
 selected:       false
 pub:            "Current Medical Science"
 pub_date:       "2018"
+cover:          /assets/images/covers/topics/chronic.svg
 doi:            "10.1007/s11596-018-1863-8"
 authors:
   - "Zhou C-H"

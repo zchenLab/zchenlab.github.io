@@ -4,6 +4,7 @@ date:           2022-12-26 00:01:00 +0800
 selected:       false
 pub:            "J Environ Manage"
 pub_date:       "2022"
+cover:          /assets/images/covers/topics/land.svg
 doi:            "10.1016/j.jenvman.2022.115672"
 authors:
   - "Shi L"
