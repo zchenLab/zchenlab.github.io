@@ -95,38 +95,6 @@ current:
   thesis: Dissertation/Thesis
 
 alumni:
-- name: Jiayi Zhao
-  program: Undergraduate
-  institution: University of Nottingham Ningbo China
-  year: July 2026
-- name: Haoling Wang
-  program: Undergraduate
-  institution: University of Nottingham Ningbo China
-  year: July 2026
-- name: Yuhan Zhao
-  program: Undergraduate
-  institution: University of Nottingham Ningbo China
-  year: July 2026
-- name: Jianuo Zhou
-  program: Undergraduate
-  institution: University of Nottingham Ningbo China
-  year: July 2026
-- name: Shiqi Cheng
-  program: Undergraduate
-  institution: University of Nottingham Ningbo China
-  year: July 2026
-- name: Yuming Liu
-  program: Undergraduate
-  institution: University of Nottingham Ningbo China
-  year: July 2025
-- name: Yuhan Guo
-  program: Undergraduate
-  institution: University of Nottingham Ningbo China
-  year: July 2025
-- name: Lian Duan
-  program: Undergraduate
-  institution: University of Nottingham Ningbo China
-  year: July 2025
 - name: Susan Fuller
   degree: DrPH, University of Georgia
   year: Spring 2026
@@ -148,91 +116,52 @@ alumni:
   thesis: Dissertation/Thesis
   role: Current role, Affiliation
 - name: Kristen Landrum McNiff
-  program: DrPH
-  institution: University of Georgia
-  logo: *uga
+  degree: DrPH, University of Georgia
   year: Fall 2024
   thesis: Dissertation/Thesis
   role: Current role, Affiliation
 - name: Xiaolong (Chris) Hou
-  program: MPH
-  institution: University of Georgia
-  logo: *uga
+  degree: MPH, University of Georgia
   year: Fall 2024
   thesis: Dissertation/Thesis
   role: Current role, Affiliation
 - name: Wei Jiang
-  program: PhD (Economics)
-  institution: University of Nottingham Ningbo China
+  degree: PhD (Economics), University of Nottingham Ningbo China
   year: Fall 2024
-- name: Feiyang Shen
-  program: Undergraduate
-  institution: University of Nottingham Ningbo China
-  year: July 2024
-- name: Songheng Sun
-  program: Undergraduate
-  institution: University of Nottingham Ningbo China
-  year: July 2024
-- name: Jiaying Wang
-  program: Undergraduate
-  institution: University of Nottingham Ningbo China
-  year: July 2024
   thesis: Dissertation/Thesis
   role: Current role, Affiliation
 - name: Lia Koski
-  program: DrPH
-  institution: University of Georgia
-  logo: *uga
+  degree: DrPH, University of Georgia
   year: Spring 2023
   thesis: Dissertation/Thesis
   role: Current role, Affiliation
 - name: George Vaughn
-  program: DrPH
-  institution: University of Georgia
-  logo: *uga
+  degree: DrPH, University of Georgia
   year: Spring 2023
   thesis: Dissertation/Thesis
   role: Current role, Affiliation
 - name: Victoria Burse
-  program: MPH
-  institution: University of Georgia
-  logo: *uga
+  degree: MPH, University of Georgia
   year: Fall 2022
   thesis: Dissertation/Thesis
   role: Current role, Affiliation
 - name: Von McClee
-  program: DrPH
-  institution: University of Georgia
-  logo: *uga
+  degree: DrPH, University of Georgia
   year: December 2021
   thesis: Dissertation/Thesis
   role: Current role, Affiliation
 - name: Leisel Talley
-  program: DrPH
-  institution: University of Georgia
-  logo: *uga
+  degree: DrPH, University of Georgia
   year: July 2021
   thesis: Dissertation/Thesis
   role: Current role, Affiliation
 - name: Gibril Njie
-  program: DrPH
-  institution: University of Georgia
-  logo: *uga
+  degree: DrPH, University of Georgia
   year: May 2021
   thesis: Dissertation/Thesis
   role: Current role, Affiliation
 - name: Yuanhang Xi
-  program: MPH
-  institution: University of Georgia
-  logo: *uga
+  degree: MPH, University of Georgia
   year: May 2021
-- name: Simiao Sun
-  program: Undergraduate
-  institution: University of Nottingham Ningbo China
-  year: July 2020
-- name: Siyi Liu
-  program: Undergraduate
-  institution: University of Nottingham Ningbo China
-  year: July 2020
   thesis: Dissertation/Thesis
   role: Current role, Affiliation
