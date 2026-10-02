@@ -1,0 +1,71 @@
+# Group members shown on the Group page (group.html).
+# Each person can have: name, program, institution, logo, photo, note.
+# `photo` is optional (e.g. /assets/images/photos/jane.jpg); without it, initials are shown.
+
+uga_logo: &uga /assets/images/badges/uga-logo.png
+
+current:
+- name: Susan Fuller
+  program: DrPH Student
+  institution: University of Georgia
+  logo: *uga
+- name: Sonh Patrick Chong
+  program: DrPH Student
+  institution: University of Georgia
+  logo: *uga
+- name: Betelihem Getachew
+  program: DrPH Student
+  institution: University of Georgia
+  logo: *uga
+- name: Oluwasegun Joel Adegoke
+  program: DrPH Student
+  institution: University of Georgia
+  logo: *uga
+- name: Jessica Amal Tarabay
+  program: DrPH Student
+  institution: University of Georgia
+  logo: *uga
+- name: Xuening Cheng
+  program: PhD Student (Economics)
+  institution: University of Nottingham Ningbo China
+- name: Jiangshan Ji
+  program: PhD Student (Economics)
+  institution: University of Nottingham Ningbo China
+- name: Fei Zhao
+  program: PhD Student (Economics)
+  institution: University of Nottingham Ningbo China
+- name: Chenyuan Yan
+  program: PhD Student (Economics)
+  institution: University of Nottingham Ningbo China
+
+alumni:
+- name: Kristen Landrum McNiff
+  degree: DrPH, University of Georgia
+  year: Fall 2024
+- name: Xiaolong (Chris) Hou
+  degree: MPH, University of Georgia
+  year: Fall 2024
+- name: Wei Jiang
+  degree: PhD (Economics), University of Nottingham Ningbo China
+  year: Fall 2024
+- name: Lia Koski
+  degree: DrPH, University of Georgia
+  year: Spring 2023
+- name: George Vaughn
+  degree: DrPH, University of Georgia
+  year: Spring 2023
+- name: Victoria Burse
+  degree: MPH, University of Georgia
+  year: Fall 2022
+- name: Von McClee
+  degree: DrPH, University of Georgia
+  year: December 2021
+- name: Leisel Talley
+  degree: DrPH, University of Georgia
+  year: July 2021
+- name: Gibril Njie
+  degree: DrPH, University of Georgia
+  year: May 2021
+- name: Yuanhang Xi
+  degree: MPH, University of Georgia
+  year: May 2021

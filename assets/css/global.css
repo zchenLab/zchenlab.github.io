@@ -101,3 +101,21 @@ div.lazy {
 .pub-item p.small {
     font-size: 1rem;
 }
+
+/* Group page */
+.group-avatar {
+    width: 56px;
+    height: 56px;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+.group-initials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ba0c2f;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
