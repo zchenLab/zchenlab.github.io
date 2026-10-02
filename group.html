@@ -1,32 +1,77 @@
 ---
 layout: default
-title : Publications
-navbar_title: Publications
-body_attr: >-
-  data-spy="scroll" data-target="#navbar-year" data-offset="100"
+title : Group
+navbar_title: Group
 ---
+{% assign group = site.data.group %}
 
-{% assign pubs_by_year = site.publications | sort: "date" | reverse | group_by_exp: "item", "item.date | date: '%Y'" %}
+<!-- Principal Investigator -->
+<div class="card border-0 shadow-sm bg-white mt-3">
+    <div class="card-body p-4">
+        <h6 class="mb-3"><i class="fas fa-user-tie"></i> Principal Investigator</h6>
+        <div class="media">
+            {% if site.data.profile.portrait_url %}
+            <img src="{{ site.data.profile.portrait_url | relative_url }}" alt="{{ site.data.profile.primary_name }}" class="rounded-circle mr-4" style="width: 96px; height: 96px; object-fit: cover;">
+            {% endif %}
+            <div class="media-body">
+                <div class="h4 font-weight-normal mb-1"><a class="text-body" href="{{ '/' | relative_url }}">{{ site.data.profile.primary_name }}</a></div>
+                <div class="text-profile-position">
+                    {% for position in site.data.profile.positions %}
+                    {% if position.logo -%}
+                    <img src="{{ position.logo | relative_url }}" alt="Logo" class="inline-badge"/>
+                    {%- endif %}
+                    {{ position.name }}<br/>
+                    {% endfor %}
+                </div>
+                <a href="mailto:{{ site.data.profile.email | encode_email }}"><i class="fas fa-at"></i> <span class="email-text">{{ site.data.profile.email | replace: "@", "(at)" }}</span></a>
+            </div>
+        </div>
+    </div>
+</div>
 
-<div class="row">
-    <div class="col-12 col-lg-10">
-        {% for year in pubs_by_year %}
-        {% assign num_papers = year.items | size %}
-        <h2 class="pt-4" id="year-{{ year.name }}">{{ year.name }}</h2>
-        <div class="my-0 p-0 bg-white shadow-sm rounded-xl">
-            {% for item in year.items %}
-                {% include widgets/publication_item.html item=item hide_bottom_border=forloop.last first=forloop.first last=forloop.last %}
-            {% endfor %}
+<!-- Current members -->
+{% if group.current %}
+<div class="my-3 bg-white shadow-sm rounded-xl">
+    <h6 class="p-3 mb-0 border-bottom border-gray"><i class="fas fa-users"></i> Current Students</h6>
+    <div class="row no-gutters p-2">
+        {% for member in group.current %}
+        <div class="col-lg-4 col-md-6 p-2">
+            <div class="media group-member p-2 h-100">
+                {% if member.photo %}
+                <img src="{{ member.photo | relative_url }}" alt="{{ member.name }}" class="rounded-circle mr-3 group-avatar">
+                {% else %}
+                {% assign words = member.name | split: " " %}
+                <div class="rounded-circle mr-3 group-avatar group-initials">{{ words.first | slice: 0 }}{{ words.last | slice: 0 }}</div>
+                {% endif %}
+                <div class="media-body">
+                    <div class="font-weight-bold">{{ member.name }}</div>
+                    <div>{{ member.program }}</div>
+                    <div class="text-muted">
+                        {% if member.logo -%}
+                        <img src="{{ member.logo | relative_url }}" alt="Logo" class="inline-badge"/>
+                        {%- endif %}
+                        {{ member.institution }}
+                    </div>
+                    {% if member.note %}<div class="text-muted"><i>{{ member.note }}</i></div>{% endif %}
+                </div>
+            </div>
         </div>
         {% endfor %}
     </div>
-
-    <div class="col-2 d-none d-lg-block">
-        <div id="navbar-year" class="nav nav-pills flex-column sticky-top" style="top: 80px">
-            {% for year in pubs_by_year %}
-            <a class="nav-link d-block" href="#year-{{ year.name }}">{{ year.name }}</a>
-            {% endfor %}
-        </div>
-    </div>
-
 </div>
+{% endif %}
+
+<!-- Alumni -->
+{% if group.alumni %}
+<div class="my-3 bg-white shadow-sm rounded-xl">
+    <h6 class="p-3 mb-0 border-bottom border-gray"><i class="fas fa-graduation-cap"></i> Alumni</h6>
+    <ul class="list-unstyled px-3 py-2 mb-0">
+        {% for member in group.alumni %}
+        <li class="d-flex py-1 {% unless forloop.first %}border-top border-gray{% endunless %}">
+            <div><span class="font-weight-bold">{{ member.name }}</span> &middot; {{ member.degree }}</div>
+            <div class="ml-auto pl-3 text-muted no-break"><i>{{ member.year }}</i></div>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endif %}

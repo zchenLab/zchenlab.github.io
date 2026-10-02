@@ -90,3 +90,32 @@ div.lazy {
     font-family: Source Code Pro, monospace;
 }
 
+
+/* Publication entries: match the bio text (Lato, 1rem) */
+.pub-item h5 {
+    font-size: 1rem;
+    font-weight: 700 !important;
+    line-height: 1.5;
+}
+
+.pub-item p.small {
+    font-size: 1rem;
+}
+
+/* Group page */
+.group-avatar {
+    width: 56px;
+    height: 56px;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+.group-initials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ba0c2f;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
