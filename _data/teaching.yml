@@ -50,6 +50,11 @@ courses_graduate:
 - code: PBHL 9560
   title: DrPH Residency
 
+study_abroad:
+- name: Faculty-led study abroad program, University of Georgia
+  description: Program details, dates and application on UGA StudyAway.
+  url: "https://studyaway.uga.edu/index.cfm?FuseAction=Programs.ViewProgramAngular&id=14215"
+
 course_development:
 - title: Introduction to Healthcare Management (HPAM 3500)
   credits: 3 cr
