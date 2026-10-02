@@ -1,3 +1,18 @@
+# Brief research summary shown in a box at the top of the Research page (HTML allowed).
+summary: >-
+  <p>Dr. Chen is a health economist whose research uses economic and data-science methods to
+  inform health policy and reduce health disparities in the United States and China. His work
+  evaluates how health insurance, hospital reform, and pharmaceutical policy shape healthcare
+  use, spending, and efficiency; measures how social determinants of health, including racism,
+  income, and place, drive inequities in health and access to care; and estimates the costs of
+  chronic disease and the value of prevention.</p>
+  <p class="mb-0">Recent projects apply machine learning, spatial analysis, and novel data such as
+  mobile phone records to health equity, COVID-19, aging, and the economics of genomics and
+  precision public health. Drawing on his experience as a senior health economist at the US
+  Centers for Disease Control and Prevention, he has published more than 150 peer-reviewed
+  articles, with support from the NIH, the National Natural Science Foundation of China, and
+  private foundations.</p>
+
 # Research themes shown on the Research page (research.html).
 # Each paper title must exactly match the `title` of an entry in _publications.
 themes:

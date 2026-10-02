@@ -4,18 +4,15 @@ title : Research
 navbar_title: Research
 ---
 
-{% for theme in site.data.research.themes %}
-<h2 class="pt-4"><i class="{{ theme.icon }}"></i> {{ theme.name }}</h2>
-<p>{{ theme.description }}</p>
-<div class="my-0 p-0 bg-white shadow-sm rounded-xl">
-    {% for title in theme.papers %}
-    {% assign item = site.publications | where: "title", title | first %}
-    {% if item %}
-        {% include widgets/publication_item.html item=item hide_bottom_border=forloop.last first=forloop.first last=forloop.last %}
-    {% endif %}
-    {% endfor %}
+<!-- Research summary -->
+{% if site.data.research.summary %}
+<div class="card border-0 shadow-sm bg-white mt-3">
+    <div class="card-body p-4">
+        <h6 class="mb-3"><i class="fas fa-microscope"></i> Research Overview</h6>
+        {{ site.data.research.summary }}
+    </div>
 </div>
-{% endfor %}
+{% endif %}
 
 <!-- Funded projects -->
 {% if site.data.research.funded_projects %}
@@ -34,6 +31,20 @@ navbar_title: Research
     </ul>
 </div>
 {% endif %}
+
+
+{% for theme in site.data.research.themes %}
+<h2 class="pt-4"><i class="{{ theme.icon }}"></i> {{ theme.name }}</h2>
+<p>{{ theme.description }}</p>
+<div class="my-0 p-0 bg-white shadow-sm rounded-xl">
+    {% for title in theme.papers %}
+    {% assign item = site.publications | where: "title", title | first %}
+    {% if item %}
+        {% include widgets/publication_item.html item=item hide_bottom_border=forloop.last first=forloop.first last=forloop.last %}
+    {% endif %}
+    {% endfor %}
+</div>
+{% endfor %}
 
 <!-- Key collaborators: joint-publication counts and years are computed from _publications -->
 {% if site.data.research.collaborators %}
