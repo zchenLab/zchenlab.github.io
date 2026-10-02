@@ -38,8 +38,9 @@ let showSemanticScholarCitationCount = () => {
     });
 };
 
-// The batch endpoint takes at most 500 ids per request.
-const fetchCitationCounts = ids => fetch('https://api.semanticscholar.org/graph/v1/paper/batch?fields=citationCount', {
+// The batch endpoint takes at most 500 ids per request. Unauthenticated
+// requests share a rate limit, so retry with backoff on HTTP 429.
+const fetchCitationCounts = (ids, attempt = 0) => fetch('https://api.semanticscholar.org/graph/v1/paper/batch?fields=citationCount', {
     method: 'POST',
     headers: {
         'Content-Type': 'application/json'
@@ -47,20 +48,24 @@ const fetchCitationCounts = ids => fetch('https://api.semanticscholar.org/graph/
     // Ids are lowercased for matching; send the DOI prefix in the API's documented case.
     body: JSON.stringify({ ids: ids.map(id => id.replace(/^doi:/, 'DOI:')) })
 }).then(response => {
+    if (response.status === 429 && attempt < 4) {
+        return new Promise(resolve => setTimeout(resolve, 2000 * 2 ** attempt))
+            .then(() => fetchCitationCounts(ids, attempt + 1));
+    }
     if (!response.ok) {
         throw new Error(`HTTP ${response.status}`);
     }
-    return response.json();
-}).then(data => {
-    data.forEach((paper, i) => {
-        if (!paper) {
-            return;
-        }
-        localStorage.setItem(cacheKeyFor(ids[i]), JSON.stringify({
-            paperId: paper.paperId,
-            citationCount: paper.citationCount,
-            timestamp: Date.now()
-        }));
+    return response.json().then(data => {
+        data.forEach((paper, i) => {
+            if (!paper) {
+                return;
+            }
+            localStorage.setItem(cacheKeyFor(ids[i]), JSON.stringify({
+                paperId: paper.paperId,
+                citationCount: paper.citationCount,
+                timestamp: Date.now()
+            }));
+        });
     });
 });
 
