@@ -85,3 +85,182 @@ themes:
   - "Trends in Utilization and Costs of BRCA Testing among Women Ages 18-64 Years in the United States, 2003-2014"
   - "BRCA Genetic Testing and Receipt of Preventive Interventions among Women Aged 18–64 Years with Employer-Sponsored Health Insurance in Nonmetropolitan and Metropolitan Areas — United States, 2009–2014"
   - "Precision Public Health in China: Opportunities and Challenges"
+
+# Key collaborators shown on the Research page. Listed in order of joint publications;
+# `keys` are the author names as written in _publications, and the count and years
+# are computed from those entries when the site builds. `featured: true` keeps a
+# collaborator on the list regardless of the number of joint papers.
+collaborators:
+- name: "Jeff Koplan"
+  keys: ["Koplan J", "Koplan JP"]
+  featured: true
+- name: "D. Zhang"
+  keys: ["Zhang D"]
+- name: "Y. Li"
+  keys: ["Li Y", "LI Y"]
+- name: "J. Rajbhandari-Thapa"
+  keys: ["Rajbhandari-Thapa J", "Rajbhandari-Thapa", "Thapa J"]
+- name: "J. Li"
+  keys: ["Li J"]
+- name: "L. Shi"
+  keys: ["Shi L"]
+- name: "X. Han"
+  keys: ["Han X"]
+- name: "H. Li"
+  keys: ["Li H"]
+- name: "D. Su"
+  keys: ["Su D"]
+- name: "Y. Wang"
+  keys: ["Wang Y"]
+- name: "T. Wu"
+  keys: ["Wu T"]
+- name: "L. Chen"
+  keys: ["Chen L"]
+- name: "M. Wen"
+  keys: ["Wen M"]
+- name: "L. Mu"
+  keys: ["Mu L"]
+- name: "S. T. Yen"
+  keys: ["Yen ST"]
+- name: "J. A. Pagán"
+  keys: ["Pagán JA", "Pagan J", "Pagan H"]
+- name: "K. Roy"
+  keys: ["Roy K"]
+- name: "R. Wang"
+  keys: ["Wang R"]
+- name: "B. Chen"
+  keys: ["Chen B"]
+- name: "G. Li"
+  keys: ["Li G"]
+- name: "D. B. Eastwood"
+  keys: ["Eastwood DB"]
+- name: "S. Jiang"
+  keys: ["Jiang S"]
+- name: "H. Son"
+  keys: ["Son H"]
+- name: "S.-H. Cho"
+  keys: ["Cho S-H"]
+- name: "C. A. Gotway Crawford"
+  keys: ["Gotway Crawford CA", "Crawford Gotway CA"]
+- name: "D. Feng"
+  keys: ["Feng D"]
+- name: "Z. Feng"
+  keys: ["Feng Z"]
+- name: "J. Zhang"
+  keys: ["Zhang J"]
+- name: "J. Liu"
+  keys: ["Liu J"]
+- name: "X. Chen"
+  keys: ["Chen X"]
+- name: "S. Tang"
+  keys: ["Tang S"]
+- name: "Z. Deng"
+  keys: ["Deng Z"]
+- name: "X. Wu"
+  keys: ["Wu X"]
+- name: "Y. Shen"
+  keys: ["Shen Y"]
+- name: "Y. Ma"
+  keys: ["Ma Y"]
+
+# Funded projects shown on the Research page, newest first (from the CV).
+funded_projects:
+- title: "Achieving Health Equity by Improving Participant Representativeness in the All of Us Research Program: A Pilot Community-Based Participatory Research in Georgia"
+  funder: NIH / Emory University, Georgia CTSA
+  role: Co-PI (with T. Rosser)
+  period: 2024–2025
+  amount: "$48,771"
+- title: "Disparities in Machine-Learning Modeling to Predict Hospital Readmissions among Patients Discharged to Skilled Nursing Facility"
+  funder: NIH / Emory University, Georgia CTSA
+  role: "Co-I (PI: D. Jung)"
+  period: 2024–2025
+  amount: "$57,684"
+- title: "Engaging Rural Georgia Communities to Understand and Eliminate Barriers to Participating in the All of Us Research Program"
+  funder: University of Georgia, Office of the Provost
+  role: PI
+  period: 2023–2024
+  amount: "$9,933"
+- title: "Principles for Global Public Health Convention"
+  funder: AIDS Healthcare Foundation / University of Miami
+  role: Subcontract PI
+  period: 2023
+  amount: "$17,978"
+- title: "Improving Prediction of Beneficiary-level Medical Costs by Incorporating Social Determinants of Health Indicators in Risk Adjustment Models to Address Health Disparities: A Machine Learning Approach"
+  funder: NIH AIM-AHEAD Initiative / University of North Texas
+  role: PI
+  period: 2022–2023
+  amount: "$347,358"
+- title: "A Workshop on Applications of Artificial Intelligence/Machine Learning in Health Disparities Research and Workforce Diversity"
+  funder: NIH AIM-AHEAD Initiative / Howard University
+  role: PI
+  period: 2022–2023
+  amount: "$20,000"
+- title: "Using Machine Learning and Causal Inference Methods to Examine Disparities in Alzheimer’s Disease and Related Dementias (Supplement of R01 MD013886)"
+  funder: NIH / New York University
+  role: PI (Georgia)
+  period: 2022–2024
+  amount: "$158,956"
+- title: "A Special Issue in Health Equity on Asian American, Native Hawaiian, and Pacific Islander Health and Health Equity"
+  funder: China Medical Board
+  role: PI
+  period: 2022
+  amount: "$18,251"
+- title: "Using Mobile Phone-generated Big Data to Evaluate the Impact of Tiered-Healthcare on Health Services Utilization and Epidemic Prevention and Control"
+  funder: National Natural Science Foundation of China (72174098)
+  role: PI
+  period: 2022–2024
+  amount: "RMB 480,000"
+- title: "Assessing and Mitigating the Mental Health Impact of COVID-19 Pandemic among Asian Americans in the US"
+  funder: The Chinese Economists Society
+  role: PI (Georgia site)
+  period: 2021
+  amount: "$9,900"
+- title: "Assessing and Mitigating the Mental Health Impact of COVID-19 Pandemic among Asian Americans in Georgia"
+  funder: Georgia Health Foundation
+  role: PI
+  period: 2021–2022
+  amount: "$12,000"
+- title: "Interdisciplinary Approaches to Social Determinants of Health Research"
+  funder: University of Georgia, Office of Research (Interdisciplinary Pre-seed Teaming Grant)
+  role: PI
+  period: 2020–2022
+  amount: "$4,250"
+- title: "Leadership Evaluation in Hospital Management"
+  funder: National Health Commission of China, Centre for Capacity Building and Continuing Education
+  role: PI
+  period: 2020–2021
+  amount: "RMB 30,000"
+- title: "A Systematic Review of Ethical, Legal and Social Implications of Genomic Research in China"
+  funder: Nottingham China Health Institute (Research Seed and Collaboration Fund)
+  role: PI
+  period: 2020–2021
+  amount: "RMB 20,000"
+- title: "Using Agent-based Modeling to Compare Strategies that Can Reduce Rural-Urban Disparities in Cardiovascular Disease"
+  funder: NIH / NIMHD (R01 MD013886)
+  role: "Co-I (PI: D. Zhang)"
+  period: 2019–2024
+  amount: "$1,574,071"
+- title: "Economic Burden of Cancer Survivorship Attributable to Physical Inactivity"
+  funder: US Census Atlanta Research Data Center (Project Development Grant)
+  role: PI
+  period: 2019
+  amount: "$12,129"
+- title: "Personalized mHealth Intervention to Aid Non-communicable Disease Management among an Elderly Population in Rural China"
+  funder: University of Georgia, Global Research Collaboration Grant
+  role: PI
+  period: 2018–2019
+  amount: "$4,000"
+- title: "Conference Support for the Chinese Economists Society Presidents’ Forum"
+  funder: Zhejiang Natural Science Foundation; University of Nottingham Ningbo China
+  role: PI
+  period: 2018
+  amount: "RMB 80,000"
+- title: "Regulatory Impact Analysis: Methods, Applications, and Implications for Emerging Economies (Conference)"
+  funder: University of Georgia, Office of the Provost
+  role: Co-PI
+  period: 2017–2018
+  amount: "$12,000"
+- title: "Impact of Local Food Prices on the Relationship between Food Stamp Program Participation & Bodyweight Status of Adults in the South"
+  funder: Southern Rural Development Center (Food Assistance Small Grant)
+  role: Co-I
+  period: 2006–2008

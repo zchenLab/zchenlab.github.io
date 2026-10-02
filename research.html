@@ -17,4 +17,53 @@ navbar_title: Research
 </div>
 {% endfor %}
 
+<!-- Funded projects -->
+{% if site.data.research.funded_projects %}
+<h2 class="pt-4"><i class="fas fa-hand-holding-usd"></i> Funded Projects</h2>
+<div class="my-0 bg-white shadow-sm rounded-xl">
+    <ul class="list-unstyled px-3 py-2 mb-0">
+        {% for g in site.data.research.funded_projects %}
+        <li class="py-2 {% unless forloop.first %}border-top border-gray{% endunless %}">
+            <div class="d-flex">
+                <div class="font-weight-bold">{{ g.title }}</div>
+                <div class="ml-auto pl-3 text-muted no-break"><i>{{ g.period }}</i></div>
+            </div>
+            <div class="text-muted">{{ g.funder }} &middot; {{ g.role }}{% if g.amount %} &middot; {{ g.amount }}{% endif %}</div>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endif %}
+
+<!-- Key collaborators: joint-publication counts and years are computed from _publications -->
+{% if site.data.research.collaborators %}
+<h2 class="pt-4"><i class="fas fa-handshake"></i> Key Collaborators</h2>
+<p>Frequent co-authors (five or more joint publications) and other close collaborators.</p>
+<div class="my-0 p-2 bg-white shadow-sm rounded-xl">
+    <div class="row no-gutters">
+        {% for person in site.data.research.collaborators %}
+        {%- assign n = 0 -%}{%- assign first_year = 9999 -%}{%- assign last_year = 0 -%}
+        {%- for pub in site.publications -%}
+            {%- assign hit = false -%}
+            {%- for a in pub.authors -%}
+                {%- assign k = a | remove: "*" | remove: "#" | strip -%}
+                {%- if person.keys contains k -%}{%- assign hit = true -%}{%- endif -%}
+            {%- endfor -%}
+            {%- if hit -%}
+                {%- assign n = n | plus: 1 -%}
+                {%- assign y = pub.date | date: "%Y" | plus: 0 -%}
+                {%- if y < first_year -%}{%- assign first_year = y -%}{%- endif -%}
+                {%- if y > last_year -%}{%- assign last_year = y -%}{%- endif -%}
+            {%- endif -%}
+        {%- endfor -%}
+        <div class="col-lg-3 col-md-4 col-6 p-2">
+            <div class="font-weight-bold">{{ person.name }}</div>
+            <div class="text-muted">{{ n }} joint publication{% if n != 1 %}s{% endif %}{% if n > 0 %} &middot; {{ first_year }}{% if last_year != first_year %}–{{ last_year }}{% endif %}{% endif %}</div>
+            {% if person.affiliation %}<div class="text-muted"><i>{{ person.affiliation }}</i></div>{% endif %}
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endif %}
+
 <p class="pt-4">See <a href="{{ '/publications' | relative_url }}">Publications</a> for the full list.</p>
