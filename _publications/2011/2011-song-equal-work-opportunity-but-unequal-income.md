@@ -4,6 +4,7 @@ date:           2011-12-27 00:01:00 +0800
 selected:       false
 pub:            "The Chinese Economy"
 pub_date:       "2011"
+cover:          /assets/images/covers/topics/inequality.svg
 doi:            "10.2753/1097-1475440103"
 authors:
   - "Song S"

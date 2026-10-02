@@ -5,6 +5,7 @@ selected:       false
 pub:            "Science Progress & Policy"
 pub_last:       ' <span class="badge badge-pill badge-publication badge-secondary">In Chinese</span>'
 pub_date:       "1998"
+cover:          /assets/images/covers/topics/econ.svg
 authors:
   - "Ma Y"
   - "Chen Z"

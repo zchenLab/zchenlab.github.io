@@ -4,6 +4,7 @@ date:           2022-12-08 00:01:00 +0800
 selected:       false
 pub:            "Int Health"
 pub_date:       "2022"
+cover:          /assets/images/covers/topics/covid.svg
 doi:            "10.1093/inthealth/ihab023"
 authors:
   - "Wong LP"

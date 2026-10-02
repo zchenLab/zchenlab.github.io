@@ -5,6 +5,7 @@ selected:       false
 pub:            "China Currents"
 pub_last:       ' <span class="badge badge-pill badge-publication badge-secondary">Commentary</span>'
 pub_date:       "2020"
+cover:          /assets/images/covers/topics/public.svg
 authors:
   - "Chen Z"
 links:

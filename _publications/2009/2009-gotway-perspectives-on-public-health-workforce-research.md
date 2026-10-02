@@ -4,6 +4,7 @@ date:           2009-12-27 00:01:00 +0800
 selected:       false
 pub:            "Journal of Public Health Management and Practice"
 pub_date:       "2009"
+cover:          /assets/images/covers/topics/public.svg
 doi:            "10.1097/PHH.0b013e3181bdff7d"
 authors:
   - "Gotway Crawford CA"

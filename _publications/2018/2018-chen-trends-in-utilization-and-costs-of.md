@@ -4,6 +4,7 @@ date:           2018-12-28 00:01:00 +0800
 selected:       false
 pub:            "Genetics in Medicine"
 pub_date:       "2018"
+cover:          /assets/images/covers/topics/genomics.svg
 doi:            "10.1038/gim.2017.118"
 authors:
   - "Chen Z*"

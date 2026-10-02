@@ -4,6 +4,7 @@ date:           2023-12-31 00:01:00 +0800
 selected:       false
 pub:            "J Health Commun"
 pub_date:       "2023"
+cover:          /assets/images/covers/topics/covid.svg
 doi:            "10.1080/10810730.2023.2245373"
 authors:
   - "Li H"

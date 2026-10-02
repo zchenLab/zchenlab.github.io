@@ -4,6 +4,7 @@ date:           2024-12-26 00:01:00 +0800
 selected:       false
 pub:            "Journal of Population Economics"
 pub_date:       "2024"
+cover:          /assets/images/covers/topics/racism.svg
 doi:            "10.1007/s00148-024-01013-y"
 authors:
   - "Hou X"

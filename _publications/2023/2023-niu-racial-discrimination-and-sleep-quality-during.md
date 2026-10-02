@@ -4,6 +4,7 @@ date:           2023-12-26 00:01:00 +0800
 selected:       false
 pub:            "J Urban Health"
 pub_date:       "2023"
+cover:          /assets/images/covers/topics/racism.svg
 doi:            "10.1007/s11524-023-00743-w"
 authors:
   - "Niu L"

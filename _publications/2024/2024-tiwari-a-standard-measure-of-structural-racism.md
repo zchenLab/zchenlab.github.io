@@ -4,6 +4,7 @@ date:           2024-12-30 00:01:00 +0800
 selected:       false
 pub:            "J Racial Ethn Health Disparities"
 pub_date:       "2024"
+cover:          /assets/images/covers/topics/racism.svg
 doi:            "10.1007/s40615-024-02179-7"
 authors:
   - "Tiwari BB"

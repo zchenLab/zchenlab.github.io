@@ -4,6 +4,7 @@ date:           2022-12-17 00:01:00 +0800
 selected:       false
 pub:            "Health Equity"
 pub_date:       "2022"
+cover:          /assets/images/covers/topics/racism.svg
 doi:            "10.1089/heq.2022.0070"
 authors:
   - "Su D"

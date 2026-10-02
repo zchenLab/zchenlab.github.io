@@ -5,6 +5,7 @@ selected:       false
 pub:            "Investing in Human Capital for Economic Development in China (Liu GG, Zhang S, Zhang Z, eds.), World Scientific"
 pub_pre:        "Book chapter in "
 pub_date:       "2010"
+cover:          /assets/images/covers/topics/inequality.svg
 authors:
   - "Chen Z"
   - "Yen ST"

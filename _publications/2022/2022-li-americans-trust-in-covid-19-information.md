@@ -4,6 +4,7 @@ date:           2022-12-21 00:01:00 +0800
 selected:       false
 pub:            "Health Communication"
 pub_date:       "2022"
+cover:          /assets/images/covers/topics/covid.svg
 doi:            "10.1080/10410236.2022.2074776"
 authors:
   - "Li H"

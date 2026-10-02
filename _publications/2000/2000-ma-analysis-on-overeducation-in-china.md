@@ -5,6 +5,7 @@ selected:       false
 pub:            "Review on Comparative Education"
 pub_last:       ' <span class="badge badge-pill badge-publication badge-secondary">In Chinese</span>'
 pub_date:       "2000"
+cover:          /assets/images/covers/topics/econ.svg
 authors:
   - "Ma Y"
   - "Chen Z"

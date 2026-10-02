@@ -4,6 +4,7 @@ date:           2023-12-22 00:01:00 +0800
 selected:       false
 pub:            "Cancer Med"
 pub_date:       "2023"
+cover:          /assets/images/covers/topics/covid.svg
 doi:            "10.1002/cam4.6028"
 authors:
   - "Li P"

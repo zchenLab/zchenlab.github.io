@@ -4,6 +4,7 @@ date:           2020-12-31 00:01:00 +0800
 selected:       false
 pub:            "Technological Forecasting & Social Change"
 pub_date:       "2020"
+cover:          /assets/images/covers/topics/covid.svg
 doi:            "10.1016/j.techfore.2020.120435"
 authors:
   - "Liu N"

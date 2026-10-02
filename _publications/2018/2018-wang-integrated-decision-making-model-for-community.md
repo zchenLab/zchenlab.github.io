@@ -4,6 +4,7 @@ date:           2018-12-30 00:01:00 +0800
 selected:       false
 pub:            "BMJ Open"
 pub_date:       "2018"
+cover:          /assets/images/covers/topics/mental.svg
 doi:            "10.1136/bmjopen-2018-021528"
 authors:
   - "Wang R"

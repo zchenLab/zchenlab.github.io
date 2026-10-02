@@ -4,6 +4,7 @@ date:           2020-12-20 00:01:00 +0800
 selected:       false
 pub:            "BMC Public Health"
 pub_date:       "2020"
+cover:          /assets/images/covers/topics/chronic.svg
 doi:            "10.1186/s12889-020-08804-4"
 authors:
   - "Liu L"
