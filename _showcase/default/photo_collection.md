@@ -1,8 +1,8 @@
 ---
 show: true
-width: 4
+width: 6
 date: 2026-10-02 00:00:30 -0400
-height: 295px
+height: 370px
 ---
 <!-- Conference and Meetings slideshow; photos are listed in _data/showcase.yml. -->
 {% include widgets/carousel.html id="conference-slideshow" images=site.data.showcase.conference_photos height=page.height %}

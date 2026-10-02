@@ -1,6 +1,6 @@
 ---
 show: true
-width: 4
+width: 6
 date: 2026-10-02 00:00:10 -0400
 ---
 <!-- Favorite projects; edit the list in _data/showcase.yml. -->
