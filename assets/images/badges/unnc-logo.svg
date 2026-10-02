@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 768 1151">
+  <text x="384" y="190" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="bold" font-size="96" textLength="660" lengthAdjust="spacingAndGlyphs" fill="#10263B">NOTTINGHAM</text>
+  <path d="M106 232 H662 V840 C662 940 520 1010 384 1055 C248 1010 106 940 106 840 Z" fill="#10263B"/>
+  <path d="M106 790 H662 V840 C662 940 520 1010 384 1055 C248 1010 106 940 106 840 Z" fill="#009BC1"/>
+  <text x="384" y="560" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="bold" font-size="170" textLength="470" lengthAdjust="spacingAndGlyphs" fill="#fff">UNNC</text>
+  <text x="384" y="690" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="64" textLength="470" lengthAdjust="spacingAndGlyphs" fill="#fff">NINGBO CHINA</text>
+  <text x="384" y="975" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="bold" font-size="120" fill="#fff">2004</text>
+</svg>

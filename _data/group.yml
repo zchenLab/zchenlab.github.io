@@ -4,6 +4,7 @@
 # `photo` is optional (e.g. /assets/images/photos/jane.jpg); without it, initials are shown.
 
 uga_logo: &uga /assets/images/badges/uga-logo.png
+unnc_logo: &unnc /assets/images/badges/unnc-logo.svg
 
 current:
 - name: Xinyi Liu
@@ -16,38 +17,69 @@ current:
   institution: University of Georgia
   logo: *uga
   thesis: Dissertation/Thesis
+- name: Anika Rahman
+  program: PhD Student
+  institution: University of Georgia
+  logo: *uga
+  thesis: Dissertation/Thesis
+- name: Sonh Patrick Chong
+  program: DrPH Student
+  institution: University of Georgia
+  logo: *uga
+  thesis: Dissertation/Thesis
+- name: Stephanie Lombard
+  program: DrPH Student
+  institution: University of Georgia
+  logo: *uga
+  thesis: Dissertation/Thesis
+- name: Shelby Rentmeester
+  program: DrPH Student
+  institution: University of Georgia
+  logo: *uga
+  thesis: Dissertation/Thesis
+- name: Ivy Oyegun
+  program: DrPH Student
+  institution: University of Georgia
+  logo: *uga
+  thesis: Dissertation/Thesis
+- name: Hannah Schoon
+  program: DrPH Student
+  institution: University of Georgia
+  logo: *uga
+  thesis: Dissertation/Thesis
 - name: Xuening Cheng
   program: PhD Student (Economics)
   institution: University of Nottingham Ningbo China
+  logo: *unnc
   thesis: Dissertation/Thesis
 - name: Jiangshan Ji
   program: PhD Student (Economics)
   institution: University of Nottingham Ningbo China
+  logo: *unnc
   thesis: Dissertation/Thesis
 - name: Fei Zhao
   program: PhD Student (Economics)
   institution: University of Nottingham Ningbo China
+  logo: *unnc
   thesis: Dissertation/Thesis
 - name: Chenyuan Yan
   program: PhD Student (Economics)
   institution: University of Nottingham Ningbo China
+  logo: *unnc
   thesis: Dissertation/Thesis
 - name: Jianhong Xu
   program: PhD Student
   institution: University of Nottingham Ningbo China
+  logo: *unnc
   thesis: Dissertation/Thesis
 - name: Chijie Cui
   program: PhD Student
   institution: University of Nottingham Ningbo China
+  logo: *unnc
   thesis: Dissertation/Thesis
 
 alumni:
 - name: Susan Fuller
-  degree: DrPH, University of Georgia
-  year: Spring 2026
-  thesis: Dissertation/Thesis
-  role: Current role, Affiliation
-- name: Sonh Patrick Chong
   degree: DrPH, University of Georgia
   year: Spring 2026
   thesis: Dissertation/Thesis
