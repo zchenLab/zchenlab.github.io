@@ -4,6 +4,7 @@ title : Publications
 navbar_title: Publications
 body_attr: >-
   data-spy="scroll" data-target="#navbar-year" data-offset="100"
+description: "Publications by Zhuo (Adam) Chen: more than 150 peer-reviewed articles in health economics, health policy, health disparities, and global health, including the Lancet and Social Science & Medicine."
 ---
 
 {% assign pubs_by_year = site.publications | sort: "date" | reverse | group_by_exp: "item", "item.date | date: '%Y'" %}

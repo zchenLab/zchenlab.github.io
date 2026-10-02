@@ -9,7 +9,7 @@
   {%- assign seo_title = page.title | append: " | " | append: site.title -%}
 {%- endif -%}
 {%- assign seo_description = page.description | default: site.description | strip_html | normalize_whitespace | strip -%}
-{%- assign seo_url = page.url | replace: "index.html", "" | absolute_url -%}
+{%- assign seo_url = page.url | replace: "index.html", "" | replace: ".html", "" | absolute_url -%}
 {%- assign seo_image = profile.portrait_url | absolute_url -%}
 <title>{{ seo_title }}</title>
 <meta name="description" content="{{ seo_description | escape }}">
