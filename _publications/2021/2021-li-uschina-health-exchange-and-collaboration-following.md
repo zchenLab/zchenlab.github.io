@@ -1,7 +1,7 @@
 ---
 title:          "US–China health exchange and collaboration following COVID-19"
 date:           2021-12-29 00:01:00 +0800
-selected:       false
+selected:       true
 pub:            "Lancet"
 pub_date:       "2021"
 authors:

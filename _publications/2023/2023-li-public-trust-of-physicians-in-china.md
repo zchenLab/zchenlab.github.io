@@ -1,7 +1,7 @@
 ---
 title:          "Public trust of physicians in China improved since the COVID-19 pandemic began"
 date:           2023-12-19 00:01:00 +0800
-selected:       false
+selected:       true
 pub:            "Social Science & Medicine"
 pub_date:       "2023"
 authors:
