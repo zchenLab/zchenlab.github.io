@@ -5,6 +5,7 @@ selected:       false
 pub:            "Technological Forecasting and Social Change"
 pub_last:       ' <span class="badge badge-pill badge-publication badge-secondary">Commentary</span>'
 pub_date:       "2020"
+doi:            "10.1016/j.techfore.2020.120072"
 authors:
   - "Chen Z"
 links:

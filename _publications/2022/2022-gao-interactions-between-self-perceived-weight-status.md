@@ -4,6 +4,7 @@ date:           2022-12-28 00:01:00 +0800
 selected:       false
 pub:            "Int J Environ Res Public Health"
 pub_date:       "2022"
+doi:            "10.3390/ijerph19169921"
 authors:
   - "Gao L"
   - "Zhu J"

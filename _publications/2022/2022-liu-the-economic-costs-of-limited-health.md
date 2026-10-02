@@ -4,6 +4,7 @@ date:           2022-12-19 00:01:00 +0800
 selected:       false
 pub:            "BMC Health Services Research"
 pub_date:       "2022"
+doi:            "10.1186/s12913-022-07795-9"
 authors:
   - "Liu L"
   - "Huang J"

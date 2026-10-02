@@ -4,6 +4,7 @@ date:           2024-12-23 00:01:00 +0800
 selected:       false
 pub:            "Journal of Integrative Agriculture"
 pub_date:       "2024"
+doi:            "10.1016/J.JIA.2023.11.020"
 authors:
   - "Chen D"
   - "Fang X"

@@ -4,6 +4,7 @@ date:           2026-12-30 00:01:00 +0800
 selected:       false
 pub:            "China Economic Journal"
 pub_date:       "2026"
+doi:            "10.1080/17538963.2026.2663627"
 authors:
   - "Hao N"
   - "Wang X"

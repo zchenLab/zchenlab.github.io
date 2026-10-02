@@ -4,6 +4,7 @@ date:           2023-12-16 00:01:00 +0800
 selected:       false
 pub:            "Sci Total Environ"
 pub_date:       "2023"
+doi:            "10.1016/j.scitotenv.2022.160444"
 authors:
   - "Wang R"
   - "Liu J"

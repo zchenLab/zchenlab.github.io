@@ -4,6 +4,7 @@ date:           2024-12-27 00:01:00 +0800
 selected:       false
 pub:            "JNCI Cancer Spectrum"
 pub_date:       "2024"
+doi:            "10.1093/jncics/pkae007"
 authors:
   - "Li L"
   - "Zhang D"

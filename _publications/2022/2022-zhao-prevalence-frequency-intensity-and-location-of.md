@@ -4,6 +4,7 @@ date:           2022-12-25 00:01:00 +0800
 selected:       false
 pub:            "Lancet Reg Health West Pac"
 pub_date:       "2022"
+doi:            "10.1016/j.lanwpc.2022.100549"
 authors:
   - "Zhao Y"
   - "Di X"

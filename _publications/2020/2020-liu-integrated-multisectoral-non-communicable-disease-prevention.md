@@ -4,6 +4,7 @@ date:           2020-12-25 00:01:00 +0800
 selected:       false
 pub:            "Journal of Global Health"
 pub_date:       "2020"
+doi:            "10.7189/jogh.10.020304"
 authors:
   - "Liu S*"
   - "Chen Z*"

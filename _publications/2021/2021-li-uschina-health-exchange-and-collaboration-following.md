@@ -4,6 +4,7 @@ date:           2021-12-29 00:01:00 +0800
 selected:       true
 pub:            "Lancet"
 pub_date:       "2021"
+doi:            "10.1016/S0140-6736(21)00734-0"
 authors:
   - "Li L"
   - "Wang K"

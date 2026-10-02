@@ -4,6 +4,7 @@ date:           2020-12-18 00:01:00 +0800
 selected:       false
 pub:            "Malar J"
 pub_date:       "2020"
+doi:            "10.1186/s12936-020-03205-9"
 authors:
   - "Li G"
   - "Zhang D"

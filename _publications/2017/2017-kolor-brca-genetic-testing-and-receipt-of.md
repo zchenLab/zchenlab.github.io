@@ -4,6 +4,7 @@ date:           2017-12-31 00:01:00 +0800
 selected:       false
 pub:            "MMWR Surveill Summ"
 pub_date:       "2017"
+doi:            "10.15585/mmwr.ss6615a1"
 authors:
   - "Kolor K"
   - "Chen Z"

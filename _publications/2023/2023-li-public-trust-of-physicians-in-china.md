@@ -4,6 +4,7 @@ date:           2023-12-19 00:01:00 +0800
 selected:       true
 pub:            "Social Science & Medicine"
 pub_date:       "2023"
+doi:            "10.1016/j.socscimed.2023.115704"
 authors:
   - "Li C"
   - "Khan MM"

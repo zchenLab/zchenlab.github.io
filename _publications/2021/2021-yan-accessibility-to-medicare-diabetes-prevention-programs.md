@@ -4,6 +4,7 @@ date:           2021-12-27 00:01:00 +0800
 selected:       false
 pub:            "JAMA Network Open"
 pub_date:       "2021"
+doi:            "10.1001/jamanetworkopen.2021.28797"
 authors:
   - "Yan AF"
   - "Chen Z"

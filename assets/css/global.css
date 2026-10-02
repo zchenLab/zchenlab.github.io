@@ -102,6 +102,14 @@ div.lazy {
     font-size: 1rem;
 }
 
+.pub-item h5 a.pub-title-link {
+    color: inherit;
+}
+
+.pub-item h5 a.pub-title-link:hover {
+    color: #007bff;
+}
+
 /* Group page */
 .group-avatar {
     width: 56px;

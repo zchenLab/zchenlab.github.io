@@ -4,6 +4,7 @@ date:           2025-12-29 00:01:00 +0800
 selected:       false
 pub:            "Journal of Ageing and Longevity"
 pub_date:       "2025"
+doi:            "10.3390/jal5020014"
 authors:
   - "Wu I"
   - "Quelly SB"

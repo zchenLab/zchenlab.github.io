@@ -4,6 +4,7 @@ date:           2024-12-29 00:01:00 +0800
 selected:       false
 pub:            "Front Public Health"
 pub_date:       "2024"
+doi:            "10.3389/fpubh.2024.1436244"
 authors:
   - "Liang B"
   - "Huang L"
