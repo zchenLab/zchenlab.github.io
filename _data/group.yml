@@ -95,6 +95,31 @@ current:
   thesis: Dissertation/Thesis
 
 alumni:
+- name: Jiayi Zhao
+  degree: Undergraduate, University of Nottingham Ningbo China
+  year: July 2026
+  thesis: Dissertation/Thesis
+  role: Current role, Affiliation
+- name: Haoling Wang
+  degree: Undergraduate, University of Nottingham Ningbo China
+  year: July 2026
+  thesis: Dissertation/Thesis
+  role: Current role, Affiliation
+- name: Yuhan Zhao
+  degree: Undergraduate, University of Nottingham Ningbo China
+  year: July 2026
+  thesis: Dissertation/Thesis
+  role: Current role, Affiliation
+- name: Jianuo Zhou
+  degree: Undergraduate, University of Nottingham Ningbo China
+  year: July 2026
+  thesis: Dissertation/Thesis
+  role: Current role, Affiliation
+- name: Shiqi Cheng
+  degree: Undergraduate, University of Nottingham Ningbo China
+  year: July 2026
+  thesis: Dissertation/Thesis
+  role: Current role, Affiliation
 - name: Susan Fuller
   degree: DrPH, University of Georgia
   year: Spring 2026
@@ -115,6 +140,21 @@ alumni:
   year: Spring 2026
   thesis: Dissertation/Thesis
   role: Current role, Affiliation
+- name: Yuming Liu
+  degree: Undergraduate, University of Nottingham Ningbo China
+  year: July 2025
+  thesis: Dissertation/Thesis
+  role: Current role, Affiliation
+- name: Yuhan Guo
+  degree: Undergraduate, University of Nottingham Ningbo China
+  year: July 2025
+  thesis: Dissertation/Thesis
+  role: Current role, Affiliation
+- name: Lian Duan
+  degree: Undergraduate, University of Nottingham Ningbo China
+  year: July 2025
+  thesis: Dissertation/Thesis
+  role: Current role, Affiliation
 - name: Kristen Landrum McNiff
   degree: DrPH, University of Georgia
   year: Fall 2024
@@ -128,6 +168,26 @@ alumni:
 - name: Wei Jiang
   degree: PhD (Economics), University of Nottingham Ningbo China
   year: Fall 2024
+  thesis: Dissertation/Thesis
+  role: Current role, Affiliation
+- name: Feiyang Shen
+  degree: Undergraduate, University of Nottingham Ningbo China
+  year: July 2024
+  thesis: Dissertation/Thesis
+  role: Current role, Affiliation
+- name: Songheng Sun
+  degree: Undergraduate, University of Nottingham Ningbo China
+  year: July 2024
+  thesis: Dissertation/Thesis
+  role: Current role, Affiliation
+- name: Jiaying Wang
+  degree: Undergraduate, University of Nottingham Ningbo China
+  year: July 2024
+  thesis: Dissertation/Thesis
+  role: Current role, Affiliation
+- name: Siyi Liu
+  degree: Undergraduate, University of Nottingham Ningbo China
+  year: July 2024
   thesis: Dissertation/Thesis
   role: Current role, Affiliation
 - name: Lia Koski
@@ -163,5 +223,10 @@ alumni:
 - name: Yuanhang Xi
   degree: MPH, University of Georgia
   year: May 2021
+  thesis: Dissertation/Thesis
+  role: Current role, Affiliation
+- name: Simiao Sun
+  degree: Undergraduate, University of Nottingham Ningbo China
+  year: July 2020
   thesis: Dissertation/Thesis
   role: Current role, Affiliation
