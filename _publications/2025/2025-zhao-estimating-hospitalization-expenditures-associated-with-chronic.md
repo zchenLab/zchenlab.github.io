@@ -4,6 +4,7 @@ date:           2025-12-31 00:01:00 +0800
 selected:       false
 pub:            "China CDC Weekly"
 pub_date:       "2025"
+doi:            "10.46234/ccdcw2025.175"
 authors:
   - "Zhao F"
   - "Li Y"

@@ -4,6 +4,7 @@ date:           2025-12-21 00:01:00 +0800
 selected:       false
 pub:            "J Sex Res"
 pub_date:       "2025"
+doi:            "10.1080/00224499.2023.2221673"
 authors:
   - "Alshehri K"
   - "Wen M"

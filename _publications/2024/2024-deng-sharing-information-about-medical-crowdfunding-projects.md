@@ -4,6 +4,7 @@ date:           2024-12-25 00:01:00 +0800
 selected:       false
 pub:            "Information Technology & People"
 pub_date:       "2024"
+doi:            "10.1108/ITP-02-2023-0120"
 authors:
   - "Deng Z"
   - "Xue J"

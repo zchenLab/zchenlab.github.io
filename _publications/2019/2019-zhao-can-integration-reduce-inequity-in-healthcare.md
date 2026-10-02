@@ -4,6 +4,7 @@ date:           2019-12-31 00:01:00 +0800
 selected:       false
 pub:            "BMC Health Serv Res"
 pub_date:       "2019"
+doi:            "10.1186/s12913-019-4480-8"
 authors:
   - "Zhao M"
   - "Liu B"

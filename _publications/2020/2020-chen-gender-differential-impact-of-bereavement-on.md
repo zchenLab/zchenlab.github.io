@@ -4,6 +4,7 @@ date:           2020-12-28 00:01:00 +0800
 selected:       false
 pub:            "BMC Psychiatry"
 pub_date:       "2020"
+doi:            "10.1186/s12888-020-02916-2"
 authors:
   - "Chen Z"
   - "Ying J"

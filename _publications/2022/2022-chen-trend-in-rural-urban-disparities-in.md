@@ -4,6 +4,7 @@ date:           2022-12-12 00:01:00 +0800
 selected:       false
 pub:            "J Rural Health"
 pub_date:       "2022"
+doi:            "10.1111/jrh.12644"
 authors:
   - "Chen Z"
   - "Roy K"

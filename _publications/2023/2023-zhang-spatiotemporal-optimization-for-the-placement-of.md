@@ -4,6 +4,7 @@ date:           2023-12-25 00:01:00 +0800
 selected:       false
 pub:            "ISPRS International Journal of Geo-Information"
 pub_date:       "2023"
+doi:            "10.3390/ijgi12030091"
 authors:
   - "Zhang J"
   - "Mu L"

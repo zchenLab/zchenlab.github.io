@@ -4,6 +4,7 @@ date:           2018-12-28 00:01:00 +0800
 selected:       false
 pub:            "Genetics in Medicine"
 pub_date:       "2018"
+doi:            "10.1038/gim.2017.118"
 authors:
   - "Chen Z*"
   - "Kolor K*"
@@ -14,4 +15,6 @@ authors:
   - "Dotson WD"
   - "Bowen MS"
   - "Khoury MJ"
+links:
+  Paper: https://doi.org/10.1038/gim.2017.118
 ---

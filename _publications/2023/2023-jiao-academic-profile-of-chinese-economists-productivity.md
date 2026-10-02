@@ -4,6 +4,7 @@ date:           2023-12-27 00:01:00 +0800
 selected:       false
 pub:            "China Economic Review"
 pub_date:       "2023"
+doi:            "10.1016/j.chieco.2023.102031"
 authors:
   - "Jiao Y"
   - "Qi L"

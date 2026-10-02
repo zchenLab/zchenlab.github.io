@@ -4,6 +4,7 @@ date:           2023-12-18 00:01:00 +0800
 selected:       false
 pub:            "Epidemiology and Health"
 pub_date:       "2023"
+doi:            "10.4178/epih.e2023013"
 authors:
   - "Xia T"
   - "Gee GC"

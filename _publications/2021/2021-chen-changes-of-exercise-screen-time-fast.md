@@ -4,6 +4,7 @@ date:           2021-12-28 00:01:00 +0800
 selected:       false
 pub:            "Nutrients"
 pub_date:       "2021"
+doi:            "10.3390/nu13103359"
 authors:
   - "Chen L"
   - "Li J"

@@ -4,6 +4,7 @@ date:           2025-12-25 00:01:00 +0800
 selected:       false
 pub:            "BMJ Open"
 pub_date:       "2025"
+doi:            "10.1136/bmjopen-2023-078103"
 authors:
   - "He W"
   - "Cai Y"

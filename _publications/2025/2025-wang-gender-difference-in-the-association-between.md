@@ -4,6 +4,7 @@ date:           2025-12-24 00:01:00 +0800
 selected:       false
 pub:            "BMC Geriatr"
 pub_date:       "2025"
+doi:            "10.1186/s12877-024-05646-2"
 authors:
   - "Wang X"
   - "Zhao D"
