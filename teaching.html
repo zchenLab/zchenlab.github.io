@@ -29,6 +29,22 @@ navbar_title: Teaching
     </div>
 </div>
 
+<!-- Study abroad -->
+<div class="my-3 bg-white shadow-sm rounded-xl">
+    <h6 class="p-3 mb-0 border-bottom border-gray"><i class="fas fa-globe-asia"></i> Study Abroad</h6>
+    <ul class="list-unstyled px-3 py-2 mb-0">
+        {% for s in t.study_abroad %}
+        <li class="d-flex py-1 {% unless forloop.first %}border-top border-gray{% endunless %}">
+            <div>
+                <a class="font-weight-bold" target="_blank" href="{{ s.url }}">{{ s.name }}</a>
+                {% if s.description %}<div class="text-muted">{{ s.description }}</div>{% endif %}
+            </div>
+            <div class="ml-auto pl-3 no-break"><a target="_blank" href="{{ s.url }}">Apply <i class="fas fa-external-link-alt"></i></a></div>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+
 <div class="row">
     <!-- Course development -->
     <div class="col-lg-6">
