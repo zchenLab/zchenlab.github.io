@@ -1,6 +1,6 @@
 ---
 show: true
-width: 4
+width: 6
 date: 2026-10-02 00:00:20 -0400
 ---
 <!-- Conferences and meetings organized; edit the list in _data/showcase.yml. -->
