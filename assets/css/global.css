@@ -122,7 +122,7 @@ div.lazy {
 
 /* Teaching page */
 .teaching-code {
-    min-width: 9.5rem;
+    flex: 0 0 9.5rem;
     color: #6c757d;
     font-weight: 700;
 }

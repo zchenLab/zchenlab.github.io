@@ -8,7 +8,7 @@ navbar_title: Teaching
 <!-- Courses taught -->
 <div class="my-3 bg-white shadow-sm rounded-xl">
     <h6 class="p-3 mb-0 border-bottom border-gray"><i class="fas fa-chalkboard-teacher"></i> Courses Taught at the University of Georgia
-        <span class="badge badge-pill badge-success ml-1 font-weight-normal">New</span> <small class="text-muted font-weight-normal">= developed or significantly revised</small>
+        <span class="badge badge-pill badge-success ml-1 font-weight-normal">Developed</span> <small class="text-muted font-weight-normal">= course developed or significantly revised</small>
     </h6>
     <div class="row no-gutters p-2">
         <div class="col-lg-6 p-2">
@@ -17,7 +17,7 @@ navbar_title: Teaching
                 {% for c in t.courses_undergraduate %}
                 <li class="media py-1 {% unless forloop.first %}border-top border-gray{% endunless %}">
                     <span class="teaching-code mr-3">{{ c.code }}</span>
-                    <span class="media-body">{{ c.title }}{% if c.developed %} <span class="badge badge-pill badge-success">New</span>{% endif %}</span>
+                    <span class="media-body">{{ c.title }}{% if c.developed %} <span class="badge badge-pill badge-success">Developed</span>{% endif %}</span>
                 </li>
                 {% endfor %}
             </ul>
@@ -28,7 +28,7 @@ navbar_title: Teaching
                 {% for c in t.courses_graduate %}
                 <li class="media py-1 {% unless forloop.first %}border-top border-gray{% endunless %}">
                     <span class="teaching-code mr-3">{{ c.code }}</span>
-                    <span class="media-body">{{ c.title }}{% if c.developed %} <span class="badge badge-pill badge-success">New</span>{% endif %}</span>
+                    <span class="media-body">{{ c.title }}{% if c.developed %} <span class="badge badge-pill badge-success">Developed</span>{% endif %}</span>
                 </li>
                 {% endfor %}
             </ul>
