@@ -1,0 +1,61 @@
+# Research themes shown on the Research page (research.html).
+# Each paper title must exactly match the `title` of an entry in _publications.
+themes:
+- name: Health Economics and Health Policy
+  icon: fas fa-balance-scale
+  description: >-
+    Evaluating how health insurance, hospital reform, and pharmaceutical policy shape
+    healthcare use, spending, and efficiency, with a focus on China and the United States.
+  papers:
+  - "Impact of the New Cooperative Medical Scheme on Individual Healthcare Utilization and Expenditure"
+  - "Impact of pilot public hospital reform on efficiencies: a DEA analysis of county hospitals in East China, 2009-2015"
+  - "Collective Pharmaceutical Procurement in China May Have Unintended Consequences in Supply and Pricing"
+
+- name: Health Disparities and Social Determinants of Health
+  icon: fas fa-hands-helping
+  description: >-
+    Measuring how racism, income, place, and neighborhood conditions drive inequities
+    in health outcomes and access to care.
+  papers:
+  - "A Standard Measure of Structural Racism, Do We Have One? Can We Have One? A Narrative Review of Commonly Used Measures and Domains of Use"
+  - "Social Determinants of Cardiovascular Health: A Longitudinal Analysis of Cardiovascular Disease Mortality in US Counties From 2009 to 2018"
+  - "Association between racial discrimination and delayed or forgone care amid the COVID-19 pandemic"
+
+- name: Chronic Disease Prevention and Economic Evaluation
+  icon: fas fa-heartbeat
+  description: >-
+    Estimating the costs of chronic disease and risk factors, and the value of prevention
+    programs for hypertension, diabetes, obesity, and physical inactivity.
+  papers:
+  - "The Health and Economic Impact of Expanding Home Blood Pressure Monitoring"
+  - "Inadequate Aerobic Physical Activity and Healthcare Expenditures in the United States: An Updated Cost Estimate"
+  - "Identifying Options of Best Value: Use of Economic Evaluation in Public Health"
+
+- name: COVID-19 and Infectious Disease
+  icon: fas fa-virus
+  description: >-
+    Studying public trust, media, stigma, and disease forecasting during the COVID-19
+    pandemic and other epidemics.
+  papers:
+  - "Role of Media Coverage in Mitigating COVID-19 Transmission: Evidence from China"
+  - "Measuring COVID-19 stigma and mitigating effect with hypothetical and non-hypothetical auction experiments"
+  - "Enhancing COVID-19 Epidemics Forecasting Accuracy by Combining Real-time and Historical Data from Multiple Internet-based Sources: Analysis of Social Media Data, Online News Articles, and Search Queries"
+
+- name: Data Science and AI for Public Health
+  icon: fas fa-project-diagram
+  description: >-
+    Applying spatial analysis, machine learning, and novel data sources to public health
+    surveillance and decision making.
+  papers:
+  - "SpaCE: a spatial counterfactual explainable deep learning model for predicting out-of-hospital cardiac arrest survival outcome"
+  - "Spatiotemporal Optimization for the Placement of Automated External Defibrillators Using Mobile Phone Data"
+
+- name: Aging and Mental Health
+  icon: fas fa-user-friends
+  description: >-
+    Understanding how social participation and support affect depression, cognition, and
+    well-being among middle-aged and older adults.
+  papers:
+  - "Melancholy or mahjong? Diversity, frequency, type, and rural-urban divide of social participation and depression in middle- and old-aged Chinese: A fixed-effects analysis"
+  - "Association between social participation and cognitive function among middle- and older-aged Chinese: a fixed-effects analysis"
+  - "Understanding health and social challenges for ageing and long-term care in China"
