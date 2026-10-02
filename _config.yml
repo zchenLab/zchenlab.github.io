@@ -14,6 +14,14 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://zhuochen.org" # used for canonical links, the sitemap and social previews
+
+# Search engine and social sharing defaults (see _includes/seo.html).
+title: "Zhuo (Adam) Chen"
+description: >-
+  Zhuo (Adam) Chen, PhD, is Professor of Health Policy and Management at the University of
+  Georgia College of Public Health and a health economist studying health policy, health
+  disparities, and the economics of prevention in the United States and China.
 
 # Build settings
 markdown: kramdown
