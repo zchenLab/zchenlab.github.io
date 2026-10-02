@@ -127,3 +127,8 @@ div.lazy {
     font-weight: 700;
     font-size: 1.75rem;
 }
+
+/* Nottingham blue for University of Nottingham Ningbo China students */
+.group-initials-unnc {
+    background-color: #10263B;
+}

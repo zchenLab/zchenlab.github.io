@@ -41,7 +41,7 @@ navbar_title: Group
                 <img src="{{ member.photo | relative_url }}" alt="{{ member.name }}" class="rounded-circle mr-3 group-avatar">
                 {% else %}
                 {% assign words = member.name | split: " " %}
-                <div class="rounded-circle mr-3 group-avatar group-initials">{{ words.first | slice: 0 }}{{ words.last | slice: 0 }}</div>
+                <div class="rounded-circle mr-3 group-avatar group-initials{% if member.institution contains "Nottingham" %} group-initials-unnc{% endif %}">{{ words.first | slice: 0 }}{{ words.last | slice: 0 }}</div>
                 {% endif %}
                 <div class="media-body">
                     <div class="font-weight-bold">{{ member.name }}</div>
