@@ -35,7 +35,28 @@ navbar_title: Group
     <h6 class="p-3 mb-0 border-bottom border-gray"><i class="fas fa-users"></i> Current Students</h6>
     <div class="row no-gutters p-2">
         {% for member in group.current %}
-        {% include widgets/group_member.html member=member %}
+        <div class="col-lg-4 col-md-6 p-2">
+            <div class="media group-member p-2 h-100">
+                {% if member.photo %}
+                <img src="{{ member.photo | relative_url }}" alt="{{ member.name }}" class="rounded-circle mr-3 group-avatar group-initials{% if member.institution contains "Nottingham" %} group-initials-unnc{% endif %}">
+                {% else %}
+                {% assign words = member.name | split: " " %}
+                <div class="rounded-circle mr-3 group-avatar group-initials{% if member.institution contains "Nottingham" %} group-initials-unnc{% endif %}">{{ words.first | slice: 0 }}{{ words.last | slice: 0 }}</div>
+                {% endif %}
+                <div class="media-body">
+                    <div class="font-weight-bold">{{ member.name }}</div>
+                    <div>{{ member.program }}</div>
+                    <div class="text-muted">
+                        {% if member.logo -%}
+                        <img src="{{ member.logo | relative_url }}" alt="Logo" class="inline-badge"/>
+                        {%- endif %}
+                        {{ member.institution }}
+                    </div>
+                    {% if member.thesis %}<div class="mt-1"><i class="fas fa-book-open text-muted"></i> <i>{{ member.thesis }}</i></div>{% endif %}
+                    {% if member.note %}<div class="text-muted"><i>{{ member.note }}</i></div>{% endif %}
+                </div>
+            </div>
+        </div>
         {% endfor %}
     </div>
 </div>
@@ -45,10 +66,17 @@ navbar_title: Group
 {% if group.alumni %}
 <div class="my-3 bg-white shadow-sm rounded-xl">
     <h6 class="p-3 mb-0 border-bottom border-gray"><i class="fas fa-graduation-cap"></i> Alumni</h6>
-    <div class="row no-gutters p-2">
+    <ul class="list-unstyled px-3 py-2 mb-0">
         {% for member in group.alumni %}
-        {% include widgets/group_member.html member=member %}
+        <li class="py-2 {% unless forloop.first %}border-top border-gray{% endunless %}">
+            <div class="d-flex">
+                <div><span class="font-weight-bold">{{ member.name }}</span> &middot; {{ member.degree }}</div>
+                <div class="ml-auto pl-3 text-muted no-break"><i>{{ member.year }}</i></div>
+            </div>
+            {% if member.thesis %}<div><i class="fas fa-book-open text-muted"></i> <i>{{ member.thesis }}</i></div>{% endif %}
+            {% if member.role %}<div class="text-muted"><i class="fas fa-briefcase"></i> {{ member.role }}</div>{% endif %}
+        </li>
         {% endfor %}
-    </div>
+    </ul>
 </div>
 {% endif %}
