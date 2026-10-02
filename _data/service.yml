@@ -1,0 +1,182 @@
+# Content for the Service page (service.html), taken from the CV.
+# Each section has a title, an icon (Font Awesome), and items with `name` and optional `date`.
+
+sections:
+- title: Editorial Roles
+  icon: fas fa-book-open
+  items:
+  - name: Associate Editor, <i>Health Equity</i>
+    date: 2021–
+  - name: Academic Editor, <i>PLOS One</i>
+    date: 2022–
+  - name: Editorial Board, <i>Social Science &amp; Medicine</i>
+    date: 2023–
+  - name: Editorial Board, <i>Health Policy OPEN</i>
+    date: 2021–
+  - name: Editorial Board, <i>Global Health Policy and Research</i>
+    date: 2020–
+  - name: Editorial Board, <i>China CDC Weekly</i>
+    date: 2019–
+  - name: Editorial Board, <i>The Chinese Economy</i>
+    date: 2018–
+  - name: Editorial Board, <i>Journal of Family &amp; Economic Issues</i>
+    date: 2010–
+  - name: Editorial Board, <i>China Rural Health Journal</i> (in Chinese)
+    date: 2020–
+  - name: Editorial Board, <i>Anhui Medical and Pharmaceutical Journal</i> (in Chinese)
+    date: 2016–
+
+- title: Guest Editor
+  icon: fas fa-feather-alt
+  items:
+  - name: "Special issue on “Asian American, Native Hawaiian &amp; Pacific Islander Health,” <i>Health Equity</i>"
+    date: 2022
+  - name: "Special issue on “Ethical, Legal, and Social Implications of Precision Public Health in China,” <i>China CDC Weekly</i>"
+    date: 2022
+  - name: "Special issue on “Social-Economic Impacts of Epidemic Diseases,” <i>Technological Forecasting and Social Change</i>"
+    date: 2020
+  - name: Special issue on health and healthcare in China, <i>The Chinese Economy</i>
+    date: 2020
+  - name: Symposium of <i>China Economic Review</i> for the Chinese Economists Society Annual Conference
+    date: 2015, 2019
+  - name: "Special issue on “Family Economic Issues in Transition Economies,” <i>Journal of Family &amp; Economic Issues</i>"
+    date: 2009
+
+- title: Professional Societies and Leadership
+  icon: fas fa-users-cog
+  items:
+  - name: Convener, iHEA Econ-Omics Interest Group
+    date: 2021–
+  - name: Member, Committee of Health Economic Theory and Policy, China Health Economics Association
+    date: 2019–
+  - name: Member, Academic Advisory Committee, School of Public Administration, Southwestern University of Finance and Economics
+    date: 2018–
+  - name: Member, Workforce Subcommittee (Education Committee) and STAR Project Committee, Consortium of Universities for Global Health
+    date: 2018–
+  - name: Member, Scientific Review Committee, Consortium of Universities for Global Health Annual Meeting
+    date: 2022
+  - name: Mentor, Georgia CTSA Translational Education and Mentoring in Science Program
+    date: 2019–2020
+  - name: Regents Committee Chair (2019) and Member (2020–2021), The Chinese Economists Society
+    date: 2019–2021
+  - name: President (2017–2018), President-Elect (2016–2017), and Board Director (2007–2008, 2012–2013), The Chinese Economists Society
+    date: 2007–2018
+  - name: Founding Board Member (2008–2014), Secretary (2014–2016), and President (2016–2018), China Health Policy and Management Society
+    date: 2008–2018
+  - name: Steering Committee Member, Health Economics Research Group, CDC
+    date: 2008–2009, 2015–2017
+  - name: Member, Scientific Committee, American Society of Health Economists
+    date: 2011–2012
+  - name: Member, Scientific Committee, International Health Economics Association
+    date: 2009–2011
+  - name: Member, Education Committee, CDC Statistical Advisory Group
+    date: 2010
+  - name: Associate, China Research Center, Atlanta
+    date: 2013–
+
+- title: Conferences Organized
+  icon: fas fa-calendar-alt
+  items:
+  - name: Co-host, Health Policy Forum, Belt &amp; Road Initiative Global Health International Congress
+    date: 2017
+  - name: Planning Committee, Westlake Youth Forum, Hangzhou, China
+    date: 2012
+  - name: Steering Committee, CDC Economic Forum
+    date: 2012
+  - name: "Planning Committee, Westlake Forum III: Healthcare Reform in China and the US, Emory University"
+    date: 2011
+  - name: Conference Organizer, The Chinese Economists Society Annual Meeting, Tianjin, China
+    date: 2008
+  - name: Session Organizer, ASHEcon, iHEA, and Southern Economic Association meetings
+
+- title: Grant Review
+  icon: fas fa-search-dollar
+  items:
+  - name: Objective Review Panel Member, CDC
+    date: 2025
+  - name: Study Section Member, NIH
+    date: 2023, 2024
+  - name: External Reviewer, Kuwait Foundation for the Advancement of Sciences
+    date: 2020, 2021
+  - name: External Reviewer, Taikang Foundation
+    date: 2020
+  - name: External Reviewer, Xi’an Jiaotong-Liverpool University Internal Grant
+    date: 2019
+  - name: External Reviewer, Nottingham China Health Institute
+    date: 2019
+  - name: External Reviewer, Research Career Development Award, Yale Pepper Center
+    date: 2016
+
+- title: Manuscript and Book Review
+  icon: fas fa-glasses
+  items:
+  - name: "Journal referee: <i>Lancet</i>, <i>Lancet Regional Health – Western Pacific</i>, <i>Journal of Health Economics</i>, <i>Health Economics</i>, <i>Health Services Research</i>, <i>Social Science &amp; Medicine</i>, <i>Medical Care</i>, <i>American Journal of Public Health</i>, <i>JAMA Pediatrics</i>, <i>Archives of Pediatrics &amp; Adolescent Medicine</i>, <i>China Economic Review</i>, <i>Contemporary Economic Policy</i>, <i>Journal of Family and Economic Issues</i>, <i>Journal of Public Health Management and Practice</i>, <i>Qualitative Health Research</i>, <i>Journal of Urban Technology</i>, <i>Social Science Journal</i>, <i>PLOS One</i>"
+  - name: "Book proposal reviewer: Johns Hopkins University Press (2024), Palgrave Macmillan (2023), Routledge Encyclopedia of Chinese Studies (2021), Oxford University Press (2008)"
+  - name: Recognized as “Exceptional Reviewer” by <i>Medical Care</i>
+    date: 2010/2011
+
+- title: External Promotion and Tenure Evaluations
+  icon: fas fa-user-check
+  items:
+  - name: Emory University; Old Dominion University; St. Louis University
+    date: 2024
+  - name: Geisinger Health Systems
+    date: 2023
+  - name: George Washington University
+    date: 2022
+  - name: University of Massachusetts, Amherst
+    date: 2021
+  - name: Mount Sinai School of Medicine
+    date: 2020
+  - name: University of California, San Diego
+    date: 2018
+  - name: Harvard School of Public Health
+    date: 2015
+  - name: Babson College
+    date: 2012
+
+- title: University Service
+  icon: fas fa-university
+  items:
+  - name: Curriculum and Academic Programs Committee, UGA College of Public Health
+    date: 2022–2024
+  - name: Clinical Assistant/Associate Professor Search Committee (Chair), UGA HPAM
+    date: 2022
+  - name: Assistant Professor Search Committee, UGA HPAM/SPIA
+    date: 2022
+  - name: Assistant Professor Search Committee (Chair), UGA HPAM
+    date: 2021
+  - name: Connie Lloyd Scholarship Review Committee, UGA HPAM
+    date: 2020
+  - name: Reviewer, UGA 2020 Study Abroad Program
+    date: 2020
+  - name: MPH Admission Committee, UGA College of Public Health
+    date: 2019
+  - name: Search Committees for the UGA Global Health Institute and the HPAM Department Chair
+    date: 2019
+  - name: Promotion and Tenure Committee, UGA Department of Health Policy and Management
+    date: 2018–
+  - name: Advisor, UGA Medical Business Association
+    date: 2018–
+
+- title: Public and Community Service
+  icon: fas fa-hands-helping
+  items:
+  - name: Lecturer, “Community Health,” Association of County Commissioners of Georgia
+    date: 2022
+  - name: Presenter, “Social Determinants of Health and Health Disparities,” UGA Health Disparities and Equity Service Certificate Program
+    date: 2022
+  - name: Organizer and Host, “Preventing a Devastating Pandemic,” Committee of 100, with former CDC directors Drs. Frieden and Koplan and former China CDC director Dr. George F. Gao
+  - name: Organizer, webinars on COVID-19 treatment lessons from Wuhan and Shanghai (over 680 participants, including WellStar physicians)
+    date: 2020
+  - name: Speaker, American Mock World Health Organization at UGA
+    date: 2020
+  - name: Presenter, “Trend and Value of Big Data in Healthcare,” Association of Chinese Professionals, Atlanta
+    date: 2018
+  - name: Guest Researcher, Office of Public Health Genomics, US CDC
+    date: 2017–
+  - name: President, Association of Asian/Pacific Islander Employees of CDC/ATSDR
+    date: 2014–2016
+  - name: Member, CDC Equal Employment Opportunity Advisory Council and CDC Diversity and Inclusion Executive Steering Committee
+    date: 2014–2016
+  - name: Organizer and Host, screening of “Blurring the Color Line,” with UGA Office of Institutional Diversity and faculty associations

@@ -1,0 +1,18 @@
+---
+layout: default
+title : Service
+navbar_title: Service
+---
+{% for section in site.data.service.sections %}
+<div class="my-3 bg-white shadow-sm rounded-xl">
+    <h6 class="p-3 mb-0 border-bottom border-gray"><i class="{{ section.icon }}"></i> {{ section.title }}</h6>
+    <ul class="list-unstyled px-3 py-2 mb-0">
+        {% for item in section.items %}
+        <li class="d-flex py-1 {% unless forloop.first %}border-top border-gray{% endunless %}">
+            <div>{{ item.name }}</div>
+            {% if item.date %}<div class="ml-auto pl-3 text-muted no-break"><i>{{ item.date }}</i></div>{% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endfor %}
