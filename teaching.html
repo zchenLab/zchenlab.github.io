@@ -1,0 +1,94 @@
+---
+layout: default
+title : Teaching
+navbar_title: Teaching
+---
+{% assign t = site.data.teaching %}
+
+<!-- Courses taught -->
+<div class="my-3 bg-white shadow-sm rounded-xl">
+    <h6 class="p-3 mb-0 border-bottom border-gray"><i class="fas fa-chalkboard-teacher"></i> Courses Taught at the University of Georgia
+        <span class="badge badge-pill badge-success ml-1 font-weight-normal">New</span> <small class="text-muted font-weight-normal">= developed or significantly revised</small>
+    </h6>
+    <div class="row no-gutters p-2">
+        <div class="col-lg-6 p-2">
+            <div class="font-weight-bold mb-2">Undergraduate</div>
+            <ul class="list-unstyled mb-0">
+                {% for c in t.courses_undergraduate %}
+                <li class="media py-1 {% unless forloop.first %}border-top border-gray{% endunless %}">
+                    <span class="teaching-code mr-3">{{ c.code }}</span>
+                    <span class="media-body">{{ c.title }}{% if c.developed %} <span class="badge badge-pill badge-success">New</span>{% endif %}</span>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="col-lg-6 p-2">
+            <div class="font-weight-bold mb-2">Graduate</div>
+            <ul class="list-unstyled mb-0">
+                {% for c in t.courses_graduate %}
+                <li class="media py-1 {% unless forloop.first %}border-top border-gray{% endunless %}">
+                    <span class="teaching-code mr-3">{{ c.code }}</span>
+                    <span class="media-body">{{ c.title }}{% if c.developed %} <span class="badge badge-pill badge-success">New</span>{% endif %}</span>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <!-- Course development -->
+    <div class="col-lg-6">
+        <div class="my-3 bg-white shadow-sm rounded-xl">
+            <h6 class="p-3 mb-0 border-bottom border-gray"><i class="fas fa-pencil-ruler"></i> Course Development</h6>
+            <ul class="list-unstyled px-3 py-2 mb-0">
+                {% for c in t.course_development %}
+                <li class="d-flex py-1 {% unless forloop.first %}border-top border-gray{% endunless %}">
+                    <div>{{ c.title }}</div>
+                    <div class="ml-auto pl-3 text-muted no-break"><i>{{ c.credits }}</i></div>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+
+    <!-- Recognitions -->
+    <div class="col-lg-6">
+        <div class="my-3 bg-white shadow-sm rounded-xl">
+            <h6 class="p-3 mb-0 border-bottom border-gray"><i class="fas fa-award"></i> Teaching Recognition &amp; Grants</h6>
+            <ul class="list-unstyled px-3 py-2 mb-0">
+                {% for r in t.recognitions %}
+                <li class="d-flex py-1 {% unless forloop.first %}border-top border-gray{% endunless %}">
+                    <div>{{ r.name }}</div>
+                    <div class="ml-auto pl-3 text-muted no-break"><i>{{ r.date }}</i></div>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Guest lectures -->
+<div class="my-3 bg-white shadow-sm rounded-xl">
+    <h6 class="p-3 mb-0 border-bottom border-gray"><i class="fas fa-microphone"></i> Guest Lectures</h6>
+    <ul class="list-unstyled px-3 py-2 mb-0">
+        {% for g in t.guest_lectures %}
+        <li class="d-flex py-1 {% unless forloop.first %}border-top border-gray{% endunless %}">
+            <div>{% if g.title != "Guest lecture" %}<span class="font-weight-bold">“{{ g.title }}”</span> &middot; {% endif %}{{ g.course }}</div>
+            <div class="ml-auto pl-3 text-muted no-break"><i>{{ g.date }}</i></div>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+
+<!-- Mentoring -->
+<div class="my-3 bg-white shadow-sm rounded-xl">
+    <h6 class="p-3 mb-0 border-bottom border-gray"><i class="fas fa-user-graduate"></i> Mentoring &amp; Advising
+        <a href="{{ '/group' | relative_url }}">(see the group <i class="fas fa-angle-double-right"></i>)</a>
+    </h6>
+    <ul class="px-4 py-2 mb-0">
+        {% for m in t.mentoring %}
+        <li class="py-1">{{ m }}</li>
+        {% endfor %}
+    </ul>
+</div>

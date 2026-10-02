@@ -119,3 +119,10 @@ div.lazy {
     font-weight: 700;
     font-size: 1.1rem;
 }
+
+/* Teaching page */
+.teaching-code {
+    min-width: 9.5rem;
+    color: #6c757d;
+    font-weight: 700;
+}
