@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
-  <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a8d5ba"/><stop offset="1" stop-color="#4f8a6b"/></linearGradient></defs>
-  <rect width="1200" height="800" fill="url(#g)"/>
-  <circle cx="900" cy="220" r="80" fill="#ffffff" fill-opacity="0.55"/>
-  <path d="M0 800 L0 560 L260 330 L430 500 L640 260 L900 560 L1050 450 L1200 560 L1200 800 Z" fill="#000000" fill-opacity="0.18"/>
-  <text x="600" y="720" text-anchor="middle" font-family="Lato, Helvetica, Arial, sans-serif" font-size="44" fill="#ffffff" fill-opacity="0.9">Travel photo placeholder</text>
-</svg>
