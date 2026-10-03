@@ -71,3 +71,10 @@ trips:
         caption: 2019, Scotland
       - src: assets/images/travel/scotland-2019-cliff.jpg
         caption: 2019, Scotland
+
+  - name: Shucheng
+    place: Shucheng, Anhui, China
+    photos:
+      - src: assets/images/travel/shucheng-with-dad.jpg
+        caption: Unknown year, with Dad in Shucheng
+        wide: true
