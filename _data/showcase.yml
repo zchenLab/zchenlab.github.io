@@ -3,6 +3,8 @@
 # Conference and Meetings slideshow. Put photos in assets/images/conferences/ and add
 # one entry per photo (newest first); `desc` is optional.
 conference_photos:
+- src: assets/images/conferences/hefei-meeting-2026.jpg
+  title: July 2026, Hefei Meeting
 - src: assets/images/conferences/chpams-changsha-2026.jpg
   title: June 2026, CHPAMS Changsha Conference
 - src: assets/images/conferences/cedex-che-ningbo-2026.jpg
