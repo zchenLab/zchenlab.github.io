@@ -1,6 +1,6 @@
 # Group members shown on the Group page (group.html).
 # Current students can have: name, program, institution, logo, photo, thesis, note.
-# Alumni can have: name, degree, year, thesis, role.
+# Alumni can have: name, photo, degree, year, thesis, role.
 # `photo` is optional; replace the placeholder with a real picture (e.g. /assets/images/photos/jane.jpg).
 # Without a `photo` line, initials are shown.
 
@@ -102,136 +102,163 @@ current:
 
 alumni:
 - name: Jiayi Zhao
+  photo: *placeholder
   degree: Undergraduate, University of Nottingham Ningbo China
   year: July 2026
   thesis: Dissertation/Thesis
   role: Current role, Affiliation
 - name: Haoling Wang
+  photo: *placeholder
   degree: Undergraduate, University of Nottingham Ningbo China
   year: July 2026
   thesis: Dissertation/Thesis
   role: Current role, Affiliation
 - name: Yuhan Zhao
+  photo: *placeholder
   degree: Undergraduate, University of Nottingham Ningbo China
   year: July 2026
   thesis: Dissertation/Thesis
   role: Current role, Affiliation
 - name: Jianuo Zhou
+  photo: *placeholder
   degree: Undergraduate, University of Nottingham Ningbo China
   year: July 2026
   thesis: Dissertation/Thesis
   role: Current role, Affiliation
 - name: Shiqi Cheng
+  photo: *placeholder
   degree: Undergraduate, University of Nottingham Ningbo China
   year: July 2026
   thesis: Dissertation/Thesis
   role: Current role, Affiliation
 - name: Susan Fuller
+  photo: *placeholder
   degree: DrPH, University of Georgia
   year: Spring 2026
   thesis: Dissertation/Thesis
   role: US CDC
 - name: Betelihem Getachew
+  photo: *placeholder
   degree: DrPH, University of Georgia
   year: Spring 2026
   thesis: Dissertation/Thesis
   role: US CDC
 - name: Oluwasegun Joel Adegoke
+  photo: *placeholder
   degree: DrPH, University of Georgia
   year: Spring 2026
   thesis: Dissertation/Thesis
   role: Current role, Affiliation
 - name: Jessica Amal Tarabay
+  photo: *placeholder
   degree: DrPH, University of Georgia
   year: Spring 2026
   thesis: Dissertation/Thesis
   role: Current role, Affiliation
 - name: Yuming Liu
+  photo: *placeholder
   degree: Undergraduate, University of Nottingham Ningbo China
   year: July 2025
   thesis: Dissertation/Thesis
   role: Current role, Affiliation
 - name: Yuhan Guo
+  photo: *placeholder
   degree: Undergraduate, University of Nottingham Ningbo China
   year: July 2025
   thesis: Dissertation/Thesis
   role: Current role, Affiliation
 - name: Lian Duan
+  photo: *placeholder
   degree: Undergraduate, University of Nottingham Ningbo China
   year: July 2025
   thesis: Dissertation/Thesis
   role: Current role, Affiliation
 - name: Kristen Landrum McNiff
+  photo: *placeholder
   degree: DrPH, University of Georgia
   year: Fall 2024
   thesis: Dissertation/Thesis
   role: Current role, Affiliation
 - name: Xiaolong (Chris) Hou
+  photo: *placeholder
   degree: MPH, University of Georgia
   year: Fall 2024
   thesis: Dissertation/Thesis
   role: Current role, Affiliation
 - name: Wei Jiang
+  photo: *placeholder
   degree: PhD (Economics), University of Nottingham Ningbo China
   year: Fall 2024
   thesis: Dissertation/Thesis
   role: Current role, Affiliation
 - name: Feiyang Shen
+  photo: *placeholder
   degree: Undergraduate, University of Nottingham Ningbo China
   year: July 2024
   thesis: Dissertation/Thesis
   role: Current role, Affiliation
 - name: Songheng Sun
+  photo: *placeholder
   degree: Undergraduate, University of Nottingham Ningbo China
   year: July 2024
   thesis: Dissertation/Thesis
   role: Current role, Affiliation
 - name: Jiaying Wang
+  photo: *placeholder
   degree: Undergraduate, University of Nottingham Ningbo China
   year: July 2024
   thesis: Dissertation/Thesis
   role: Current role, Affiliation
 - name: Siyi Liu
+  photo: *placeholder
   degree: Undergraduate, University of Nottingham Ningbo China
   year: July 2023
   thesis: Dissertation/Thesis
   role: Current role, Affiliation
 - name: Lia Koski
+  photo: *placeholder
   degree: DrPH, University of Georgia
   year: Spring 2023
   thesis: Dissertation/Thesis
   role: Current role, Affiliation
 - name: George Vaughn
+  photo: *placeholder
   degree: DrPH, University of Georgia
   year: Spring 2023
   thesis: Dissertation/Thesis
   role: Current role, Affiliation
 - name: Victoria Burse
+  photo: *placeholder
   degree: MPH, University of Georgia
   year: Fall 2022
   thesis: Dissertation/Thesis
   role: Current role, Affiliation
 - name: Von McClee
+  photo: *placeholder
   degree: DrPH, University of Georgia
   year: December 2021
   thesis: Dissertation/Thesis
   role: Current role, Affiliation
 - name: Leisel Talley
+  photo: *placeholder
   degree: DrPH, University of Georgia
   year: July 2021
   thesis: Dissertation/Thesis
   role: Current role, Affiliation
 - name: Gibril Njie
+  photo: *placeholder
   degree: DrPH, University of Georgia
   year: May 2021
   thesis: Dissertation/Thesis
   role: Current role, Affiliation
 - name: Yuanhang Xi
+  photo: *placeholder
   degree: MPH, University of Georgia
   year: May 2021
   thesis: Dissertation/Thesis
   role: Current role, Affiliation
 - name: Simiao Sun
+  photo: *placeholder
   degree: Undergraduate, University of Nottingham Ningbo China
   year: July 2020
   thesis: Dissertation/Thesis
