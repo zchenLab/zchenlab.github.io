@@ -30,12 +30,20 @@ trips:
       - src: assets/images/travel/bali-2025-heart.jpg
         caption: July 2025, Bali
 
+  - name: Ningbo
+    place: Ningbo, China
+    date: June 2024
+    photos:
+      - src: assets/images/travel/ningbo-2024.jpg
+        caption: June 2024, Ningbo
+        wide: true
+
   - name: Hong Kong
     place: Hong Kong
     date: October 2023
     photos:
       - src: assets/images/travel/hong-kong-2023.jpg
-        caption: October 2023, HUST Hong Kong
+        caption: October 2023, HKUST Hong Kong
 
   - name: Guizhou Miaozhai
     place: Guizhou, China
@@ -44,3 +52,10 @@ trips:
       - src: assets/images/travel/guizhou-miaozhai-2023.jpg
         caption: June 22, 2023, Guizhou Miaozhai
         wide: true
+
+  - name: Harvard
+    place: Cambridge, Massachusetts
+    date: September 2022
+    photos:
+      - src: assets/images/travel/harvard-2022.jpg
+        caption: September 2022, Harvard
