@@ -44,3 +44,10 @@ trips:
       - src: assets/images/travel/guizhou-miaozhai-2023.jpg
         caption: June 22, 2023, Guizhou Miaozhai
         wide: true
+
+  - name: Harvard
+    place: Cambridge, Massachusetts
+    date: September 2022
+    photos:
+      - src: assets/images/travel/harvard-2022.jpg
+        caption: September 2022, Harvard
