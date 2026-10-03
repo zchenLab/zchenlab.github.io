@@ -59,3 +59,22 @@ trips:
     photos:
       - src: assets/images/travel/harvard-2022.jpg
         caption: September 2022, Harvard
+
+  - name: Scotland
+    place: Scotland, UK
+    date: "2019"
+    photos:
+      - src: assets/images/travel/scotland-2019-castle.jpg
+        caption: 2019, Scotland
+        wide: true
+      - src: assets/images/travel/scotland-2019.jpg
+        caption: 2019, Scotland
+      - src: assets/images/travel/scotland-2019-cliff.jpg
+        caption: 2019, Scotland
+
+  - name: Shucheng
+    place: Shucheng, Anhui, China
+    photos:
+      - src: assets/images/travel/shucheng-with-dad.jpg
+        caption: Unknown year, with Dad in Shucheng
+        wide: true
