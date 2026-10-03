@@ -3,6 +3,8 @@
 # Conference and Meetings slideshow. Put photos in assets/images/conferences/ and add
 # one entry per photo (newest first); `desc` is optional.
 conference_photos:
+- src: assets/images/conferences/uga-graduation-2025.jpg
+  title: December 2025 UGA Graduation Ceremony
 - src: assets/images/conferences/georgia-asian-professors-meeting.jpg
   title: Georgia Asian Professors Meeting
 - src: assets/images/conferences/tehi5-talk.jpg
