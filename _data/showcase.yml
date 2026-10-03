@@ -3,6 +3,8 @@
 # Conference and Meetings slideshow. Put photos in assets/images/conferences/ and add
 # one entry per photo (newest first); `desc` is optional.
 conference_photos:
+- src: assets/images/conferences/uga-drph-orientation-2026.jpg
+  title: August 2026, UGA DrPH Orientation
 - src: assets/images/conferences/hefei-meeting-2026.jpg
   title: July 2026, Hefei Meeting
 - src: assets/images/conferences/ces-conference-2026-07.jpg
