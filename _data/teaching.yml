@@ -50,6 +50,29 @@ courses_graduate:
 - code: PBHL 9560
   title: DrPH Residency
 
+study_abroad:
+- name: "HPAM 3650/7650: Comparative Health Systems: China"
+  location: Ningbo, China
+  term: "Maymester 2027 (May 9–23)"
+  credits: 3 cr
+  description: >-
+    Two weeks in Ningbo comparing the health systems of the USA, the UK and China.
+    Students discuss China's health sector reforms with policy makers, researchers and
+    health insurance administrators; learn the history of the Chinese health system from
+    faculty at local universities, including the University of Nottingham Ningbo China;
+    visit tertiary hospitals, community health centers and village clinics; and explore
+    cultural sites such as Tianyi Pavilion and Xuedou Temple.
+  url: "https://studyaway.uga.edu/index.cfm?FuseAction=Programs.ViewProgramAngular&id=14215"
+  flyer: /assets/files/StudyAbroadChina_Maymester2027.pdf
+
+certificates:
+- name: Graduate Certificate in Social Determinants of Health
+  description: >-
+    Builds public health skills in racial and social justice, health equity, health
+    disparities, and interdisciplinary approaches to solving public health problems.
+  format: In person, Athens campus · College of Public Health
+  url: "https://publichealth.uga.edu/degree/graduate-certificate-social-determinants-of-health/"
+
 course_development:
 - title: Introduction to Healthcare Management (HPAM 3500)
   credits: 3 cr
