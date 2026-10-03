@@ -17,3 +17,14 @@ trips:
         caption: Nov 2025, Samarkand
       - src: assets/images/travel/samarkand-2025-statue.jpg
         caption: Nov 2025, Samarkand
+
+  - name: Bali
+    place: Bali, Indonesia
+    date: July 2025
+    photos:
+      - src: assets/images/travel/bali-2025-sunset.jpg
+        caption: July 2025, Bali
+      - src: assets/images/travel/bali-2025-gate.jpg
+        caption: July 2025, Bali
+      - src: assets/images/travel/bali-2025-heart.jpg
+        caption: July 2025, Bali
