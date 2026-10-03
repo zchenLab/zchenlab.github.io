@@ -64,5 +64,10 @@ trips:
     place: Scotland, UK
     date: "2019"
     photos:
+      - src: assets/images/travel/scotland-2019-castle.jpg
+        caption: 2019, Scotland
+        wide: true
       - src: assets/images/travel/scotland-2019.jpg
+        caption: 2019, Scotland
+      - src: assets/images/travel/scotland-2019-cliff.jpg
         caption: 2019, Scotland
