@@ -30,6 +30,14 @@ trips:
       - src: assets/images/travel/bali-2025-heart.jpg
         caption: July 2025, Bali
 
+  - name: Ningbo
+    place: Ningbo, China
+    date: June 2024
+    photos:
+      - src: assets/images/travel/ningbo-2024.jpg
+        caption: June 2024, Ningbo
+        wide: true
+
   - name: Hong Kong
     place: Hong Kong
     date: October 2023
