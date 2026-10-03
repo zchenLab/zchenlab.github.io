@@ -2,7 +2,8 @@
 #
 # To add your own photos:
 #   1. Put the image files in assets/images/travel/ (JPG or PNG; ~1600px wide is plenty).
-#   2. Add them under a trip below with a `src` path and a caption.
+#   2. Add them under a trip below with a `src` path and a caption. Add `wide: true`
+#      to a landscape photo so it shows wider instead of being cropped to portrait.
 #   3. Add or remove trips freely; newest first. The first trip's first photo
 #      is also used as the cover on the Showcase page.
 intro: >-
@@ -28,3 +29,11 @@ trips:
         caption: July 2025, Bali
       - src: assets/images/travel/bali-2025-heart.jpg
         caption: July 2025, Bali
+
+  - name: Guizhou Miaozhai
+    place: Guizhou, China
+    date: June 2023
+    photos:
+      - src: assets/images/travel/guizhou-miaozhai-2023.jpg
+        caption: June 22, 2023, Guizhou Miaozhai
+        wide: true
