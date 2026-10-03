@@ -13,6 +13,27 @@ summary: >-
   articles, with support from the NIH, the National Natural Science Foundation of China, and
   private foundations.</p>
 
+# Current projects shown near the top of the Research page (placeholders).
+# Each project has a title, a brief summary, a funder, and the publications it produced.
+# A publication title that exactly matches a `title` in _publications links to its DOI;
+# any other text is shown as written. Leave `publications` empty while none are out yet.
+current_projects:
+- title: Project title
+  summary: One or two sentences on the question the project asks, the data and methods, and why it matters.
+  funder: Funding agency (e.g. NIH/NIMHD R01)
+  publications:
+  - Publication title
+- title: Project title
+  summary: One or two sentences on the question the project asks, the data and methods, and why it matters.
+  funder: Funding agency
+  publications:
+  - Publication title
+  - Publication title
+- title: Project title
+  summary: One or two sentences on the question the project asks, the data and methods, and why it matters.
+  funder: Funding agency
+  publications: []
+
 # Research themes shown on the Research page (research.html).
 # Each paper title must exactly match the `title` of an entry in _publications.
 themes:

@@ -57,6 +57,12 @@ current:
   institution: University of Georgia
   logo: *uga
   thesis: Dissertation/Thesis
+- name: Feiyang Li
+  photo: *placeholder
+  program: DrPH Student
+  institution: University of Georgia
+  logo: *uga
+  thesis: Dissertation/Thesis
 - name: Xuening Cheng
   photo: *placeholder
   program: PhD Student (Economics)

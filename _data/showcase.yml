@@ -100,18 +100,6 @@ conferences_organized:
   year: "2008"
   program_book: "#"
 
-# Favorite projects (placeholders). Edit the title, description, image and link for each.
-favorite_projects:
-- title: Project title
-  description: One or two sentences on what the project is and why it matters to you.
-  link: "#"
-- title: Project title
-  description: One or two sentences on what the project is and why it matters to you.
-  link: "#"
-- title: Project title
-  description: One or two sentences on what the project is and why it matters to you.
-  link: "#"
-
 # Media coverage, commentaries and interviews (from the CV), with the links given in the CV.
 # Leave `link` out to show an item without a link.
 media_coverage:
