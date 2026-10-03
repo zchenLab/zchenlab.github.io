@@ -30,6 +30,13 @@ trips:
       - src: assets/images/travel/bali-2025-heart.jpg
         caption: July 2025, Bali
 
+  - name: Hong Kong
+    place: Hong Kong
+    date: October 2023
+    photos:
+      - src: assets/images/travel/hong-kong-2023.jpg
+        caption: October 2023, HUST Hong Kong
+
   - name: Guizhou Miaozhai
     place: Guizhou, China
     date: June 2023
