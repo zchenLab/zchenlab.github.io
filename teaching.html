@@ -2,7 +2,7 @@
 layout: default
 title : Teaching
 navbar_title: Teaching
-description: "Teaching by Zhuo (Adam) Chen at the University of Georgia: undergraduate and graduate courses in health policy and management, course development, guest lectures, and mentoring."
+description: "Teaching by Zhuo (Adam) Chen at the University of Georgia: undergraduate and graduate courses in health policy and management, course development, study abroad in Ningbo, China, guest lectures, and mentoring."
 ---
 {% assign t = site.data.teaching %}
 
@@ -35,6 +35,27 @@ description: "Teaching by Zhuo (Adam) Chen at the University of Georgia: undergr
             </ul>
         </div>
     </div>
+</div>
+
+<!-- Study abroad -->
+<div class="my-3 bg-white shadow-sm rounded-xl">
+    <h6 class="p-3 mb-0 border-bottom border-gray"><i class="fas fa-globe-asia"></i> Study Abroad</h6>
+    <ul class="list-unstyled px-3 py-2 mb-0">
+        {% for s in t.study_abroad %}
+        <li class="py-2 {% unless forloop.first %}border-top border-gray{% endunless %}">
+            <div class="d-flex flex-wrap">
+                <a class="font-weight-bold mr-2" target="_blank" href="{{ s.url }}">{{ s.name }}</a>
+                <span class="ml-auto text-muted no-break"><i>{{ s.term }}</i></span>
+            </div>
+            <div class="text-muted"><i class="fas fa-map-marker-alt"></i> {{ s.location }}{% if s.credits %} &middot; {{ s.credits }}{% endif %}</div>
+            {% if s.description %}<div class="mt-1">{{ s.description }}</div>{% endif %}
+            <div class="mt-1">
+                <a class="pr-3 no-break" target="_blank" href="{{ s.url }}"><i class="fas fa-external-link-alt"></i> Details &amp; apply</a>
+                {% if s.flyer %}<a class="no-break" target="_blank" href="{{ s.flyer | relative_url }}"><i class="fas fa-file-pdf"></i> Flyer</a>{% endif %}
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
 </div>
 
 <div class="row">
