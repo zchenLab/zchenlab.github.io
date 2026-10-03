@@ -1,17 +1,14 @@
 # Content for the Showcase page cards.
 
-# Conference and Meetings slideshow. Replace the placeholder images with your photos
-# (e.g. put files in assets/images/conferences/) and edit the titles and descriptions.
+# Conference and Meetings slideshow. Put photos in assets/images/conferences/ and add
+# one entry per photo (newest first); `desc` is optional.
 conference_photos:
-- src: assets/images/conferences/placeholder-1.svg
-  title: Conference or meeting name
-  desc: Place, year
-- src: assets/images/conferences/placeholder-2.svg
-  title: Conference or meeting name
-  desc: Place, year
-- src: assets/images/conferences/placeholder-3.svg
-  title: Conference or meeting name
-  desc: Place, year
+- src: assets/images/conferences/georgia-asian-professors-meeting.jpg
+  title: Georgia Asian Professors Meeting
+- src: assets/images/conferences/tehi5-talk.jpg
+  title: The 5th International Conference on Trends in Electronics and Health Informatics
+- src: assets/images/conferences/tehi5-audience.jpg
+  title: The 5th International Conference on Trends in Electronics and Health Informatics
 
 # Conferences and meetings organized (from the CV). Replace each `program_book: "#"`
 # with a link to the program book (a URL, or a PDF you add under assets/).
