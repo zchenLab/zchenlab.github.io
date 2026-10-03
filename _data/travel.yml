@@ -59,3 +59,10 @@ trips:
     photos:
       - src: assets/images/travel/harvard-2022.jpg
         caption: September 2022, Harvard
+
+  - name: Scotland
+    place: Scotland, UK
+    date: "2019"
+    photos:
+      - src: assets/images/travel/scotland-2019.jpg
+        caption: 2019, Scotland
