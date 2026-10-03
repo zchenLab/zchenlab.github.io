@@ -3,6 +3,12 @@
 # Conference and Meetings slideshow. Put photos in assets/images/conferences/ and add
 # one entry per photo (newest first); `desc` is optional.
 conference_photos:
+- src: assets/images/conferences/drph-day-2026-1.jpg
+  title: April 2026, UGA DrPH Day
+- src: assets/images/conferences/drph-day-2026-2.jpg
+  title: April 2026, UGA DrPH Day
+- src: assets/images/conferences/drph-day-2026-3.jpg
+  title: April 2026, UGA DrPH Day
 - src: assets/images/conferences/ningbo-guests-2026.jpg
   title: March 2026, Hosting Guests at Ningbo
 - src: assets/images/conferences/ces-emory-2026-group.jpg
