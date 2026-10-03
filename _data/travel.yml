@@ -35,7 +35,7 @@ trips:
     date: October 2023
     photos:
       - src: assets/images/travel/hong-kong-2023.jpg
-        caption: October 2023, HUST Hong Kong
+        caption: October 2023, HKUST Hong Kong
 
   - name: Guizhou Miaozhai
     place: Guizhou, China
