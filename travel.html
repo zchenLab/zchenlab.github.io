@@ -18,10 +18,10 @@ description: "Travel photos from conferences, fieldwork, and teaching trips by Z
 {% if trip.note %}<p>{{ trip.note }}</p>{% endif %}
 <div class="row">
     {% for photo in trip.photos %}
-    <div class="col-lg-4 col-sm-6 p-2">
+    <div class="{% if photo.wide %}col-lg-8 col-sm-12{% else %}col-lg-4 col-sm-6{% endif %} p-2">
         <figure class="card border-0 shadow-sm bg-white rounded-xl h-100 mb-0">
             <a href="{{ photo.src | relative_url }}" target="_blank">
-                <img src="{{ photo.src | relative_url }}" alt="{{ photo.caption | escape }}" class="img-fluid rounded-xl-top travel-photo" loading="lazy">
+                <img src="{{ photo.src | relative_url }}" alt="{{ photo.caption | escape }}" class="img-fluid rounded-xl-top travel-photo{% if photo.wide %} travel-photo-wide{% endif %}" loading="lazy">
             </a>
             {% if photo.caption %}<figcaption class="px-3 py-2 small text-muted">{{ photo.caption }}</figcaption>{% endif %}
         </figure>
@@ -31,5 +31,6 @@ description: "Travel photos from conferences, fieldwork, and teaching trips by Z
 {% endfor %}
 
 <style>
-    .travel-photo { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; }
+    .travel-photo { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; }
+    .travel-photo-wide { aspect-ratio: 4 / 3; }
 </style>
