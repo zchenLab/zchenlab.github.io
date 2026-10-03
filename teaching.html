@@ -2,7 +2,7 @@
 layout: default
 title : Teaching
 navbar_title: Teaching
-description: "Teaching by Zhuo (Adam) Chen at the University of Georgia: undergraduate and graduate courses in health policy and management, course development, study abroad in Ningbo, China, guest lectures, and mentoring."
+description: "Teaching by Zhuo (Adam) Chen at the University of Georgia: undergraduate and graduate courses in health policy and management, course development, study abroad in Ningbo, China, the Social Determinants of Health graduate certificate, guest lectures, and mentoring."
 ---
 {% assign t = site.data.teaching %}
 
@@ -53,6 +53,21 @@ description: "Teaching by Zhuo (Adam) Chen at the University of Georgia: undergr
                 <a class="pr-3 no-break" target="_blank" href="{{ s.url }}"><i class="fas fa-external-link-alt"></i> Details &amp; apply</a>
                 {% if s.flyer %}<a class="no-break" target="_blank" href="{{ s.flyer | relative_url }}"><i class="fas fa-file-pdf"></i> Flyer</a>{% endif %}
             </div>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+
+<!-- Graduate certificates -->
+<div class="my-3 bg-white shadow-sm rounded-xl">
+    <h6 class="p-3 mb-0 border-bottom border-gray"><i class="fas fa-certificate"></i> Graduate Certificate</h6>
+    <ul class="list-unstyled px-3 py-2 mb-0">
+        {% for c in t.certificates %}
+        <li class="py-2 {% unless forloop.first %}border-top border-gray{% endunless %}">
+            <a class="font-weight-bold" target="_blank" href="{{ c.url }}">{{ c.name }}</a>
+            {% if c.format %}<div class="text-muted"><i class="fas fa-university"></i> {{ c.format }}</div>{% endif %}
+            {% if c.description %}<div class="mt-1">{{ c.description }}</div>{% endif %}
+            <div class="mt-1"><a class="no-break" target="_blank" href="{{ c.url }}"><i class="fas fa-external-link-alt"></i> Program details</a></div>
         </li>
         {% endfor %}
     </ul>

@@ -65,6 +65,14 @@ study_abroad:
   url: "https://studyaway.uga.edu/index.cfm?FuseAction=Programs.ViewProgramAngular&id=14215"
   flyer: /assets/files/StudyAbroadChina_Maymester2027.pdf
 
+certificates:
+- name: Graduate Certificate in Social Determinants of Health
+  description: >-
+    Builds public health skills in racial and social justice, health equity, health
+    disparities, and interdisciplinary approaches to solving public health problems.
+  format: In person, Athens campus · College of Public Health
+  url: "https://publichealth.uga.edu/degree/graduate-certificate-social-determinants-of-health/"
+
 course_development:
 - title: Introduction to Healthcare Management (HPAM 3500)
   credits: 3 cr
