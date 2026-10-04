@@ -1,6 +1,6 @@
 # Group members shown on the Group page (group.html).
-# Current students can have: name, program, institution, logo, photo, thesis, note.
-# Alumni can have: name, photo, degree, year, thesis, role.
+# Current students can have: name, url, program, institution, logo, photo, thesis, note.
+# Alumni can have: name, url, photo, degree, year, thesis, role.
 # `photo` is optional; replace the placeholder with a real picture (e.g. /assets/images/photos/jane.jpg).
 # Without a `photo` line, initials are shown.
 
@@ -88,6 +88,7 @@ current:
   logo: *unnc
   thesis: Dissertation/Thesis
 - name: Jianhong Xu
+  url: https://sites.google.com/view/jianhongxu/home
   photo: *placeholder
   program: PhD Student
   institution: University of Nottingham Ningbo China
@@ -96,6 +97,12 @@ current:
 - name: Chijie Cui
   photo: *placeholder
   program: PhD Student
+  institution: University of Nottingham Ningbo China
+  logo: *unnc
+  thesis: Dissertation/Thesis
+- name: Canhui Wei
+  photo: *placeholder
+  program: PhD Student (Committee Member)
   institution: University of Nottingham Ningbo China
   logo: *unnc
   thesis: Dissertation/Thesis
