@@ -90,7 +90,7 @@ current:
   thesis: Dissertation/Thesis
 - name: Jianhong Xu
   url: https://sites.google.com/view/jianhongxu/home
-  photo: *placeholder
+  photo: /assets/images/photos/jianhong-xu.jpg
   program: PhD Student
   institution: University of Nottingham Ningbo China
   logo: *unnc
