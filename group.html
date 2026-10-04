@@ -45,7 +45,7 @@ description: "The research group of Zhuo (Adam) Chen at the University of Georgi
                 <div class="rounded-circle mr-3 group-avatar group-initials{% if member.institution contains "Nottingham" %} group-initials-unnc{% endif %}">{{ words.first | slice: 0 }}{{ words.last | slice: 0 }}</div>
                 {% endif %}
                 <div class="media-body">
-                    <div class="font-weight-bold">{{ member.name }}</div>
+                    <div class="font-weight-bold">{% if member.url %}<a href="{{ member.url }}" target="_blank" rel="noopener">{{ member.name }}</a>{% else %}{{ member.name }}{% endif %}</div>
                     <div>{{ member.program }}</div>
                     <div class="text-muted">
                         {% if member.logo -%}
@@ -78,7 +78,7 @@ description: "The research group of Zhuo (Adam) Chen at the University of Georgi
             {% endif %}
             <div class="media-body">
                 <div class="d-flex">
-                    <div><span class="font-weight-bold">{{ member.name }}</span> &middot; {{ member.degree }}</div>
+                    <div><span class="font-weight-bold">{% if member.url %}<a href="{{ member.url }}" target="_blank" rel="noopener">{{ member.name }}</a>{% else %}{{ member.name }}{% endif %}</span> &middot; {{ member.degree }}</div>
                     <div class="ml-auto pl-3 text-muted no-break"><i>{{ member.year }}</i></div>
                 </div>
                 {% if member.thesis %}<div><i class="fas fa-book-open text-muted"></i> <i>{{ member.thesis }}</i></div>{% endif %}
