@@ -9,7 +9,7 @@ description: "Media coverage, commentaries and interviews by Zhuo (Adam) Chen."
 <p class="mb-0">{{ site.data.media.intro }}</p>
 <p><a href="{{ '/showcase' | relative_url }}"><i class="fas fa-arrow-left"></i> Back to Showcase</a></p>
 
-{%- assign items = site.data.media.items | sort: "date" | reverse -%}
+{%- assign items = site.data.media.items | reverse | sort: "date" | reverse -%}
 {%- assign current_year = "" -%}
 {% for m in items %}
 {%- assign year = m.date | slice: 0, 4 -%}

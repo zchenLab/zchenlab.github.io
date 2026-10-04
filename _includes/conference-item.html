@@ -1,0 +1,7 @@
+{%- comment -%} One organized conference/meeting entry; pass item=... {%- endcomment -%}
+{%- assign c = include.item -%}
+<div>{{ c.name }}</div>
+<div class="small text-muted">
+    {{ c.role }}{% if c.year %} &middot; {{ c.year }}{% endif %}
+    {% if c.program_book %} &middot; <a href="{{ c.program_book }}"{% unless c.program_book == "#" %} target="_blank"{% endunless %}><i class="fas fa-book"></i> Program book</a>{% endif %}
+</div>
