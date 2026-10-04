@@ -9,8 +9,8 @@
         {%- endif -%}
     </div>
     <div class="col-9{% if include.page %} col-xl-10{% endif %} p-3">
-        <h5 class="mt-0 mb-1 font-weight-normal showcase-title">{{ c.name }}</h5>
+        <h5 class="mt-0 mb-1 font-weight-normal showcase-title">{% if c.link %}<a class="pub-title-link" href="{{ c.link }}" target="_blank">{{ c.name }}</a>{% else %}{{ c.name }}{% endif %}</h5>
         <p class="mt-0 mb-0 small">{{ c.role }}{% if c.year %}, {{ c.year }}{% endif %}</p>
-        {% if c.program_book %}<p class="small mb-0 abstract-links"><a href="{{ c.program_book }}"{% unless c.program_book == "#" %} target="_blank"{% endunless %}>[Program book]</a></p>{% endif %}
+        {% if c.link or c.program_book %}<p class="small mb-0 abstract-links">{% if c.link %}<a href="{{ c.link }}" target="_blank">[{{ c.link_label | default: "Link" }}]</a> {% endif %}{% if c.program_book %}<a href="{{ c.program_book }}"{% unless c.program_book == "#" %} target="_blank"{% endunless %}>[Program book]</a>{% endif %}</p>{% endif %}
     </div>
 </div>
