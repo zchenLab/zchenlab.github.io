@@ -83,11 +83,12 @@ current:
   logo: *unnc
   thesis: Dissertation/Thesis
 - name: Chenyuan Yan
+  url: https://www.linkedin.com/in/chenyuan-y-57a3b7168/
   photo: /assets/images/photos/chenyuan-yan.jpg
   program: PhD Student (Economics)
   institution: University of Nottingham Ningbo China
   logo: *unnc
-  thesis: Dissertation/Thesis
+  thesis: Effectiveness and Cost-Effectiveness of GLP-1 Receptor Agonists and SGLT2 Inhibitors in Type 2 Diabetes
 - name: Jianhong Xu
   url: https://sites.google.com/view/jianhongxu/home
   photo: /assets/images/photos/jianhong-xu.jpg
