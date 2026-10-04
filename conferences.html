@@ -1,0 +1,28 @@
+---
+layout: default
+title : Conferences and Meetings Organized
+navbar_title: Showcase
+description: "Conferences, forums, workshops and webinars organized by Zhuo (Adam) Chen."
+---
+
+<h1 class="pt-4">Conferences and Meetings Organized</h1>
+<p class="mb-0">{{ site.data.conferences.intro }}</p>
+<p><a href="{{ '/showcase' | relative_url }}"><i class="fas fa-arrow-left"></i> Back to Showcase</a></p>
+
+{%- assign items = site.data.conferences.items | reverse | sort: "year", "first" | reverse -%}
+{%- assign current_year = "none" -%}
+{% for c in items %}
+{%- assign year = c.year | default: "Year not listed" -%}
+{%- assign next = items[forloop.index] -%}
+{%- if next -%}{%- assign next_year = next.year | default: "Year not listed" -%}{%- else -%}{%- assign next_year = "end" -%}{%- endif -%}
+{% if year != current_year %}
+<h2 class="pt-4 h3">{{ year }}</h2>
+<div class="my-3 p-0 bg-white shadow-sm rounded-xl">
+{%- assign current_year = year -%}
+{% endif %}
+{% if next_year != year %}{% include conference-item.html item=c last=true page=true %}
+</div>
+{% else %}{% include conference-item.html item=c page=true %}{% endif %}
+{% endfor %}
+
+{% include showcase-list.css.html %}

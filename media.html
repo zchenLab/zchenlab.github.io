@@ -1,0 +1,28 @@
+---
+layout: default
+title : Media Coverage
+navbar_title: Showcase
+description: "Media coverage, commentaries and interviews by Zhuo (Adam) Chen."
+---
+
+<h1 class="pt-4">Media Coverage</h1>
+<p class="mb-0">{{ site.data.media.intro }}</p>
+<p><a href="{{ '/showcase' | relative_url }}"><i class="fas fa-arrow-left"></i> Back to Showcase</a></p>
+
+{%- assign items = site.data.media.items | reverse | sort: "date" | reverse -%}
+{%- assign current_year = "none" -%}
+{% for m in items %}
+{%- assign year = m.date | slice: 0, 4 -%}
+{%- assign next = items[forloop.index] -%}
+{%- if next -%}{%- assign next_year = next.date | slice: 0, 4 -%}{%- else -%}{%- assign next_year = "end" -%}{%- endif -%}
+{% if year != current_year %}
+<h2 class="pt-4 h3">{{ year }}</h2>
+<div class="my-3 p-0 bg-white shadow-sm rounded-xl">
+{%- assign current_year = year -%}
+{% endif %}
+{% if next_year != year %}{% include media-item.html item=m last=true page=true %}
+</div>
+{% else %}{% include media-item.html item=m page=true %}{% endif %}
+{% endfor %}
+
+{% include showcase-list.css.html %}

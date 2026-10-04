@@ -1,0 +1,43 @@
+# Media coverage, commentaries and interviews (from the CV), shown on /media and,
+# newest first, on the Showcase card. Order here does not matter; items are sorted
+# by `date`, written as "YYYY-MM" (or "YYYY" when the month is unknown, or
+# "YYYY-MM-DD" to order items within the same month).
+# Leave `link` out to show an item without a link. `image` is an optional thumbnail
+# path, e.g. assets/images/media/xyz.jpg; without one a generated pattern is shown.
+intro: Commentaries, op-eds, columns and interviews in the media.
+
+items:
+- title: "Crouching Trouble, Hidden Discrimination: The Predicament of Chinese Scientists in the United States"
+  outlet: Committee of 100
+  type: Commentary
+  date: "2021"
+  link: "https://www.committee100.org/wp-content/uploads/2021/10/Commentary_Zhuo-Adam-Chen.pdf"
+- title: COVID-19 and the Case for Empowering China’s CDC
+  outlet: Sixth Tone
+  type: Op-ed
+  date: "2020-03"
+  link: "http://www.sixthtone.com/news/1005370/covid-19-and-the-case-for-empowering-chinas-cdc"
+- title: The Fate of Traditional Chinese Medicine
+  outlet: Sina News
+  type: Column
+  date: "2014-07"
+  link: "http://finance.sina.com.cn/zl/lifestyle/20140722/073019780028.shtml"
+- title: Why American Tobacco Products Sell Cheaper in China
+  outlet: Sina News
+  type: Column
+  date: "2014-06"
+  link: "http://finance.sina.com.cn/zl/lifestyle/20140610/080919363537.shtml"
+- title: Mind the Mines in Predicting Disease Trends with Big Data
+  outlet: cn-healthcare
+  type: Column
+  date: "2014-05-23"
+  link: "http://t1.cn-healthcare.com/article/20140523/content-457618.html"
+- title: "Genetically Modified Food: An Economist’s Point of View"
+  outlet: Sina News
+  type: Column
+  date: "2014-05-05"
+  link: "http://finance.sina.com.cn/zl/lifestyle/20140505/083019000301.shtml"
+- title: Interview with Dr. Lincoln Chen
+  outlet: China Health Review
+  type: Interview
+  date: "2010"

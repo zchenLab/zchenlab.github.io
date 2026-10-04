@@ -1,0 +1,18 @@
+---
+show: true
+width: 6
+date: 2026-10-02 00:00:05 -0400
+---
+<!-- Newest media coverage from _data/media.yml; the full list is at /media. -->
+{%- assign items = site.data.media.items | reverse | sort: "date" | reverse -%}
+<h6 class="border-bottom border-gray p-3 mb-0">
+    <i class="fas fa-newspaper"></i> Media Coverage
+    <a href="{{ '/media' | relative_url }}">(view all <i class="fas fa-angle-double-right"></i>)</a>
+</h6>
+{% for m in items limit: 4 %}
+{% include media-item.html item=m %}
+{% endfor %}
+<h6 class="d-block p-3 mt-0 text-right">
+    <a href="{{ '/media' | relative_url }}">All {{ items.size }} items <i class="fas fa-angle-double-right"></i></a>
+</h6>
+{% include showcase-list.css.html %}
