@@ -20,6 +20,7 @@ items:
   year: "2023"
   link: "https://www.youtube.com/watch?v=fPYWR2SJRaA"
   link_label: Video
+  image: assets/images/conferences/preventing-pandemic-c100.jpg
   program_book: "#"
 - name: Chinese Economists Society Presidents’ Forum
   role: Organizer
