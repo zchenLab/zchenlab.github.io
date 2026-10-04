@@ -83,7 +83,7 @@ current:
   logo: *unnc
   thesis: Dissertation/Thesis
 - name: Chenyuan Yan
-  photo: *placeholder
+  photo: /assets/images/photos/chenyuan-yan.jpg
   program: PhD Student (Economics)
   institution: University of Nottingham Ningbo China
   logo: *unnc
