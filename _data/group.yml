@@ -17,7 +17,7 @@ current:
   thesis: Dissertation/Thesis
 - name: Yunjie Liu
   url: https://www.linkedin.com/in/yunjie-liu-aa1b7632a
-  photo: *placeholder
+  photo: /assets/images/photos/yunjie-liu.jpg
   program: PhD Student
   institution: University of Georgia
   logo: *uga
