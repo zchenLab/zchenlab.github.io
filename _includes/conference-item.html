@@ -1,7 +1,16 @@
-{%- comment -%} One organized conference/meeting entry; pass item=... {%- endcomment -%}
+{%- comment -%} One organized conference/meeting entry, styled like a publication row; pass item=... {%- endcomment -%}
 {%- assign c = include.item -%}
-<div>{{ c.name }}</div>
-<div class="small text-muted">
-    {{ c.role }}{% if c.year %} &middot; {{ c.year }}{% endif %}
-    {% if c.program_book %} &middot; <a href="{{ c.program_book }}"{% unless c.program_book == "#" %} target="_blank"{% endunless %}><i class="fas fa-book"></i> Program book</a>{% endif %}
+<div class="row no-gutters showcase-row{% unless include.last %} border-bottom border-gray{% endunless %}">
+    <div class="col-3{% if include.page %} col-xl-2{% endif %} p-3 pr-0">
+        {%- if c.image -%}
+        <img src="{{ c.image | relative_url }}" alt="{{ c.name | escape }}" class="w-100 rounded-sm showcase-thumb" loading="lazy">
+        {%- else -%}
+        <svg class="bubble-visual-hash w-100 rounded-sm" data-bubble-visual-hash="{{ c.name | slugify }}" viewBox="0 0 300 200"></svg>
+        {%- endif -%}
+    </div>
+    <div class="col-9{% if include.page %} col-xl-10{% endif %} p-3">
+        <h5 class="mt-0 mb-1 font-weight-normal showcase-title">{{ c.name }}</h5>
+        <p class="mt-0 mb-0 small">{{ c.role }}{% if c.year %}, {{ c.year }}{% endif %}</p>
+        {% if c.program_book %}<p class="small mb-0 abstract-links"><a href="{{ c.program_book }}"{% unless c.program_book == "#" %} target="_blank"{% endunless %}>[Program book]</a></p>{% endif %}
+    </div>
 </div>

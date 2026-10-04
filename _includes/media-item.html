@@ -1,5 +1,17 @@
-{%- comment -%} One media coverage entry; pass item=... {%- endcomment -%}
+{%- comment -%} One media coverage entry, styled like a publication row; pass item=... {%- endcomment -%}
 {%- assign m = include.item -%}
 {%- if m.date.size == 7 -%}{%- assign when = m.date | append: "-01" | date: "%b %Y" -%}{%- elsif m.date.size > 7 -%}{%- assign when = m.date | date: "%b %Y" -%}{%- else -%}{%- assign when = m.date -%}{%- endif -%}
-<div>{% if m.link %}<a class="text-body" href="{{ m.link }}" target="_blank">{{ m.title }}</a>{% else %}{{ m.title }}{% endif %}</div>
-<div class="small text-muted"><i>{{ m.outlet }}</i>{% if m.type %} &middot; {{ m.type }}{% endif %}{% if when %} &middot; {{ when }}{% endif %}{% if m.link %} &middot; <a href="{{ m.link }}" target="_blank"><i class="fas fa-external-link-alt"></i> Read</a>{% endif %}</div>
+<div class="row no-gutters showcase-row{% unless include.last %} border-bottom border-gray{% endunless %}">
+    <div class="col-3{% if include.page %} col-xl-2{% endif %} p-3 pr-0">
+        {%- if m.image -%}
+        <img src="{{ m.image | relative_url }}" alt="{{ m.title | escape }}" class="w-100 rounded-sm showcase-thumb" loading="lazy">
+        {%- else -%}
+        <svg class="bubble-visual-hash w-100 rounded-sm" data-bubble-visual-hash="{{ m.title | slugify }}" viewBox="0 0 300 200"></svg>
+        {%- endif -%}
+    </div>
+    <div class="col-9{% if include.page %} col-xl-10{% endif %} p-3">
+        <h5 class="mt-0 mb-1 font-weight-normal showcase-title">{% if m.link %}<a class="pub-title-link" href="{{ m.link }}" target="_blank">{{ m.title }}</a>{% else %}{{ m.title }}{% endif %}</h5>
+        <p class="mt-0 mb-0 small"><i>{{ m.outlet }}</i>{% if when %}, {{ when }}{% endif %}</p>
+        <p class="small mb-0 text-muted abstract-links">{% if m.type %}<span class="badge badge-light border">{{ m.type }}</span>{% endif %}{% if m.link %} <a href="{{ m.link }}" target="_blank">[Read]</a>{% endif %}</p>
+    </div>
+</div>

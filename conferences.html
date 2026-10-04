@@ -13,17 +13,16 @@ description: "Conferences, forums, workshops and webinars organized by Zhuo (Ada
 {%- assign current_year = "none" -%}
 {% for c in items %}
 {%- assign year = c.year | default: "Year not listed" -%}
+{%- assign next = items[forloop.index] -%}
+{%- if next -%}{%- assign next_year = next.year | default: "Year not listed" -%}{%- else -%}{%- assign next_year = "end" -%}{%- endif -%}
 {% if year != current_year %}
-{% unless forloop.first %}</ul></div>{% endunless %}
 <h2 class="pt-4 h3">{{ year }}</h2>
-<div class="card border-0 shadow-sm bg-white rounded-xl px-3 py-1 mb-2">
-<ul class="list-unstyled mb-0">
+<div class="my-3 p-0 bg-white shadow-sm rounded-xl">
 {%- assign current_year = year -%}
-{%- assign first_in_year = true -%}
 {% endif %}
-    <li class="py-2 {% unless first_in_year %}border-top border-gray{% endunless %}">
-        {% include conference-item.html item=c %}
-    </li>
-{%- assign first_in_year = false -%}
+{% if next_year != year %}{% include conference-item.html item=c last=true page=true %}
+</div>
+{% else %}{% include conference-item.html item=c page=true %}{% endif %}
 {% endfor %}
-{% if items.size > 0 %}</ul></div>{% endif %}
+
+{% include showcase-list.css.html %}

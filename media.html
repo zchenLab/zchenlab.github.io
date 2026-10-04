@@ -10,19 +10,19 @@ description: "Media coverage, commentaries and interviews by Zhuo (Adam) Chen."
 <p><a href="{{ '/showcase' | relative_url }}"><i class="fas fa-arrow-left"></i> Back to Showcase</a></p>
 
 {%- assign items = site.data.media.items | reverse | sort: "date" | reverse -%}
-{%- assign current_year = "" -%}
+{%- assign current_year = "none" -%}
 {% for m in items %}
 {%- assign year = m.date | slice: 0, 4 -%}
+{%- assign next = items[forloop.index] -%}
+{%- if next -%}{%- assign next_year = next.date | slice: 0, 4 -%}{%- else -%}{%- assign next_year = "end" -%}{%- endif -%}
 {% if year != current_year %}
-{% unless forloop.first %}</ul></div>{% endunless %}
 <h2 class="pt-4 h3">{{ year }}</h2>
-<div class="card border-0 shadow-sm bg-white rounded-xl px-3 py-1 mb-2">
-<ul class="list-unstyled mb-0">
+<div class="my-3 p-0 bg-white shadow-sm rounded-xl">
 {%- assign current_year = year -%}
 {% endif %}
-    <li class="py-2 {% if forloop.first or year != prev_year %}{% else %}border-top border-gray{% endif %}">
-        {% include media-item.html item=m %}
-    </li>
-{%- assign prev_year = year -%}
+{% if next_year != year %}{% include media-item.html item=m last=true page=true %}
+</div>
+{% else %}{% include media-item.html item=m page=true %}{% endif %}
 {% endfor %}
-{% if items.size > 0 %}</ul></div>{% endif %}
+
+{% include showcase-list.css.html %}

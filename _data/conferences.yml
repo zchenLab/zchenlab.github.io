@@ -1,6 +1,7 @@
 # Conferences and meetings organized, shown on /conferences and, newest first, on the
-# Showcase card. Order here does not matter; items are sorted by `year`. Items with no
-# `year` are listed last under "Year not listed". Replace each `program_book: "#"`
+# Showcase card. Order here does not matter; items are sorted by `year` (items with no
+# `year` go last under "Year not listed"). `image` is an optional thumbnail path,
+# e.g. assets/images/conferences/xyz.jpg; without one a generated pattern is shown. Replace each `program_book: "#"`
 # with a link to the program book (a URL, or a PDF you add under assets/); leave it out to hide the link.
 intro: Conferences, forums, workshops and webinars I have organized or helped plan.
 
@@ -15,6 +16,7 @@ items:
   program_book: "#"
 - name: "Preventing a Devastating Pandemic, Committee of 100"
   role: Organizer and host
+  year: "2023"
   program_book: "#"
 - name: Chinese Economists Society Presidents’ Forum
   role: Organizer

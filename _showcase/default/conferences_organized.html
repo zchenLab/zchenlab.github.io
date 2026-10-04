@@ -5,14 +5,14 @@ date: 2026-10-02 00:00:20 -0400
 ---
 <!-- Newest organized conferences/meetings from _data/conferences.yml; the full list is at /conferences. -->
 {%- assign items = site.data.conferences.items | reverse | sort: "year", "first" | reverse -%}
-<div class="p-3">
-    <h4 class="mb-2"><i class="fas fa-calendar-check"></i> Conferences and Meetings Organized</h4>
-    <ul class="list-unstyled mb-2">
-        {% for c in items limit: 5 %}
-        <li class="py-2 {% unless forloop.first %}border-top border-gray{% endunless %}">
-            {% include conference-item.html item=c %}
-        </li>
-        {% endfor %}
-    </ul>
-    <a href="{{ '/conferences' | relative_url }}">See all {{ items.size }} events &rarr;</a>
-</div>
+<h6 class="border-bottom border-gray p-3 mb-0">
+    <i class="fas fa-calendar-check"></i> Conferences and Meetings Organized
+    <a href="{{ '/conferences' | relative_url }}">(view all <i class="fas fa-angle-double-right"></i>)</a>
+</h6>
+{% for c in items limit: 4 %}
+{% include conference-item.html item=c %}
+{% endfor %}
+<h6 class="d-block p-3 mt-0 text-right">
+    <a href="{{ '/conferences' | relative_url }}">All {{ items.size }} events <i class="fas fa-angle-double-right"></i></a>
+</h6>
+{% include showcase-list.css.html %}

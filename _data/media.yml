@@ -2,7 +2,8 @@
 # newest first, on the Showcase card. Order here does not matter; items are sorted
 # by `date`, written as "YYYY-MM" (or "YYYY" when the month is unknown, or
 # "YYYY-MM-DD" to order items within the same month).
-# Leave `link` out to show an item without a link.
+# Leave `link` out to show an item without a link. `image` is an optional thumbnail
+# path, e.g. assets/images/media/xyz.jpg; without one a generated pattern is shown.
 intro: Commentaries, op-eds, columns and interviews in the media.
 
 items:
