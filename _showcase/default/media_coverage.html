@@ -1,0 +1,18 @@
+---
+show: true
+width: 6
+date: 2026-10-02 00:00:05 -0400
+---
+<!-- Newest media coverage from _data/media.yml; the full list is at /media. -->
+{%- assign items = site.data.media.items | sort: "date" | reverse -%}
+<div class="p-3">
+    <h4 class="mb-2"><i class="fas fa-newspaper"></i> Media Coverage</h4>
+    <ul class="list-unstyled mb-2">
+        {% for m in items limit: 5 %}
+        <li class="py-2 {% unless forloop.first %}border-top border-gray{% endunless %}">
+            {% include media-item.html item=m %}
+        </li>
+        {% endfor %}
+    </ul>
+    <a href="{{ '/media' | relative_url }}">See all {{ items.size }} items &rarr;</a>
+</div>

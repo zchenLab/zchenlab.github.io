@@ -1,0 +1,5 @@
+{%- comment -%} One media coverage entry; pass item=... {%- endcomment -%}
+{%- assign m = include.item -%}
+{%- if m.date.size == 7 -%}{%- assign when = m.date | append: "-01" | date: "%b %Y" -%}{%- elsif m.date.size > 7 -%}{%- assign when = m.date | date: "%b %Y" -%}{%- else -%}{%- assign when = m.date -%}{%- endif -%}
+<div>{% if m.link %}<a class="text-body" href="{{ m.link }}" target="_blank">{{ m.title }}</a>{% else %}{{ m.title }}{% endif %}</div>
+<div class="small text-muted"><i>{{ m.outlet }}</i>{% if m.type %} &middot; {{ m.type }}{% endif %}{% if when %} &middot; {{ when }}{% endif %}{% if m.link %} &middot; <a href="{{ m.link }}" target="_blank"><i class="fas fa-external-link-alt"></i> Read</a>{% endif %}</div>
