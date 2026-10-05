@@ -17,7 +17,7 @@ description: "Research by Zhuo (Adam) Chen at the University of Georgia: health 
 
 <!-- Current projects -->
 {% if site.data.research.current_projects %}
-<h2 class="pt-4"><i class="fas fa-tasks"></i> Current Projects</h2>
+<h2 class="h4 pt-4"><i class="fas fa-tasks"></i> Current Projects</h2>
 <div class="my-0 bg-white shadow-sm rounded-xl">
     <ul class="list-unstyled px-3 py-2 mb-0">
         {% for p in site.data.research.current_projects %}
@@ -44,7 +44,7 @@ description: "Research by Zhuo (Adam) Chen at the University of Georgia: health 
 
 <!-- Funded projects -->
 {% if site.data.research.funded_projects %}
-<h2 class="pt-4"><i class="fas fa-hand-holding-usd"></i> Funded Projects</h2>
+<h2 class="h4 pt-4"><i class="fas fa-hand-holding-usd"></i> Funded Projects</h2>
 <div class="my-0 bg-white shadow-sm rounded-xl">
     <ul class="list-unstyled px-3 py-2 mb-0">
         {% for g in site.data.research.funded_projects %}
@@ -62,7 +62,7 @@ description: "Research by Zhuo (Adam) Chen at the University of Georgia: health 
 
 
 {% for theme in site.data.research.themes %}
-<h2 class="pt-4"><i class="{{ theme.icon }}"></i> {{ theme.name }}</h2>
+<h2 class="h4 pt-4"><i class="{{ theme.icon }}"></i> {{ theme.name }}</h2>
 <p>{{ theme.description }}</p>
 <div class="my-0 p-0 bg-white shadow-sm rounded-xl">
     {% for title in theme.papers %}
@@ -76,7 +76,7 @@ description: "Research by Zhuo (Adam) Chen at the University of Georgia: health 
 
 <!-- Key collaborators: joint-publication counts and years are computed from _publications -->
 {% if site.data.research.collaborators %}
-<h2 class="pt-4"><i class="fas fa-handshake"></i> Key Collaborators</h2>
+<h2 class="h4 pt-4"><i class="fas fa-handshake"></i> Key Collaborators</h2>
 <p>Frequent co-authors (five or more joint publications) and other close collaborators.</p>
 <div class="my-0 p-2 bg-white shadow-sm rounded-xl">
     <div class="row no-gutters">
