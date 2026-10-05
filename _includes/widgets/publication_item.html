@@ -1,6 +1,7 @@
 {% assign item = include.item %}
 {%- assign citation_id = item.semantic_scholar_id -%}
 {%- if citation_id == nil and item.doi -%}{%- assign citation_id = item.doi | prepend: "DOI:" -%}{%- endif -%}
+{% if include.anchor %}<div id="pub-{{ item.slug }}" style="scroll-margin-top: 80px;"></div>{% endif %}
 <div class="pub-item d-none d-md-block">
     <div class="row no-gutters {% unless include.hide_bottom_border %}border-bottom{% endunless %} border-gray">
         <div class="col-md-3 col-xl-2 mb-md-0 p-md-3">
