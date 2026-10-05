@@ -1,0 +1,158 @@
+# Conference and Meetings photo page (/meetings-photos), linked from the Showcase page.
+#
+# To add your own photos:
+#   1. Put the image files in assets/images/conferences/ (JPG or PNG; ~1600px wide is plenty).
+#   2. Add them under an event below with a `src` path and a caption. Photos show as
+#      landscape tiles; add `portrait: true` to a tall photo so the crop keeps the top (faces).
+#   3. Add or remove events freely; newest first. `place` and `date` are optional.
+#      The Showcase card shows a slideshow of every photo here, in this order.
+intro: >-
+  Snapshots from conferences, workshops, seminars and meetings.
+
+events:
+  - name: UGA Study Abroad Fair
+    date: September 2026
+    photos:
+      - src: assets/images/conferences/uga-study-abroad-fair-2026.jpg
+        caption: September 2026, UGA Study Abroad Fair
+        portrait: true
+
+  - name: Health Connect South
+    date: September 2026
+    photos:
+      - src: assets/images/conferences/health-connect-south-2026.jpg
+        caption: September 2026, Representing UGA DrPH at Health Connect South
+
+  - name: USTC Atlanta Alumni Gathering
+    date: September 2026
+    photos:
+      - src: assets/images/conferences/ustc-atlanta-alumni-2026.jpg
+        caption: September 2026, USTC Atlanta Alumni Gathering
+
+  - name: UGA DrPH Orientation
+    date: August 2026
+    photos:
+      - src: assets/images/conferences/uga-drph-orientation-2026.jpg
+        caption: August 2026, UGA DrPH Orientation
+
+  - name: Hefei Meeting
+    place: Hefei, China
+    date: July 2026
+    photos:
+      - src: assets/images/conferences/hefei-meeting-2026.jpg
+        caption: July 2026, Hefei Meeting
+
+  - name: CES Conference
+    date: July 2026
+    photos:
+      - src: assets/images/conferences/ces-conference-2026-07.jpg
+        caption: July 2026, CES Conference
+
+  - name: UNNC Graduation
+    place: Ningbo, China
+    date: July 2026
+    photos:
+      - src: assets/images/conferences/unnc-graduation-2026.jpg
+        caption: July 2026, UNNC Graduation
+
+  - name: UGA ACAP Transition
+    date: July 2026
+    photos:
+      - src: assets/images/conferences/uga-acap-2026.jpg
+        caption: July 2026, UGA ACAP Transition
+
+  - name: CHPAMS Changsha Conference
+    place: Changsha, China
+    date: June 2026
+    photos:
+      - src: assets/images/conferences/chpams-changsha-2026.jpg
+        caption: June 2026, CHPAMS Changsha Conference
+
+  - name: Ningbo CeDeX/CHE Joint Conference
+    place: Ningbo, China
+    date: June 2026
+    photos:
+      - src: assets/images/conferences/cedex-che-ningbo-2026.jpg
+        caption: June 2026, Ningbo CeDeX/CHE Joint Conference
+
+  - name: Writing Workshop
+    date: June 2026
+    photos:
+      - src: assets/images/conferences/writing-workshop-2026.jpg
+        caption: June 2026, Writing Workshop
+
+  - name: UGA Graduation
+    date: May 2026
+    photos:
+      - src: assets/images/conferences/uga-graduation-2026.jpg
+        caption: May 2026, UGA Graduation
+
+  - name: Ningbo CAER Conference
+    place: Ningbo, China
+    date: May 2026
+    photos:
+      - src: assets/images/conferences/caer-ningbo-2026.jpg
+        caption: May 2026, Ningbo CAER Conference
+
+  - name: UGA DrPH Day
+    date: April 2026
+    photos:
+      - src: assets/images/conferences/drph-day-2026-1.jpg
+        caption: April 2026, UGA DrPH Day
+      - src: assets/images/conferences/drph-day-2026-2.jpg
+        caption: April 2026, UGA DrPH Day
+      - src: assets/images/conferences/drph-day-2026-3.jpg
+        caption: April 2026, UGA DrPH Day
+        portrait: true
+
+  - name: Hosting Guests at Ningbo
+    place: Ningbo, China
+    date: March 2026
+    photos:
+      - src: assets/images/conferences/ningbo-guests-2026.jpg
+        caption: March 2026, Hosting Guests at Ningbo
+
+  - name: CES Emory Conference
+    date: March 2026
+    photos:
+      - src: assets/images/conferences/ces-emory-2026-group.jpg
+        caption: March 2026, CES Emory Conference
+      - src: assets/images/conferences/ces-emory-2026-outdoor.jpg
+        caption: March 2026, CES Emory Conference
+
+  - name: Prof. Valerie Yeager Seminar
+    date: February 2026
+    photos:
+      - src: assets/images/conferences/yeager-seminar-2026.jpg
+        caption: Feb. 2026, Prof. Valerie Yeager Seminar
+
+  - name: UGA Graduation Ceremony
+    date: December 2025
+    photos:
+      - src: assets/images/conferences/uga-graduation-2025.jpg
+        caption: December 2025, UGA Graduation Ceremony
+        portrait: true
+
+  - name: Ningbo Workshop
+    place: Ningbo, China
+    date: December 2025
+    photos:
+      - src: assets/images/conferences/ningbo-workshop-2025-group.jpg
+        caption: December 2025, Ningbo Workshop
+        portrait: true
+      - src: assets/images/conferences/ningbo-workshop-2025-lecture.jpg
+        caption: December 2025, Ningbo Workshop
+        portrait: true
+
+  # Dates unknown; add a `date` and move these up when known.
+  - name: Georgia Asian Professors Meeting
+    photos:
+      - src: assets/images/conferences/georgia-asian-professors-meeting.jpg
+        caption: Georgia Asian Professors Meeting
+
+  - name: The 5th International Conference on Trends in Electronics and Health Informatics
+    photos:
+      - src: assets/images/conferences/tehi5-talk.jpg
+        caption: The 5th International Conference on Trends in Electronics and Health Informatics
+      - src: assets/images/conferences/tehi5-audience.jpg
+        caption: The 5th International Conference on Trends in Electronics and Health Informatics

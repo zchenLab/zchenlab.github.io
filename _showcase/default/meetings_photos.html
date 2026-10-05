@@ -1,0 +1,55 @@
+---
+show: true
+width: 6
+date: 2026-10-02 00:00:30 -0400
+---
+<!-- Slideshow of every photo in _data/meetings.yml; the full gallery is at /meetings-photos. -->
+<div id="meetings-slideshow" class="carousel slide" data-ride="carousel" data-interval="4000">
+    <div class="carousel-inner rounded-xl-top">
+        {%- assign n = 0 -%}
+        {%- for event in site.data.meetings.events -%}
+        {%- for photo in event.photos -%}
+        <div class="carousel-item{% if n == 0 %} active{% endif %}">
+            <img src="{{ photo.src | relative_url }}" alt="{{ photo.caption | default: event.name | escape }}" class="d-block w-100 meetings-slide" {% if n > 0 %}loading="lazy"{% endif %}>
+            <div class="carousel-caption meetings-slide-caption">
+                <div class="font-weight-bold">{{ event.name }}{% if event.place %} &middot; {{ event.place }}{% endif %}</div>
+                {% if event.date %}<div class="small">{{ event.date }}</div>{% endif %}
+            </div>
+        </div>
+        {%- assign n = n | plus: 1 -%}
+        {%- endfor -%}
+        {%- endfor -%}
+    </div>
+    {% if n > 1 %}
+    <ol class="carousel-indicators meetings-slide-indicators">
+        {% for i in (1..n) %}
+        <li data-target="#meetings-slideshow" data-slide-to="{{ forloop.index0 }}"{% if forloop.first %} class="active"{% endif %}></li>
+        {% endfor %}
+    </ol>
+    <a class="carousel-control-prev" href="#meetings-slideshow" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#meetings-slideshow" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+    {% endif %}
+</div>
+<a href="{{ '/meetings-photos' | relative_url }}" class="text-reset text-decoration-none">
+    <div class="p-3">
+        <h4 class="mb-1"><i class="fas fa-users"></i> Conference and Meetings</h4>
+        <p class="mb-0 text-muted">Photos from conferences, workshops and meetings. <span class="text-primary">View the gallery &rarr;</span></p>
+    </div>
+</a>
+
+<style>
+    .meetings-slide { aspect-ratio: 3 / 2; object-fit: cover; }
+    .meetings-slide-caption {
+        left: 0; right: 0; bottom: 0;
+        padding: 1.75rem 1rem 1.5rem;
+        background: linear-gradient(transparent, rgba(0, 0, 0, 0.6));
+        text-align: left;
+    }
+    .meetings-slide-indicators { margin-bottom: 0.4rem; }
+</style>
