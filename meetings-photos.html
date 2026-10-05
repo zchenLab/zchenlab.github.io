@@ -1,0 +1,39 @@
+---
+layout: default
+title : Conference and Meetings
+navbar_title: Showcase
+description: "Photos from conferences, workshops, seminars and meetings attended by Zhuo (Adam) Chen."
+---
+
+<h1 class="pt-4">Conference and Meetings</h1>
+<p class="mb-0">{{ site.data.meetings.intro }}</p>
+<p><a href="{{ '/showcase' | relative_url }}"><i class="fas fa-arrow-left"></i> Back to Showcase</a></p>
+
+{% for event in site.data.meetings.events %}
+<h2 class="pt-4 mb-1">{{ event.name }}</h2>
+{% if event.place or event.date %}
+<p class="text-muted mb-2">
+    {% if event.place %}<i class="fas fa-location-dot"></i> {{ event.place }}{% endif %}
+    {% if event.place and event.date %}&nbsp;&middot;&nbsp; {% endif %}
+    {% if event.date %}<i class="far fa-calendar"></i> {{ event.date }}{% endif %}
+</p>
+{% endif %}
+{% if event.note %}<p>{{ event.note }}</p>{% endif %}
+<div class="row">
+    {% for photo in event.photos %}
+    <div class="col-lg-4 col-sm-6 p-2">
+        <figure class="card border-0 shadow-sm bg-white rounded-xl h-100 mb-0">
+            <a href="{{ photo.src | relative_url }}" target="_blank">
+                <img src="{{ photo.src | relative_url }}" alt="{{ photo.caption | default: event.name | escape }}" class="img-fluid rounded-xl-top meetings-photo{% if photo.portrait %} meetings-photo-portrait{% endif %}" loading="lazy">
+            </a>
+            {% if photo.caption %}<figcaption class="px-3 py-2 small text-muted">{{ photo.caption }}</figcaption>{% endif %}
+        </figure>
+    </div>
+    {% endfor %}
+</div>
+{% endfor %}
+
+<style>
+    .meetings-photo { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+    .meetings-photo-portrait { object-position: 50% 30%; }
+</style>
