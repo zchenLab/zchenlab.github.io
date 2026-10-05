@@ -31,3 +31,25 @@ description: "Publications by Zhuo (Adam) Chen: more than 150 peer-reviewed arti
     </div>
 
 </div>
+
+<!-- When opened with #pub-..., keep that paper in view while images, fonts and citation badges load, then highlight it. -->
+<style>
+    .pub-highlight + .pub-item, .pub-highlight + .pub-item + .pub-item { animation: pub-flash 2.5s ease-out; }
+    @keyframes pub-flash { 0%, 40% { background-color: #fff3bf; } 100% { background-color: transparent; } }
+</style>
+<script>
+(function () {
+    var id = decodeURIComponent(location.hash.slice(1));
+    if (id.indexOf('pub-') !== 0) return;
+    var target = document.getElementById(id);
+    if (!target) return;
+    var userMoved = false;
+    var stop = function () { userMoved = true; };
+    ['wheel', 'touchmove', 'keydown', 'mousedown'].forEach(function (e) { window.addEventListener(e, stop, { passive: true, once: true }); });
+    var jump = function () { if (!userMoved) target.scrollIntoView({ block: 'start' }); };
+    jump();
+    window.addEventListener('load', jump);
+    [300, 800, 1500, 2500, 4000].forEach(function (t) { setTimeout(jump, t); });
+    target.classList.add('pub-highlight');
+})();
+</script>
