@@ -144,15 +144,16 @@ events:
         caption: December 2025, Ningbo Workshop
         portrait: true
 
-  # Dates unknown; add a `date` and move these up when known.
-  - name: Georgia Asian Professors Meeting
-    photos:
-      - src: assets/images/conferences/georgia-asian-professors-meeting.jpg
-        caption: Georgia Asian Professors Meeting
-
   - name: The 5th International Conference on Trends in Electronics and Health Informatics
+    date: November 2025
     photos:
       - src: assets/images/conferences/tehi5-talk.jpg
-        caption: The 5th International Conference on Trends in Electronics and Health Informatics
+        caption: November 2025, The 5th International Conference on Trends in Electronics and Health Informatics
       - src: assets/images/conferences/tehi5-audience.jpg
-        caption: The 5th International Conference on Trends in Electronics and Health Informatics
+        caption: November 2025, The 5th International Conference on Trends in Electronics and Health Informatics
+
+  - name: Georgia Asian Professors Meeting
+    date: August 2025
+    photos:
+      - src: assets/images/conferences/georgia-asian-professors-meeting.jpg
+        caption: August 2025, Georgia Asian Professors Meeting
