@@ -57,7 +57,7 @@ current:
   program: DrPH Student
   institution: University of Georgia
   logo: *uga
-  thesis: Quantifying Urban Assumptions Embedded into Georgia Public Health Policy Through the Use of Large Language Models
+  thesis: Rural Health Research via LLM
   note: Epidemiologist Coordinator, Southeast Utah Health Department
 - name: Feiyang Li
   photo: *placeholder
