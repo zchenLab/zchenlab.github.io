@@ -15,7 +15,7 @@ summary: >-
 
 # Current projects shown near the top of the Research page (placeholders).
 # Each project has a title, a brief summary, a funder, and the publications it produced.
-# A publication title that exactly matches a `title` in _publications links to its DOI;
+# A publication title that exactly matches a `title` in _publications links to its card on the Publications page;
 # any other text is shown as written. Leave `publications` empty while none are out yet.
 current_projects:
 - title: Project title

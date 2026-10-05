@@ -30,7 +30,7 @@ description: "Research by Zhuo (Adam) Chen at the University of Georgia: health 
             <ul class="small mb-0 pl-4">
                 {% for t in p.publications %}
                 {% assign pub = site.publications | where: "title", t | first %}
-                <li>{% if pub and pub.doi %}<a href="https://doi.org/{{ pub.doi }}" target="_blank">{{ t }}</a>{% else %}{{ t }}{% endif %}</li>
+                <li>{% if pub %}<a href="{{ '/publications' | relative_url }}#pub-{{ pub.slug }}">{{ t }}</a>{% else %}{{ t }}{% endif %}</li>
                 {% endfor %}
             </ul>
             {% else %}
