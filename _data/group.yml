@@ -119,7 +119,7 @@ alumni:
   thesis: Dissertation/Thesis
   role: Current role, Affiliation
 - name: Haoling Wang
-  photo: *placeholder
+  photo: /assets/images/photos/haoling-wang.jpg
   degree: Undergraduate, University of Nottingham Ningbo China
   year: July 2026
   thesis: Dissertation/Thesis
