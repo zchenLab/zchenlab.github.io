@@ -53,7 +53,7 @@ current:
   logo: *uga
   thesis: Dissertation/Thesis
 - name: Hannah Schoon
-  photo: *placeholder
+  photo: /assets/images/photos/hannah-schoon.jpg
   program: DrPH Student
   institution: University of Georgia
   logo: *uga
