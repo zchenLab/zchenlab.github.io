@@ -23,11 +23,12 @@ current:
   logo: *uga
   thesis: Dissertation/Thesis
 - name: Anika Rahman
+  url: https://www.linkedin.com/in/anikarahmanmou/
   photo: *placeholder
   program: PhD Student
   institution: University of Georgia
   logo: *uga
-  thesis: Dissertation/Thesis
+  thesis: "Maternal Epilepsy and the Perinatal Care Continuum: Infant Outcomes, Postpartum Care Disparities"
 - name: Sonh Patrick Chong
   photo: *placeholder
   program: DrPH Student
