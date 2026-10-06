@@ -24,7 +24,7 @@ current:
   thesis: Dissertation/Thesis
 - name: Anika Rahman
   url: https://www.linkedin.com/in/anikarahmanmou/
-  photo: *placeholder
+  photo: /assets/images/photos/anika-rahman.jpg
   program: PhD Student
   institution: University of Georgia
   logo: *uga
