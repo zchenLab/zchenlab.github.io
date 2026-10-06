@@ -119,11 +119,12 @@ alumni:
   thesis: Dissertation/Thesis
   role: Current role, Affiliation
 - name: Haoling Wang
+  url: https://haolingwang.weebly.com
   photo: /assets/images/photos/haoling-wang.jpg
   degree: Undergraduate, University of Nottingham Ningbo China
   year: July 2026
-  thesis: Dissertation/Thesis
-  role: Current role, Affiliation
+  thesis: "Square Dancing or Medical Bills? The Effect of Regular Group Physical Exercise on Healthcare Expenditure among Older Adults in China"
+  role: MA (Economics), University of Chicago
 - name: Yuhan Zhao
   photo: *placeholder
   degree: Undergraduate, University of Nottingham Ningbo China
