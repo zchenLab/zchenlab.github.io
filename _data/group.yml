@@ -113,11 +113,12 @@ current:
 
 alumni:
 - name: Jiayi Zhao
-  photo: *placeholder
+  url: https://www.linkedin.com/in/jiayi-jolyne-zhao-3343053bb
+  photo: /assets/images/photos/jiayi-zhao.jpg
   degree: Undergraduate, University of Nottingham Ningbo China
   year: July 2026
-  thesis: Dissertation/Thesis
-  role: Current role, Affiliation
+  thesis: "Preference for Feature Simplicity and Price as Commitment: A Discrete Choice Experiment on Consumer Preferences for Digital Fitness Application"
+  role: MS (Quantitative Economics), National University of Singapore
 - name: Haoling Wang
   url: https://haolingwang.weebly.com
   photo: /assets/images/photos/haoling-wang.jpg
