@@ -42,11 +42,12 @@ current:
   logo: *uga
   thesis: Dissertation/Thesis
 - name: Shelby Rentmeester
-  photo: *placeholder
+  photo: /assets/images/photos/shelby-rentmeester.jpg
   program: DrPH Student
   institution: University of Georgia
   logo: *uga
-  thesis: Dissertation/Thesis
+  thesis: Public Health Workforce
+  note: Program Director, Emory University
 - name: Ivy Oyegun
   photo: *placeholder
   program: DrPH Student
