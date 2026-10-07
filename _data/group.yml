@@ -224,7 +224,8 @@ alumni:
   thesis: Dissertation/Thesis
   role: Current role, Affiliation
 - name: Siyi Liu
-  photo: *placeholder
+  url: https://www.linkedin.com/in/andrea-siyi-liu-21a56b244/
+  photo: /assets/images/photos/siyi-liu.jpg
   degree: Undergraduate, University of Nottingham Ningbo China
   year: July 2023
   thesis: "How does informal care affect caregivers’ mental health: Evidence from China"
