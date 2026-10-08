@@ -194,11 +194,11 @@ alumni:
   thesis: Dissertation/Thesis
   role: Current role, Affiliation
 - name: Xiaolong (Chris) Hou
-  photo: *placeholder
+  photo: /assets/images/photos/xiaolong-hou.jpg
   degree: MPH, University of Georgia
   year: Fall 2024
   thesis: Dissertation/Thesis
-  role: Current role, Affiliation
+  role: Assistant Professor, Lahore University of Management Sciences
 - name: Wei Jiang
   photo: *placeholder
   degree: PhD (Economics), University of Nottingham Ningbo China
