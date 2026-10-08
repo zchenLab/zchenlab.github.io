@@ -1,1 +1,26 @@
-{% for item in site.news %}
+---
+layout: default
+title : News
+navbar_title: Home
+description: "News from Zhuo (Adam) Chen and his research group at the University of Georgia College of Public Health: appointments, honors, invited talks, and conference presentations."
+---
+{% assign news_by_year = site.news | sort: "date" | reverse | group_by_exp: "item", "item.date | date: '%Y'" %}
+
+<div class="my-3 bg-white shadow-sm rounded-xl">
+    <h6 class="p-3 mb-0 border-bottom border-gray"><i class="fas fa-rss"></i> News</h6>
+    <div class="px-3 pb-1">
+    {% for year in news_by_year %}
+        <div class="media py-2 {% unless forloop.first %}border-top border-gray{% endunless %}">
+            <div class="mr-3 text-muted my-1">{{ year.name }}</div>
+            <div class="media-body">
+                {% for item in year.items %}
+                <div class="my-1 d-flex">
+                    <div>{{ item.title }}</div>
+                    <div class="ml-auto pl-3 mt-auto text-muted no-break"><i>{{ item.date | date: "%b %d" }}</i></div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+</div>
