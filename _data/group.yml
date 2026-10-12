@@ -80,11 +80,11 @@ current:
   logo: *unnc
   thesis: Dissertation/Thesis
 - name: Fei Zhao
-  photo: *placeholder
+  photo: /assets/images/photos/fei-zhao.jpg
   program: PhD Student (Economics)
   institution: University of Nottingham Ningbo China
   logo: *unnc
-  thesis: Dissertation/Thesis
+  thesis: Health Services Research using Administrative Data
 - name: Chenyuan Yan
   url: https://www.linkedin.com/in/chenyuan-y-57a3b7168/
   photo: /assets/images/photos/chenyuan-yan.jpg
