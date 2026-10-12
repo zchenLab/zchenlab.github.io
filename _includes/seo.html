@@ -61,6 +61,7 @@
   "sameAs": [
     {%- if profile.gscholar %}"https://scholar.google.com/citations?user={{ profile.gscholar }}",{% endif %}
     {%- if profile.orcid %}"https://orcid.org/{{ profile.orcid }}",{% endif %}
+    {%- if profile.loop %}"https://loop.frontiersin.org/people/{{ profile.loop }}/overview",{% endif %}
     {%- if profile.linkedin %}"https://www.linkedin.com/in/{{ profile.linkedin }}",{% endif %}
     {%- if profile.twitter %}"https://twitter.com/{{ profile.twitter }}",{% endif %}
     {%- if profile.github %}"https://github.com/{{ profile.github }}",{% endif %}
