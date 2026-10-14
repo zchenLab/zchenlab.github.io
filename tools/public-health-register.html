@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Public Health Register</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Spectral:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme: light;
+  --paper:#E6EAE8;
+  --card:#FCFDFC;
+  --sunk:#DDE3E0;
+  --ink:#16211D;
+  --muted:#5B6A65;
+  --rule:#C3CDC8;
+  --rule-soft:#D7DEDB;
+
+  --t-rule:#5B2E63;
+  --t-prorule:#A85C13;
+  --t-notice:#2A6679;
+  --t-pres:#7A2A2A;
+  --urgent:#B41E45;
+
+  --focus:#2A6679;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme: dark;
+    --paper:#0F1614;
+    --card:#17211E;
+    --sunk:#1D2825;
+    --ink:#DEE7E3;
+    --muted:#93A39D;
+    --rule:#2C3A36;
+    --rule-soft:#232F2C;
+    --t-rule:#C79BD0;
+    --t-prorule:#E0A05C;
+    --t-notice:#79BBD2;
+    --t-pres:#D98D8D;
+    --urgent:#F0718F;
+    --focus:#79BBD2;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme: dark;
+  --paper:#0F1614; --card:#17211E; --sunk:#1D2825; --ink:#DEE7E3;
+  --muted:#93A39D; --rule:#2C3A36; --rule-soft:#232F2C;
+  --t-rule:#C79BD0; --t-prorule:#E0A05C; --t-notice:#79BBD2; --t-pres:#D98D8D;
+  --urgent:#F0718F; --focus:#79BBD2;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px);-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:15px; line-height:1.5;
+  font-variant-numeric:tabular-nums;
+}
+h1,h2,h3{font-family:Spectral,Georgia,"Times New Roman",serif;font-weight:600;margin:0;line-height:1.2}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--focus);outline-offset:2px;border-radius:2px}
+@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px 80px}
+
+/* masthead */
+.mast{
+  display:flex;flex-wrap:wrap;gap:16px;align-items:flex-end;justify-content:space-between;
+  padding:28px 0 16px;border-bottom:2px solid var(--ink);
+}
+.mast .back{display:inline-block;margin-bottom:6px;font-size:13px;color:var(--muted);text-decoration:none}
+.mast .back:hover{color:var(--ink);text-decoration:underline}
+.mast h1{font-size:30px;letter-spacing:-.01em}
+.mast p{margin:4px 0 0;color:var(--muted);font-size:13.5px;max-width:52ch}
+.mast-controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+
+select,button,input[type=search]{
+  font:inherit;font-size:13.5px;color:var(--ink);background:var(--card);
+  border:1px solid var(--rule);border-radius:3px;padding:6px 9px;
+}
+button{cursor:pointer}
+button:hover:not(:disabled){border-color:var(--ink)}
+button:disabled{opacity:.5;cursor:default}
+.btn-go{background:var(--ink);color:var(--paper);border-color:var(--ink);font-weight:500}
+.btn-go:hover:not(:disabled){opacity:.85;border-color:var(--ink)}
+
+/* status line */
+.status{
+  display:flex;flex-wrap:wrap;gap:4px 20px;align-items:baseline;
+  padding:14px 0;border-bottom:1px solid var(--rule);font-size:13.5px;color:var(--muted);
+}
+.status b{color:var(--ink);font-weight:700}
+
+/* hero: deadline rail */
+.rail-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin:30px 0 12px}
+.rail-head h2{font-size:21px}
+.rail-head span{font-size:12.5px;color:var(--muted)}
+.rail{
+  display:grid;grid-auto-flow:column;grid-auto-columns:minmax(238px,268px);gap:10px;
+  overflow-x:auto;overscroll-behavior-x:contain;padding-bottom:10px;
+  scroll-snap-type:x proximity;
+}
+.rail::-webkit-scrollbar{height:8px}
+.rail::-webkit-scrollbar-thumb{background:var(--rule);border-radius:4px}
+.dl{
+  scroll-snap-align:start;display:flex;flex-direction:column;gap:7px;
+  background:var(--card);border:1px solid var(--rule-soft);border-left:4px solid var(--t-prorule);
+  border-radius:3px;padding:12px 13px;text-decoration:none;min-height:132px;
+}
+.dl:hover{border-color:var(--rule);border-left-color:var(--t-prorule)}
+.dl.soon{border-left-color:var(--urgent)}
+.dl .days{font-size:22px;font-weight:700;line-height:1;letter-spacing:-.02em}
+.dl.soon .days{color:var(--urgent)}
+.dl .days small{font-size:11.5px;font-weight:500;color:var(--muted);letter-spacing:0;margin-left:5px}
+.dl .ttl{font-family:Spectral,Georgia,serif;font-size:14.5px;line-height:1.3;
+  display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.dl .meta{margin-top:auto;font-size:11.5px;color:var(--muted);line-height:1.35}
+
+/* two-panel */
+.panels{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:22px;margin-top:34px}
+@media (max-width:860px){.panels{grid-template-columns:1fr}}
+.panel{background:var(--card);border:1px solid var(--rule-soft);border-radius:3px;padding:16px 18px}
+.panel h3{font-size:16.5px;margin-bottom:3px}
+.panel .sub{font-size:12.5px;color:var(--muted);margin:0 0 14px}
+
+.legend{display:flex;flex-wrap:wrap;gap:12px;font-size:12px;color:var(--muted);margin-bottom:10px}
+.legend i{display:inline-block;width:9px;height:9px;border-radius:1px;margin-right:5px;vertical-align:baseline}
+
+svg.chart{display:block;width:100%;height:auto}
+svg.chart text{font-family:"Public Sans",sans-serif;font-size:10px;fill:var(--muted)}
+
+/* theme matrix */
+table.matrix{width:100%;border-collapse:collapse;font-size:12.5px}
+table.matrix th{font-weight:500;color:var(--muted);text-align:right;padding:5px 6px;font-size:11.5px}
+table.matrix th.lbl{text-align:left;font-weight:400;color:var(--ink);font-size:12.5px;width:46%}
+table.matrix td{text-align:right;padding:0}
+table.matrix tr+tr th.lbl,table.matrix tr+tr td{border-top:1px solid var(--rule-soft)}
+.cell{
+  width:100%;border:0;background:transparent;text-align:right;padding:6px 6px;
+  font-variant-numeric:tabular-nums;color:var(--ink);border-radius:2px;
+}
+.cell[data-n="0"]{color:var(--rule)}
+.cell:hover:not([data-n="0"]){background:var(--sunk)}
+.cell.on{background:var(--ink);color:var(--paper)}
+
+/* filters */
+.filters{
+  display:flex;flex-wrap:wrap;gap:8px;align-items:center;
+  margin:34px 0 0;padding:14px 0;border-top:2px solid var(--ink);border-bottom:1px solid var(--rule);
+}
+.filters input[type=search]{flex:1 1 220px;min-width:160px}
+.chk{display:inline-flex;align-items:center;gap:6px;font-size:13px;color:var(--muted);cursor:pointer}
+.spacer{flex:1 1 auto}
+
+/* ledger */
+.ledger{margin:0;padding:0;list-style:none}
+.doc{border-bottom:1px solid var(--rule-soft);padding:15px 0}
+.doc-top{display:flex;gap:12px;align-items:baseline}
+.tag{
+  flex:0 0 auto;font-size:10.5px;font-weight:700;letter-spacing:.02em;
+  padding:2px 6px;border-radius:2px;border:1px solid currentColor;white-space:nowrap;
+}
+.tag.RULE{color:var(--t-rule)} .tag.PRORULE{color:var(--t-prorule)}
+.tag.NOTICE{color:var(--t-notice)} .tag.PRESDOCU{color:var(--t-pres)}
+.doc h4{margin:0;font-family:Spectral,Georgia,serif;font-size:17px;font-weight:600;line-height:1.3}
+.doc h4 a{text-decoration:none;background-image:linear-gradient(var(--rule),var(--rule));
+  background-size:100% 1px;background-repeat:no-repeat;background-position:0 100%}
+.doc h4 a:hover{background-image:linear-gradient(var(--ink),var(--ink))}
+.doc-meta{display:flex;flex-wrap:wrap;gap:3px 14px;margin-top:6px;font-size:12.5px;color:var(--muted)}
+.doc-meta .due{color:var(--urgent);font-weight:500}
+.abs{margin:9px 0 0;font-family:Spectral,Georgia,serif;font-size:14.5px;line-height:1.62;max-width:76ch;color:var(--ink)}
+.abs.clip{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.more{background:none;border:0;padding:4px 0 0;font-size:12.5px;color:var(--muted);text-decoration:underline}
+.themes{display:flex;flex-wrap:wrap;gap:6px;margin-top:9px}
+.themes span{font-size:11px;color:var(--muted);border:1px solid var(--rule-soft);border-radius:2px;padding:1px 6px}
+
+.note{font-size:13px;color:var(--muted);padding:26px 0;max-width:62ch}
+.note code{background:var(--sunk);padding:1px 5px;border-radius:2px;font-size:12px}
+.err{border-left:3px solid var(--urgent);padding-left:14px}
+footer{margin-top:50px;padding-top:18px;border-top:1px solid var(--rule);font-size:12.5px;color:var(--muted);max-width:70ch}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="mast">
+  <div>
+    <a class="back" href="/tools/">&larr; Tools · zhuochen.org</a>
+    <h1>Public Health Register</h1>
+    <p>Rules, proposed rules and notices from the federal public health agencies, pulled live from the Federal Register.</p>
+  </div>
+  <div class="mast-controls">
+    <label class="chk" for="win">Window</label>
+    <select id="win">
+      <option value="14">Last 14 days</option>
+      <option value="30" selected>Last 30 days</option>
+      <option value="60">Last 60 days</option>
+      <option value="90">Last 90 days</option>
+      <option value="180">Last 180 days</option>
+    </select>
+    <button id="reload" class="btn-go">Refresh</button>
+    <button id="theme" title="Switch light and dark">Dark</button>
+  </div>
+</header>
+
+<div class="status" id="status">Loading from federalregister.gov…</div>
+
+<div id="main" hidden>
+
+  <div class="rail-head">
+    <h2>Comment periods closing</h2>
+    <span id="railNote"></span>
+  </div>
+  <div class="rail" id="rail"></div>
+
+  <div class="panels">
+    <section class="panel">
+      <h3>Publication volume</h3>
+      <p class="sub">Documents per week, by type.</p>
+      <div class="legend">
+        <span><i style="background:var(--t-rule)"></i>Final rule</span>
+        <span><i style="background:var(--t-prorule)"></i>Proposed rule</span>
+        <span><i style="background:var(--t-notice)"></i>Notice</span>
+        <span><i style="background:var(--t-pres)"></i>Presidential</span>
+      </div>
+      <div id="chart"></div>
+    </section>
+
+    <section class="panel">
+      <h3>Subject matter</h3>
+      <p class="sub">Documents tagged by keyword. Click a number to filter the list below.</p>
+      <div id="matrix"></div>
+    </section>
+  </div>
+
+  <div class="filters">
+    <input type="search" id="q" placeholder="Search titles and abstracts" aria-label="Search titles and abstracts">
+    <select id="fType" aria-label="Document type">
+      <option value="">All types</option>
+      <option value="RULE">Final rules</option>
+      <option value="PRORULE">Proposed rules</option>
+      <option value="NOTICE">Notices</option>
+      <option value="PRESDOCU">Presidential documents</option>
+    </select>
+    <select id="fAgency" aria-label="Agency"><option value="">All agencies</option></select>
+    <label class="chk"><input type="checkbox" id="fOpen"> Open for comment</label>
+    <label class="chk"><input type="checkbox" id="fRoutine" checked> Hide routine notices</label>
+    <span class="spacer"></span>
+    <button id="csv">Download CSV</button>
+    <button id="brief">Copy brief</button>
+  </div>
+
+  <p class="note" id="count"></p>
+  <ul class="ledger" id="ledger"></ul>
+
+  <footer>
+    Source: Office of the Federal Register public API (federalregister.gov/api/v1), no key required.
+    Documents post to the API at 8:45 a.m. Eastern on each federal business day.
+    Subject tags are assigned by keyword matching in this page, not by the Federal Register — treat them as a
+    first pass, not a classification of record. Always open the source document before relying on it.
+  </footer>
+</div>
+
+<div class="note err" id="error" hidden></div>
+
+</div>
+
+<script>
+/* ---------------------------------------------------------------
+   Scope. Edit these two lists to change what the dashboard covers.
+   Agency slugs: https://www.federalregister.gov/api/v1/agencies.json
+   Filtering on a parent (e.g. HHS) also returns its sub-agencies.
+----------------------------------------------------------------*/
+const AGENCIES = [
+  "health-and-human-services-department",        // FDA, CDC, CMS, NIH, HRSA, SAMHSA, ACF, ACL, ATSDR, AHRQ, IHS
+  "occupational-safety-and-health-administration",
+  "food-safety-and-inspection-service",
+  "consumer-product-safety-commission"
+];
+
+// Catches public-health material at agencies outside the list above (EPA, DOL, USDA, VA…).
+const TERMS = [
+  '"public health"', '"drinking water"', '"air quality"', '"lead exposure"',
+  '"occupational exposure"', '"health care"'
+];
+
+const THEMES = [
+  ["infect","Infectious disease & immunization",/vaccin|immuniz|outbreak|influenza|measles|pandemic|epidemic|infectious|covid|antimicrobial|antibiotic resist|tuberculosis|\bhiv\b|hepatitis|quarantine|select agent|biosafety/i],
+  ["product","Drugs, biologics & devices",/\bdrug|biologic|medical device|premarket|510\(k\)|generic|prescription|clinical (trial|investigation)|new animal drug|orphan|over-the-counter|compounding|tobacco product|\be-?cigarette/i],
+  ["coverage","Coverage & payment",/medicare|medicaid|\bchip\b|prospective payment|marketplace|premium|reimburs|coverage determination|hipaa|enrollment|fee schedule|managed care/i],
+  ["food","Food & nutrition",/\bfood\b|nutrition|dietary|infant formula|produce safety|\bmeat\b|poultry|seafood|\bwic\b|\bsnap\b|school meal|food additive/i],
+  ["env","Environmental health",/drinking water|air quality|\blead\b|pesticid|toxic|contaminant|emission|radon|pfas|hazardous substance|superfund|asbestos/i],
+  ["occ","Occupational health",/occupational|workplace|\bworker|respirator|silica|\bosha\b|niosh|ergonom|beryllium|hearing conservation|black lung/i],
+  ["behav","Behavioral health & substance use",/mental health|substance use|opioid|buprenorphine|methadone|suicide|behavioral health|naloxone|addiction|overdose|controlled substance/i],
+  ["lifespan","Maternal, child & aging",/maternal|infant|\bchild|pediatric|head start|older adult|\baging\b|long-term care|nursing home|home.{0,3}and.{0,3}community.based|hospice/i],
+  ["data","Data, privacy & research",/information collection|privacy act|institutional review|human subject|surveillance system|interoperab|health information technology|electronic health record|registry|data standard/i],
+  ["grants","Grants & funding",/funding opportunity|cooperative agreement|\bgrant\b|notice of award|allocation of funds|supplemental award/i],
+  ["equity","Access & equity",/health equity|disparit|underserved|rural health|tribal|language access|disabilit|civil rights/i],
+];
+
+const TYPE_ORDER = ["RULE","PRORULE","NOTICE","PRESDOCU"];
+const TYPE_LABEL = {RULE:"Final rule",PRORULE:"Proposed rule",NOTICE:"Notice",PRESDOCU:"Presidential"};
+const TYPE_CODE  = {"Rule":"RULE","Proposed Rule":"PRORULE","Notice":"NOTICE","Presidential Document":"PRESDOCU"};
+const TYPE_COLOR = {RULE:"var(--t-rule)",PRORULE:"var(--t-prorule)",NOTICE:"var(--t-notice)",PRESDOCU:"var(--t-pres)"};
+
+const ROUTINE = /^(agency information collection|submission for omb review|proposed collection|privacy act of 1974|notice of (a )?meeting|government[- ]owned invention|statement of organization|meeting of the)|advisory (committee|council|board).{0,40}(meeting|notice)|; notice of (closed )?meeting|request for nominations/i;
+
+const FIELDS = ["document_number","title","type","abstract","publication_date","comments_close_on",
+  "effective_on","agency_names","html_url","pdf_url","action","citation","docket_ids","significant"];
+
+const API = "https://www.federalregister.gov/api/v1/documents.json";
+const $ = id => document.getElementById(id);
+const today = new Date(); today.setHours(0,0,0,0);
+
+let DOCS = [];
+let sel = {theme:null, type:null};
+
+/* ------------------------------ fetching ------------------------------ */
+
+function buildURL(extra, since){
+  const p = new URLSearchParams();
+  p.set("per_page","1000");
+  p.set("order","newest");
+  p.append("conditions[publication_date][gte]", since);
+  FIELDS.forEach(f => p.append("fields[]", f));
+  for (const [k,v] of extra) p.append(k,v);
+  return API + "?" + p.toString();
+}
+
+async function pull(url){
+  const out = [];
+  let next = url, pages = 0;
+  while (next && pages < 3){
+    const r = await fetch(next);
+    if (r.status === 404) break;            // API convention: no matches
+    if (!r.ok) throw new Error("Federal Register API returned " + r.status);
+    const j = await r.json();
+    (j.results || []).forEach(d => out.push(d));
+    next = j.next_page_url ? j.next_page_url.replace("/documents?", "/documents.json?") : null;
+    pages++;
+  }
+  return out;
+}
+
+async function load(){
+  const days = +$("win").value;
+  const since = new Date(today.getTime() - days*864e5).toISOString().slice(0,10);
+  $("status").textContent = "Querying federalregister.gov…";
+  $("main").hidden = true; $("error").hidden = true;
+  $("reload").disabled = true;
+
+  const queries = [
+    buildURL(AGENCIES.map(a => ["conditions[agencies][]", a]), since),
+    ...TERMS.map(t => buildURL([["conditions[term]", t]], since))
+  ];
+
+  try {
+    const batches = await Promise.all(queries.map(pull));
+    const seen = new Map();
+    batches.flat().forEach(d => { if (d && !seen.has(d.document_number)) seen.set(d.document_number, d); });
+
+    DOCS = [...seen.values()].map(prep)
+      .sort((a,b) => b.publication_date.localeCompare(a.publication_date));
+
+    buildAgencyFilter();
+    $("main").hidden = false;
+    renderAll();
+  } catch (e) {
+    $("status").textContent = "Could not load.";
+    $("error").hidden = false;
+    $("error").innerHTML =
+      "<b>" + escapeHTML(e.message) + "</b><br><br>" +
+      "If this says “Failed to fetch”, the browser blocked the request because the page was opened " +
+      "straight off disk. Serve it over HTTP instead — from the folder holding this file, run " +
+      "<code>python3 -m http.server 8000</code> and open <code>http://localhost:8000</code>. " +
+      "A corporate proxy that blocks federalregister.gov will produce the same error.";
+  } finally {
+    $("reload").disabled = false;
+  }
+}
+
+function prep(d){
+  const hay = (d.title || "") + " " + (d.abstract || "") + " " + (d.action || "");
+  const agencies = d.agency_names || [];
+  return {
+    id: d.document_number,
+    title: d.title || "(untitled)",
+    abstract: d.abstract || "",
+    type: TYPE_CODE[d.type] || "NOTICE",
+    publication_date: d.publication_date || "",
+    comments_close_on: d.comments_close_on || null,
+    effective_on: d.effective_on || null,
+    agencies,
+    agency: agencies.length ? agencies[agencies.length-1] : "Unknown",
+    url: d.html_url, pdf: d.pdf_url,
+    citation: d.citation || "", significant: !!d.significant,
+    docket: (d.docket_ids || [])[0] || "",
+    routine: ROUTINE.test(d.title || ""),
+    themes: THEMES.filter(t => t[2].test(hay)).map(t => t[0])
+  };
+}
+
+const daysUntil = iso => Math.round((new Date(iso + "T00:00:00") - today) / 864e5);
+
+/* ------------------------------ filtering ------------------------------ */
+
+function visible(){
+  const q = $("q").value.trim().toLowerCase();
+  const ty = $("fType").value, ag = $("fAgency").value;
+  const openOnly = $("fOpen").checked, hideRoutine = $("fRoutine").checked;
+  return DOCS.filter(d => {
+    if (hideRoutine && d.routine) return false;
+    if (ty && d.type !== ty) return false;
+    if (sel.type && d.type !== sel.type) return false;
+    if (sel.theme && !d.themes.includes(sel.theme)) return false;
+    if (ag && !d.agencies.includes(ag)) return false;
+    if (openOnly && !(d.comments_close_on && daysUntil(d.comments_close_on) >= 0)) return false;
+    if (q && !(d.title.toLowerCase().includes(q) || d.abstract.toLowerCase().includes(q))) return false;
+    return true;
+  });
+}
+
+/* ------------------------------ rendering ------------------------------ */
+
+function renderAll(){ renderStatus(); renderRail(); renderChart(); renderMatrix(); renderLedger(); }
+
+function renderStatus(){
+  const kept = DOCS.filter(d => !d.routine).length;
+  const open = DOCS.filter(d => d.comments_close_on && daysUntil(d.comments_close_on) >= 0);
+  const soon = open.filter(d => daysUntil(d.comments_close_on) <= 14).length;
+  const rules = DOCS.filter(d => d.type === "RULE" && !d.routine).length;
+  const pro = DOCS.filter(d => d.type === "PRORULE").length;
+  $("status").innerHTML =
+    `<span><b>${DOCS.length}</b> documents retrieved</span>` +
+    `<span><b>${kept}</b> substantive</span>` +
+    `<span><b>${rules}</b> final rules · <b>${pro}</b> proposed</span>` +
+    `<span><b>${open.length}</b> comment periods open, <b>${soon}</b> closing within 14 days</span>` +
+    `<span>as of ${today.toLocaleDateString(undefined,{month:"long",day:"numeric",year:"numeric"})}</span>`;
+}
+
+function renderRail(){
+  const open = DOCS
+    .filter(d => d.comments_close_on && daysUntil(d.comments_close_on) >= 0)
+    .sort((a,b) => a.comments_close_on.localeCompare(b.comments_close_on))
+    .slice(0,24);
+
+  $("railNote").textContent = open.length
+    ? "Soonest first. Scroll for more."
+    : "";
+
+  if (!open.length){
+    $("rail").innerHTML = `<p class="note" style="grid-column:1/-1">No comment deadlines fall inside this window.
+      Widen the window, or clear the filters, to see more.</p>`;
+    return;
+  }
+  $("rail").innerHTML = open.map(d => {
+    const n = daysUntil(d.comments_close_on);
+    return `<a class="dl ${n <= 7 ? "soon" : ""}" href="${d.url}" target="_blank" rel="noopener">
+      <span class="days">${n}<small>${n === 1 ? "day left" : "days left"}</small></span>
+      <span class="ttl">${escapeHTML(d.title)}</span>
+      <span class="meta">${escapeHTML(d.agency)}<br>${TYPE_LABEL[d.type]} · closes ${fmt(d.comments_close_on)}</span>
+    </a>`;
+  }).join("");
+}
+
+function renderChart(){
+  const days = +$("win").value;
+  const weeks = Math.min(Math.ceil(days/7), 26);
+  const buckets = Array.from({length:weeks}, (_,i) => {
+    const end = new Date(today.getTime() - i*7*864e5);
+    return {end, start:new Date(end.getTime() - 6*864e5), counts:{RULE:0,PRORULE:0,NOTICE:0,PRESDOCU:0}};
+  }).reverse();
+
+  DOCS.filter(d => !d.routine).forEach(d => {
+    const t = new Date(d.publication_date + "T00:00:00");
+    const b = buckets.find(b => t >= b.start && t <= b.end);
+    if (b) b.counts[d.type]++;
+  });
+
+  const max = Math.max(1, ...buckets.map(b => TYPE_ORDER.reduce((s,t) => s + b.counts[t], 0)));
+  const W = 560, H = 190, padB = 24, padL = 26, gap = 4;
+  const bw = (W - padL) / buckets.length - gap;
+
+  let bars = "", labels = "";
+  buckets.forEach((b,i) => {
+    const x = padL + i * ((W - padL) / buckets.length);
+    let y = H - padB;
+    TYPE_ORDER.forEach(t => {
+      const h = (b.counts[t] / max) * (H - padB - 10);
+      if (h > 0){ y -= h; bars += `<rect x="${x.toFixed(1)}" y="${y.toFixed(1)}" width="${bw.toFixed(1)}" height="${h.toFixed(1)}" fill="${TYPE_COLOR[t]}"><title>${TYPE_LABEL[t]}: ${b.counts[t]} (week ending ${fmt(b.end.toISOString().slice(0,10))})</title></rect>`; }
+    });
+    if (i % Math.ceil(buckets.length/6) === 0 || i === buckets.length-1)
+      labels += `<text x="${(x+bw/2).toFixed(1)}" y="${H-8}" text-anchor="middle">${b.end.toLocaleDateString(undefined,{month:"numeric",day:"numeric"})}</text>`;
+  });
+
+  const grid = [0, Math.round(max/2), max].map(v => {
+    const y = H - padB - (v/max)*(H - padB - 10);
+    return `<line x1="${padL}" x2="${W}" y1="${y.toFixed(1)}" y2="${y.toFixed(1)}" stroke="var(--rule-soft)"/>
+            <text x="${padL-6}" y="${(y+3).toFixed(1)}" text-anchor="end">${v}</text>`;
+  }).join("");
+
+  $("chart").innerHTML = `<svg class="chart" viewBox="0 0 ${W} ${H}" role="img"
+    aria-label="Weekly document counts by type">${grid}${bars}${labels}</svg>`;
+}
+
+function renderMatrix(){
+  const base = DOCS.filter(d => !$("fRoutine").checked || !d.routine);
+  const cols = ["RULE","PRORULE","NOTICE"];
+  const rows = THEMES.map(([id,label]) => {
+    const ds = base.filter(d => d.themes.includes(id));
+    return {id,label,total:ds.length,counts:cols.map(c => ds.filter(d => d.type===c).length)};
+  }).filter(r => r.total > 0).sort((a,b) => b.total - a.total);
+
+  if (!rows.length){ $("matrix").innerHTML = `<p class="note">Nothing tagged in this window.</p>`; return; }
+  const peak = Math.max(...rows.map(r => Math.max(...r.counts)));
+
+  $("matrix").innerHTML = `<table class="matrix">
+    <tr><th class="lbl"></th>${cols.map(c => `<th>${TYPE_LABEL[c].replace(" rule","")}</th>`).join("")}<th>All</th></tr>
+    ${rows.map(r => `<tr>
+      <th class="lbl">${r.label}</th>
+      ${r.counts.map((n,i) => `<td><button class="cell${sel.theme===r.id && sel.type===cols[i] ? " on":""}"
+         data-n="${n}" data-theme="${r.id}" data-type="${cols[i]}"
+         style="${n?`background:color-mix(in srgb, var(--t-${cols[i].toLowerCase()}) ${Math.round(8+32*n/peak)}%, transparent)`:""}"
+         ${n?"":"disabled"}>${n||"·"}</button></td>`).join("")}
+      <td><button class="cell${sel.theme===r.id && !sel.type ? " on":""}" data-n="${r.total}"
+         data-theme="${r.id}" data-type=""><b>${r.total}</b></button></td>
+    </tr>`).join("")}
+  </table>`;
+
+  $("matrix").querySelectorAll(".cell").forEach(b => b.addEventListener("click", () => {
+    const t = b.dataset.theme, ty = b.dataset.type || null;
+    if (sel.theme === t && sel.type === ty) { sel = {theme:null,type:null}; }
+    else { sel = {theme:t, type:ty}; }
+    renderMatrix(); renderLedger();
+    if (sel.theme) $("ledger").scrollIntoView({behavior:"smooth",block:"start"});
+  }));
+}
+
+function renderLedger(){
+  const docs = visible();
+  const hidden = DOCS.filter(d => d.routine).length;
+  const label = sel.theme ? THEMES.find(t => t[0]===sel.theme)[1] : null;
+
+  $("count").innerHTML =
+    `Showing <b>${docs.length}</b> of ${DOCS.length} documents` +
+    (label ? ` · tagged <b>${escapeHTML(label)}</b>${sel.type ? ", " + TYPE_LABEL[sel.type].toLowerCase() + "s" : ""}
+       <button class="more" id="clearSel">clear</button>` : "") +
+    ($("fRoutine").checked && hidden ? ` · ${hidden} routine notices hidden` : "");
+  if ($("clearSel")) $("clearSel").onclick = () => { sel = {theme:null,type:null}; renderMatrix(); renderLedger(); };
+
+  if (!docs.length){ $("ledger").innerHTML = `<li class="doc"><p class="note">Nothing matches. Loosen a filter or widen the window.</p></li>`; return; }
+
+  $("ledger").innerHTML = docs.slice(0,300).map(d => {
+    const due = d.comments_close_on ? daysUntil(d.comments_close_on) : null;
+    const meta = [
+      fmt(d.publication_date),
+      escapeHTML(d.agency),
+      d.citation,
+      d.effective_on ? "effective " + fmt(d.effective_on) : "",
+      d.significant ? "significant" : ""
+    ].filter(Boolean).map(s => `<span>${s}</span>`).join("");
+    const dueHTML = due !== null
+      ? `<span class="${due >= 0 && due <= 14 ? "due" : ""}">${due >= 0 ? `comments close ${fmt(d.comments_close_on)} (${due}d)` : `comments closed ${fmt(d.comments_close_on)}`}</span>`
+      : "";
+    const tags = d.themes.map(t => `<span>${THEMES.find(x => x[0]===t)[1]}</span>`).join("");
+    const long = d.abstract.length > 300;
+    return `<li class="doc">
+      <div class="doc-top">
+        <span class="tag ${d.type}">${TYPE_LABEL[d.type]}</span>
+        <h4><a href="${d.url}" target="_blank" rel="noopener">${escapeHTML(d.title)}</a></h4>
+      </div>
+      <div class="doc-meta">${meta}${dueHTML}</div>
+      ${d.abstract ? `<p class="abs${long ? " clip" : ""}">${escapeHTML(d.abstract)}</p>
+        ${long ? `<button class="more">Read the full abstract</button>` : ""}` : ""}
+      ${tags ? `<div class="themes">${tags}</div>` : ""}
+    </li>`;
+  }).join("") + (docs.length > 300 ? `<li class="doc"><p class="note">Showing the 300 most recent. Narrow the filters to see the rest.</p></li>` : "");
+
+  $("ledger").querySelectorAll(".more").forEach(b => b.addEventListener("click", () => {
+    const p = b.previousElementSibling;
+    p.classList.toggle("clip");
+    b.textContent = p.classList.contains("clip") ? "Read the full abstract" : "Collapse";
+  }));
+}
+
+/* ------------------------------ exports ------------------------------ */
+
+function toCSV(){
+  const rows = visible();
+  const head = ["document_number","type","publication_date","title","agencies","comments_close_on","effective_on","citation","docket","themes","url"];
+  const esc = v => `"${String(v ?? "").replace(/"/g,'""')}"`;
+  const body = rows.map(d => [d.id, TYPE_LABEL[d.type], d.publication_date, d.title, d.agencies.join("; "),
+    d.comments_close_on || "", d.effective_on || "", d.citation, d.docket,
+    d.themes.map(t => THEMES.find(x => x[0]===t)[1]).join("; "), d.url].map(esc).join(","));
+  const blob = new Blob([head.join(",") + "\n" + body.join("\n")], {type:"text/csv;charset=utf-8"});
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = `public-health-register-${today.toISOString().slice(0,10)}.csv`;
+  a.click(); URL.revokeObjectURL(a.href);
+}
+
+function toBrief(){
+  const docs = visible();
+  const open = docs.filter(d => d.comments_close_on && daysUntil(d.comments_close_on) >= 0)
+                   .sort((a,b) => a.comments_close_on.localeCompare(b.comments_close_on));
+  const L = [];
+  L.push(`Public health in the Federal Register — last ${$("win").value} days, as of ${today.toISOString().slice(0,10)}`);
+  L.push("");
+  TYPE_ORDER.forEach(t => {
+    const ds = docs.filter(d => d.type === t);
+    if (!ds.length) return;
+    L.push(`${TYPE_LABEL[t].toUpperCase()}S (${ds.length})`);
+    ds.slice(0,15).forEach(d => L.push(`  • ${d.publication_date} — ${d.title} [${d.agency}] ${d.url}`));
+    if (ds.length > 15) L.push(`  … and ${ds.length - 15} more`);
+    L.push("");
+  });
+  if (open.length){
+    L.push(`COMMENT DEADLINES (${open.length} open)`);
+    open.slice(0,20).forEach(d => L.push(`  • ${d.comments_close_on} (${daysUntil(d.comments_close_on)}d) — ${d.title}`));
+  }
+  const text = L.join("\n");
+  navigator.clipboard?.writeText(text).then(
+    () => { $("brief").textContent = "Copied"; setTimeout(() => $("brief").textContent = "Copy brief", 1800); },
+    () => window.prompt("Copy the brief:", text)
+  );
+}
+
+/* ------------------------------ plumbing ------------------------------ */
+
+function buildAgencyFilter(){
+  const freq = new Map();
+  DOCS.forEach(d => d.agencies.forEach(a => freq.set(a, (freq.get(a)||0)+1)));
+  const sorted = [...freq.entries()].filter(([,n]) => n >= 2).sort((a,b) => b[1]-a[1] || a[0].localeCompare(b[0]));
+  $("fAgency").innerHTML = `<option value="">All agencies</option>` +
+    sorted.map(([a,n]) => `<option value="${escapeHTML(a)}">${escapeHTML(a)} (${n})</option>`).join("");
+}
+
+const fmt = iso => new Date(iso + "T00:00:00").toLocaleDateString(undefined,{month:"short",day:"numeric",year:"numeric"});
+function escapeHTML(s){ return String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c])); }
+function debounce(fn, ms){ let t; return (...a) => { clearTimeout(t); t = setTimeout(() => fn(...a), ms); }; }
+
+["fType","fAgency","fOpen"].forEach(id => $(id).addEventListener("change", renderLedger));
+$("fRoutine").addEventListener("change", () => { renderStatus(); renderChart(); renderMatrix(); renderLedger(); });
+$("q").addEventListener("input", debounce(renderLedger, 180));
+$("win").addEventListener("change", load);
+$("reload").addEventListener("click", load);
+$("csv").addEventListener("click", toCSV);
+$("brief").addEventListener("click", toBrief);
+$("theme").addEventListener("click", () => {
+  const dark = document.documentElement.getAttribute("data-theme") === "dark"
+    || (!document.documentElement.hasAttribute("data-theme") && matchMedia("(prefers-color-scheme: dark)").matches);
+  document.documentElement.setAttribute("data-theme", dark ? "light" : "dark");
+  $("theme").textContent = dark ? "Dark" : "Light";
+  renderChart();
+});
+
+load();
+</script>
+</body>
+</html>

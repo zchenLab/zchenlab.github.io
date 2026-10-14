@@ -1,0 +1,21 @@
+---
+layout: default
+title : Tools
+navbar_title: Tools
+description: "Dashboards and tools by Zhuo (Adam) Chen for tracking health policy, including a live Public Health Register of federal rules, proposed rules and notices."
+---
+<div class="my-3 bg-white shadow-sm rounded-xl">
+    <h6 class="p-3 mb-0 border-bottom border-gray"><i class="fas fa-chart-bar"></i> Dashboards</h6>
+    <ul class="list-unstyled px-3 py-2 mb-0">
+        {% for item in site.data.tools.dashboards %}
+        <li class="d-flex py-2 {% unless forloop.first %}border-top border-gray{% endunless %}">
+            <div class="pr-3 text-muted"><i class="{{ item.icon }}"></i></div>
+            <div>
+                <a href="{{ item.url | relative_url }}"><strong>{{ item.name }}</strong></a>
+                <div>{{ item.description }}</div>
+                {% if item.source %}<div class="text-muted small"><i>{{ item.source }}</i></div>{% endif %}
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
