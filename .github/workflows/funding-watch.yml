@@ -1,0 +1,46 @@
+# Rebuilds tools/funding-watch.html (the Funding Watch dashboard on the Tools page)
+# from Grants.gov and the NIH Guide feed, and commits it so GitHub Pages serves it.
+name: Funding Watch
+
+on:
+  schedule:
+    - cron: "0 11 * * 1" # Mondays, 11:00 UTC
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - _scripts/grants_dashboard.py
+      - .github/workflows/funding-watch.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: funding-watch
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate dashboard
+        run: python3 _scripts/grants_dashboard.py --deep --no-open --out tools/funding-watch.html
+
+      - name: Commit if changed
+        run: |
+          git add tools/funding-watch.html
+          if git diff --cached --quiet; then
+            echo "No changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Refresh Funding Watch dashboard"
+          git push
