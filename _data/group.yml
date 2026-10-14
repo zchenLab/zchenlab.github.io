@@ -68,11 +68,11 @@ current:
   logo: *uga
   thesis: Dissertation/Thesis
 - name: Xuening Cheng
-  photo: *placeholder
+  photo: /assets/images/photos/xuening-cheng.jpg
   program: PhD Student (Economics)
   institution: University of Nottingham Ningbo China
   logo: *unnc
-  thesis: Dissertation/Thesis
+  thesis: Essays on Economic Aspects of Hospital Management and Services Research
 - name: Jiangshan Ji
   photo: *placeholder
   program: PhD Student (Economics)
