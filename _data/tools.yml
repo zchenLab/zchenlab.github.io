@@ -8,3 +8,8 @@ dashboards:
   icon: fas fa-landmark
   description: Rules, proposed rules and notices from the federal public health agencies (HHS and its operating divisions, OSHA, FSIS, CPSC), with open comment periods, weekly volume, subject tags, filters, CSV download and a copyable brief.
   source: Live from the Federal Register public API (federalregister.gov)
+- name: Funding Watch
+  url: /tools/funding-watch.html
+  icon: fas fa-hand-holding-dollar
+  description: Federal funding announcements in health economics, health services research, health disparities and implementation science, with deadlines closing soonest, topic and funder breakdowns, filters and CSV download.
+  source: Rebuilt weekly from the Grants.gov search API and the NIH Guide funding feed
