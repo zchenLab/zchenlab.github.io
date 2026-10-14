@@ -15,3 +15,5 @@ pages:
   url: /service
 - name: Showcase
   url: /showcase
+- name: Tools
+  url: /tools/

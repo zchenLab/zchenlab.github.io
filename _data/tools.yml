@@ -1,0 +1,10 @@
+# Content for the Tools page (tools/index.html).
+# Each dashboard is a standalone HTML file under tools/ with no front matter, so Jekyll copies it as is.
+# Fields: name, url, description, source (where the data comes from), icon (Font Awesome).
+
+dashboards:
+- name: Public Health Register
+  url: /tools/public-health-register.html
+  icon: fas fa-landmark
+  description: Rules, proposed rules and notices from the federal public health agencies (HHS and its operating divisions, OSHA, FSIS, CPSC), with open comment periods, weekly volume, subject tags, filters, CSV download and a copyable brief.
+  source: Live from the Federal Register public API (federalregister.gov)
