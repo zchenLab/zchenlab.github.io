@@ -177,11 +177,12 @@ alumni:
   thesis: Dissertation/Thesis
   role: Current role, Affiliation
 - name: Yuhan Guo
-  photo: *placeholder
-  degree: Undergraduate, University of Nottingham Ningbo China
+  url: https://www.linkedin.com/in/yuhan-guo777
+  photo: /assets/images/photos/yuhan-guo.jpg
+  degree: Undergraduate (BS, ITE; First Class Honours), University of Nottingham Ningbo China
   year: July 2025
-  thesis: Dissertation/Thesis
-  role: Current role, Affiliation
+  thesis: "Characterizing Telemedicine Adoption among Providers in the US: Analysis of the 2021 National Electronic Records Survey"
+  role: MSc (International Health Policy), London School of Economics and Political Science
 - name: Lian Duan
   photo: *placeholder
   degree: Undergraduate, University of Nottingham Ningbo China
