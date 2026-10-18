@@ -140,11 +140,12 @@ alumni:
   thesis: Dissertation/Thesis
   role: Current role, Affiliation
 - name: Shiqi Cheng
-  photo: *placeholder
+  url: https://www.linkedin.com/in/shiqi-cheng-a29376271/
+  photo: /assets/images/photos/shiqi-cheng.jpg
   degree: Undergraduate, University of Nottingham Ningbo China
   year: July 2026
-  thesis: Dissertation/Thesis
-  role: Current role, Affiliation
+  thesis: "Did URRBMI Integration Narrow the Urban-Rural Gap in Healthcare Financial Burden? Evidence from CHARLS 2013-2018"
+  role: MSc (Data Science for Sustainability), National University of Singapore
 - name: Susan Fuller
   photo: *placeholder
   degree: DrPH, University of Georgia
