@@ -185,11 +185,12 @@ alumni:
   thesis: "Characterizing Telemedicine Adoption among Providers in the US: Analysis of the 2021 National Electronic Records Survey"
   role: MSc (International Health Policy), London School of Economics and Political Science
 - name: Lian Duan
-  photo: *placeholder
+  url: https://www.linkedin.com/in/lianduan1/
+  photo: /assets/images/photos/lian-duan.jpg
   degree: Undergraduate, University of Nottingham Ningbo China
   year: July 2025
-  thesis: Dissertation/Thesis
-  role: Current role, Affiliation
+  thesis: "The Impact of Parental Education Level on HPV Vaccination Decisions Among Children: Evidence from the United States"
+  role: MA (Economics) student, University of Chicago
 - name: Kristen Landrum McNiff
   photo: *placeholder
   degree: DrPH, University of Georgia
