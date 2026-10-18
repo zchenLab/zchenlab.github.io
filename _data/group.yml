@@ -223,6 +223,12 @@ alumni:
   year: July 2024
   thesis: Dissertation/Thesis
   role: Current role, Affiliation
+- name: Yangjing Xu
+  photo: *placeholder
+  degree: MPH, University of Georgia
+  year: Summer 2023
+  thesis: Longitudinal socioeconomic inequality of mental health among the Chinese elderly
+  role: PhD student, George Washington University
 - name: Siyi Liu
   url: https://www.linkedin.com/in/andrea-siyi-liu-21a56b244/
   photo: /assets/images/photos/siyi-liu.jpg
