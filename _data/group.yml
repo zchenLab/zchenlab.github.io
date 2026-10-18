@@ -200,10 +200,10 @@ alumni:
   thesis: Dissertation/Thesis
   role: Assistant Professor, Lahore University of Management Sciences
 - name: Wei Jiang
-  photo: *placeholder
+  photo: /assets/images/photos/wei-jiang.jpg
   degree: PhD (Economics), University of Nottingham Ningbo China
   year: Fall 2024
-  thesis: Dissertation/Thesis
+  thesis: Essays on Public Hospital Reform, Hospital Management, and Health Services Delivery in East China
   role: Assistant Professor, Ningbo University of Finance and Economics
 - name: Feiyang Shen
   photo: *placeholder
