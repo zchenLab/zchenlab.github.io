@@ -287,11 +287,10 @@ alumni:
   thesis: Dissertation/Thesis
   role: Current role, Affiliation
 - name: Yuanhang Xi
-  photo: *placeholder
+  photo: /assets/images/photos/yuanhang-xi.jpg
   degree: MPH, University of Georgia
   year: Spring 2021
   thesis: Gender Pay Gap among US Non-Profit Hospital Executives in 2017
-  role: Lecturer, FMMU
 - name: Simiao Sun
   photo: *placeholder
   degree: Undergraduate, University of Nottingham Ningbo China
