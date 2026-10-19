@@ -219,7 +219,8 @@ alumni:
   thesis: "Health-seeking Behaviour and Its Determinants: Whether the Hierarchical Medical System is Effective in Restraining Bypassing Activities in China?"
   role: Associate Engineer - Data Analytics, Lenovo
 - name: Songheng Sun
-  photo: *placeholder
+  url: https://www.linkedin.com/in/songheng-sun/
+  photo: /assets/images/photos/songheng-sun.jpg
   degree: Undergraduate, University of Nottingham Ningbo China
   year: July 2024
   thesis: "What Does Antiretroviral Therapy Bring to the Development of Low- and Middle-Income Countries?"
