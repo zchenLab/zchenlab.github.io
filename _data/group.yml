@@ -212,11 +212,12 @@ alumni:
   thesis: Essays on Public Hospital Reform, Hospital Management, and Health Services Delivery in East China
   role: Assistant Professor, Ningbo University of Finance and Economics
 - name: Feiyang Shen
-  photo: *placeholder
+  url: https://www.linkedin.com/in/feiyang-shen-439429327
+  photo: /assets/images/photos/feiyang-shen.jpg
   degree: Undergraduate, University of Nottingham Ningbo China
   year: July 2024
-  thesis: Dissertation/Thesis
-  role: Current role, Affiliation
+  thesis: "Health-seeking Behaviour and Its Determinants: Whether the Hierarchical Medical System is Effective in Restraining Bypassing Activities in China?"
+  role: Associate Engineer - Data Analytics, Lenovo
 - name: Songheng Sun
   photo: *placeholder
   degree: Undergraduate, University of Nottingham Ningbo China
