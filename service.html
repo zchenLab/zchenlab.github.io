@@ -2,10 +2,19 @@
 layout: default
 title : Service
 navbar_title: Service
+body_attr: >-
+  data-spy="scroll" data-target="#service-nav" data-offset="100"
 description: "Professional service of Zhuo (Adam) Chen: editorial roles including Health Equity and PLOS One, society leadership, grant and manuscript review, and university and community service."
 ---
+{%- comment -%} Section list shared by the side navigation (desktop) and the "On this page" list (mobile). {%- endcomment -%}
+{%- capture service_nav -%}
+{% for section in site.data.service.sections %}<a class="nav-link" href="#{{ section.title | slugify }}">{{ section.title }}</a>
+{% endfor %}
+{%- endcapture -%}
+
+{%- capture service_body -%}
 {% for section in site.data.service.sections %}
-<div class="my-3 bg-white shadow-sm rounded-xl">
+<div id="{{ section.title | slugify }}" class="side-nav-section my-3 bg-white shadow-sm rounded-xl">
     <h6 class="p-3 mb-0 border-bottom border-gray"><i class="{{ section.icon }}"></i> {{ section.title }}</h6>
     <ul class="list-unstyled px-3 py-2 mb-0">
         {% for item in section.items %}
@@ -17,3 +26,6 @@ description: "Professional service of Zhuo (Adam) Chen: editorial roles includin
     </ul>
 </div>
 {% endfor %}
+{%- endcapture -%}
+
+{% include side-nav.html id="service-nav" links=service_nav body=service_body %}

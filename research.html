@@ -14,42 +14,15 @@ description: "Research by Zhuo (Adam) Chen at the University of Georgia: health 
 {% if site.data.research.collaborators %}<a class="nav-link" href="#collaborators">Collaborators</a>{% endif %}
 {% if site.data.research.funded_projects %}<a class="nav-link" href="#funded-projects">Funded Projects</a>{% endif %}
 {% if site.data.research.themes %}<a class="nav-link" href="#research-themes">Research Themes</a>
-<nav class="nav nav-pills flex-column research-subnav">
+<nav class="nav nav-pills flex-column side-nav-sub">
 {% for theme in site.data.research.themes %}<a class="nav-link" href="#{{ theme.name | slugify }}">{{ theme.name }}</a>
 {% endfor %}</nav>{% endif %}
 {%- endcapture -%}
 
-<style>
-    .research-section { scroll-margin-top: 80px; }
-    #research-nav .nav-link { padding: 0.35rem 0.75rem; font-size: 0.9rem; line-height: 1.3; }
-    .research-nav-mobile .nav-link { padding: 0.25rem 0.6rem; font-size: 0.9rem; }
-    #research-nav .research-subnav { margin-left: 0.75rem; border-left: 2px solid #e9ecef; }
-    #research-nav .research-subnav .nav-link { font-size: 0.85rem; }
-    .card .research-subnav { display: contents; }
-    .card .research-subnav .nav-link { font-size: 0.85rem; color: #6c757d; }
-    .research-theme { scroll-margin-top: 80px; }
-</style>
-
-<div class="row">
-    <div class="col-lg-3 d-none d-lg-block">
-        <nav id="research-nav" class="nav nav-pills flex-column sticky-top pt-3" style="top: 80px">
-            {{ research_nav }}
-        </nav>
-    </div>
-
-    <div class="col-12 col-lg-9">
-<!-- Section list on small screens -->
-<div class="research-nav-mobile d-lg-none card border-0 shadow-sm bg-white mt-3">
-    <div class="card-body py-2 px-2">
-        <div class="small text-muted px-2 pb-1">On this page</div>
-        <nav class="nav">{{ research_nav }}</nav>
-    </div>
-</div>
-
-
+{%- capture research_body -%}
 <!-- Research summary -->
 {% if site.data.research.summary %}
-<div id="research-overview" class="research-section card border-0 shadow-sm bg-white mt-3">
+<div id="research-overview" class="side-nav-section card border-0 shadow-sm bg-white mt-3">
     <div class="card-body p-4">
         <h6 class="mb-3"><i class="fas fa-microscope"></i> Research Overview</h6>
         {{ site.data.research.summary }}
@@ -59,7 +32,7 @@ description: "Research by Zhuo (Adam) Chen at the University of Georgia: health 
 
 <!-- Current projects -->
 {% if site.data.research.current_projects %}
-<h2 id="current-projects" class="research-section h4 pt-4"><i class="fas fa-tasks"></i> Current Projects</h2>
+<h2 id="current-projects" class="side-nav-section h4 pt-4"><i class="fas fa-tasks"></i> Current Projects</h2>
 <div class="my-0 bg-white shadow-sm rounded-xl">
     <ul class="list-unstyled px-3 py-2 mb-0">
         {% for p in site.data.research.current_projects %}
@@ -86,7 +59,7 @@ description: "Research by Zhuo (Adam) Chen at the University of Georgia: health 
 
 <!-- Collaborators: joint-publication counts and years are computed from _publications -->
 {% if site.data.research.collaborators %}
-<h2 id="collaborators" class="research-section h4 pt-4"><i class="fas fa-handshake"></i> Collaborators</h2>
+<h2 id="collaborators" class="side-nav-section h4 pt-4"><i class="fas fa-handshake"></i> Collaborators</h2>
 <p>Frequent co-authors (five or more joint publications) and other close collaborators.</p>
 <div class="my-0 p-2 bg-white shadow-sm rounded-xl">
     <div class="row no-gutters">
@@ -117,7 +90,7 @@ description: "Research by Zhuo (Adam) Chen at the University of Georgia: health 
 
 <!-- Funded projects -->
 {% if site.data.research.funded_projects %}
-<h2 id="funded-projects" class="research-section h4 pt-4"><i class="fas fa-hand-holding-usd"></i> Funded Projects</h2>
+<h2 id="funded-projects" class="side-nav-section h4 pt-4"><i class="fas fa-hand-holding-usd"></i> Funded Projects</h2>
 <div class="my-0 bg-white shadow-sm rounded-xl">
     <ul class="list-unstyled px-3 py-2 mb-0">
         {% for g in site.data.research.funded_projects %}
@@ -137,9 +110,9 @@ description: "Research by Zhuo (Adam) Chen at the University of Georgia: health 
 
 <!-- Research themes: one parent section with each theme as a subsection -->
 {% if site.data.research.themes %}
-<h2 id="research-themes" class="research-section h4 pt-4"><i class="fas fa-layer-group"></i> Research Themes</h2>
+<h2 id="research-themes" class="side-nav-section h4 pt-4"><i class="fas fa-layer-group"></i> Research Themes</h2>
 {% for theme in site.data.research.themes %}
-<h3 id="{{ theme.name | slugify }}" class="research-theme h5 pt-3"><i class="{{ theme.icon }}"></i> {{ theme.name }}</h3>
+<h3 id="{{ theme.name | slugify }}" class="side-nav-section h5 pt-3"><i class="{{ theme.icon }}"></i> {{ theme.name }}</h3>
 <p>{{ theme.description }}</p>
 <div class="my-0 p-0 bg-white shadow-sm rounded-xl">
     {% for title in theme.papers %}
@@ -153,5 +126,6 @@ description: "Research by Zhuo (Adam) Chen at the University of Georgia: health 
 {% endif %}
 
 <p class="pt-4">See <a href="{{ '/publications' | relative_url }}">Publications</a> for the full list.</p>
-    </div>
-</div>
+{%- endcapture -%}
+
+{% include side-nav.html id="research-nav" links=research_nav body=research_body %}

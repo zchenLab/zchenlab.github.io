@@ -1,0 +1,29 @@
+{%- comment -%}
+    Side navigation for long pages (Research, Teaching, Service): a sticky pill list on large screens
+    and an "On this page" card on small screens, wrapped around the page body.
+    Parameters:
+      id    - id of the desktop nav; the page's body_attr must point scrollspy at it
+              (data-spy="scroll" data-target="#<id>" data-offset="100")
+      links - captured <a class="nav-link" href="#section-id"> links, one per section; wrap sub-links
+              in <nav class="nav nav-pills flex-column side-nav-sub"> to indent them under a parent
+      body  - captured page content; linked sections should carry the "side-nav-section" class
+{%- endcomment -%}
+<div class="row">
+    <div class="col-lg-3 d-none d-lg-block">
+        <nav id="{{ include.id }}" class="side-nav nav nav-pills flex-column sticky-top pt-3" style="top: 80px">
+            {{ include.links }}
+        </nav>
+    </div>
+
+    <div class="col-12 col-lg-9">
+<!-- Section list on small screens -->
+<div class="side-nav-mobile d-lg-none card border-0 shadow-sm bg-white mt-3">
+    <div class="card-body py-2 px-2">
+        <div class="small text-muted px-2 pb-1">On this page</div>
+        <nav class="nav">{{ include.links }}</nav>
+    </div>
+</div>
+
+{{ include.body }}
+    </div>
+</div>

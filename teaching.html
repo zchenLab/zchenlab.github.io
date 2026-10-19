@@ -2,12 +2,27 @@
 layout: default
 title : Teaching
 navbar_title: Teaching
+body_attr: >-
+  data-spy="scroll" data-target="#teaching-nav" data-offset="100"
 description: "Teaching by Zhuo (Adam) Chen at the University of Georgia: undergraduate and graduate courses in health policy and management, course development, study abroad in Ningbo, China, the Social Determinants of Health graduate certificate, guest lectures, and mentoring."
 ---
 {% assign t = site.data.teaching %}
 
+{%- comment -%} Section list shared by the side navigation (desktop) and the "On this page" list (mobile). {%- endcomment -%}
+{%- capture teaching_nav -%}
+<a class="nav-link" href="#courses-taught">Courses Taught</a>
+<a class="nav-link" href="#study-abroad">Study Abroad</a>
+<a class="nav-link" href="#graduate-certificate">Graduate Certificate</a>
+<a class="nav-link" href="#course-development">Course Development</a>
+<a class="nav-link" href="#teaching-recognition">Recognition &amp; Grants</a>
+<a class="nav-link" href="#guest-lectures">Guest Lectures</a>
+<a class="nav-link" href="#mentoring">Mentoring &amp; Advising</a>
+{%- endcapture -%}
+
+{%- capture teaching_body -%}
+
 <!-- Courses taught -->
-<div class="my-3 bg-white shadow-sm rounded-xl">
+<div id="courses-taught" class="side-nav-section my-3 bg-white shadow-sm rounded-xl">
     <h6 class="p-3 mb-0 border-bottom border-gray"><i class="fas fa-chalkboard-teacher"></i> Courses Taught at the University of Georgia
         <span class="badge badge-pill badge-success ml-1 font-weight-normal">Developed</span> <small class="text-muted font-weight-normal">= course developed or significantly revised</small>
     </h6>
@@ -38,7 +53,7 @@ description: "Teaching by Zhuo (Adam) Chen at the University of Georgia: undergr
 </div>
 
 <!-- Study abroad -->
-<div class="my-3 bg-white shadow-sm rounded-xl">
+<div id="study-abroad" class="side-nav-section my-3 bg-white shadow-sm rounded-xl">
     <h6 class="p-3 mb-0 border-bottom border-gray"><i class="fas fa-globe-asia"></i> Study Abroad</h6>
     <ul class="list-unstyled px-3 py-2 mb-0">
         {% for s in t.study_abroad %}
@@ -59,7 +74,7 @@ description: "Teaching by Zhuo (Adam) Chen at the University of Georgia: undergr
 </div>
 
 <!-- Graduate certificates -->
-<div class="my-3 bg-white shadow-sm rounded-xl">
+<div id="graduate-certificate" class="side-nav-section my-3 bg-white shadow-sm rounded-xl">
     <h6 class="p-3 mb-0 border-bottom border-gray"><i class="fas fa-certificate"></i> Graduate Certificate</h6>
     <ul class="list-unstyled px-3 py-2 mb-0">
         {% for c in t.certificates %}
@@ -76,7 +91,7 @@ description: "Teaching by Zhuo (Adam) Chen at the University of Georgia: undergr
 <div class="row">
     <!-- Course development -->
     <div class="col-lg-6">
-        <div class="my-3 bg-white shadow-sm rounded-xl">
+        <div id="course-development" class="side-nav-section my-3 bg-white shadow-sm rounded-xl">
             <h6 class="p-3 mb-0 border-bottom border-gray"><i class="fas fa-pencil-ruler"></i> Course Development</h6>
             <ul class="list-unstyled px-3 py-2 mb-0">
                 {% for c in t.course_development %}
@@ -91,7 +106,7 @@ description: "Teaching by Zhuo (Adam) Chen at the University of Georgia: undergr
 
     <!-- Recognitions -->
     <div class="col-lg-6">
-        <div class="my-3 bg-white shadow-sm rounded-xl">
+        <div id="teaching-recognition" class="side-nav-section my-3 bg-white shadow-sm rounded-xl">
             <h6 class="p-3 mb-0 border-bottom border-gray"><i class="fas fa-award"></i> Teaching Recognition &amp; Grants</h6>
             <ul class="list-unstyled px-3 py-2 mb-0">
                 {% for r in t.recognitions %}
@@ -106,7 +121,7 @@ description: "Teaching by Zhuo (Adam) Chen at the University of Georgia: undergr
 </div>
 
 <!-- Guest lectures -->
-<div class="my-3 bg-white shadow-sm rounded-xl">
+<div id="guest-lectures" class="side-nav-section my-3 bg-white shadow-sm rounded-xl">
     <h6 class="p-3 mb-0 border-bottom border-gray"><i class="fas fa-microphone"></i> Guest Lectures</h6>
     <ul class="list-unstyled px-3 py-2 mb-0">
         {% for g in t.guest_lectures %}
@@ -119,7 +134,7 @@ description: "Teaching by Zhuo (Adam) Chen at the University of Georgia: undergr
 </div>
 
 <!-- Mentoring -->
-<div class="my-3 bg-white shadow-sm rounded-xl">
+<div id="mentoring" class="side-nav-section my-3 bg-white shadow-sm rounded-xl">
     <h6 class="p-3 mb-0 border-bottom border-gray"><i class="fas fa-user-graduate"></i> Mentoring &amp; Advising
         <a href="{{ '/group' | relative_url }}">(see the group <i class="fas fa-angle-double-right"></i>)</a>
     </h6>
@@ -129,3 +144,6 @@ description: "Teaching by Zhuo (Adam) Chen at the University of Georgia: undergr
         {% endfor %}
     </ul>
 </div>
+{%- endcapture -%}
+
+{% include side-nav.html id="teaching-nav" links=teaching_nav body=teaching_body %}
