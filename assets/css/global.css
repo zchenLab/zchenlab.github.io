@@ -139,3 +139,13 @@ div.lazy {
     color: #6c757d;
     font-weight: 700;
 }
+
+/* Side navigation (_includes/side-nav.html) */
+.side-nav-section { scroll-margin-top: 80px; }
+.side-nav .nav-link { padding: 0.35rem 0.75rem; font-size: 0.9rem; line-height: 1.3; }
+.side-nav-mobile .nav-link { padding: 0.25rem 0.6rem; font-size: 0.9rem; }
+/* Nested <nav class="nav side-nav-sub"> inside the links: indented on desktop, inline on mobile */
+.side-nav .side-nav-sub { margin-left: 0.75rem; border-left: 2px solid #e9ecef; }
+.side-nav .side-nav-sub .nav-link { font-size: 0.85rem; }
+.side-nav-mobile .side-nav-sub { display: contents; }
+.side-nav-mobile .side-nav-sub .nav-link { font-size: 0.85rem; color: #6c757d; }
