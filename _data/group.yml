@@ -106,11 +106,13 @@ current:
   logo: *unnc
   thesis: Health Economics and Data-Driven Healthcare Decision-Making
 - name: Canhui Wei
-  photo: *placeholder
+  url: https://www.linkedin.com/in/canhui-wei-econ/
+  photo: /assets/images/photos/canhui-wei.jpg
   program: PhD Student (Committee Member)
   institution: University of Nottingham Ningbo China
   logo: *unnc
-  thesis: Dissertation/Thesis
+  thesis: Health Insurance and Household Economic Behavior
+  note: "Expected graduation: Summer 2029"
 
 alumni:
 - name: Jiayi Zhao
