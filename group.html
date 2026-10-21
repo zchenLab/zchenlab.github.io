@@ -54,12 +54,7 @@ description: "The research group of Zhuo (Adam) Chen at the University of Georgi
                         {{ member.institution }}
                     </div>
                     {% if member.thesis %}<div class="mt-1"><i class="fas fa-book-open text-muted"></i> <i>{{ member.thesis }}</i></div>{% endif %}
-                    {% if member.note %}<div class="text-muted">
-                        {% if member.note_logo -%}
-                        <img src="{{ member.note_logo | relative_url }}" alt="Logo" class="inline-badge"/>
-                        {%- endif %}
-                        <i>{{ member.note }}</i>
-                    </div>{% endif %}
+                    {% if member.note %}<div class="text-muted">{% if member.note_is_job %}<i class="fas fa-briefcase"></i> {% endif %}<i>{{ member.note }}</i></div>{% endif %}
                 </div>
             </div>
         </div>
