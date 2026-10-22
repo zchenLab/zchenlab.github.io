@@ -273,6 +273,12 @@ alumni:
   year: Fall 2022
   thesis: Dissertation/Thesis
   role: Current role, Affiliation
+- name: Lan Jiang
+  photo: *placeholder
+  degree: Undergraduate, University of Nottingham Ningbo China
+  year: July 2022
+  thesis: "An Evaluation of the Zero Markup Drug Policy: Evidence from Hospitals in East China"
+  role: Current role, Affiliation
 - name: Von McClee
   photo: *placeholder
   degree: DrPH, University of Georgia
