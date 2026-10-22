@@ -229,11 +229,12 @@ alumni:
   thesis: "What Does Antiretroviral Therapy Bring to the Development of Low- and Middle-Income Countries?"
   role: MSc Student, University of Oxford
 - name: Jiaying Wang
-  photo: *placeholder
+  url: https://www.linkedin.com/in/jiaying-wang-jocelyn
+  photo: /assets/images/photos/jiaying-wang.jpg
   degree: Undergraduate, University of Nottingham Ningbo China
   year: July 2024
-  thesis: Dissertation/Thesis
-  role: Current role, Affiliation
+  thesis: "Advantageous Selection in China’s Commercial Health Insurance Market: Empirical Evidence from CHARLS"
+  role: Manager - Sales, eBusiness, Hair Care, China, Procter & Gamble (P&G)
 - name: Yangjing Xu
   url: https://gwhwi.org/team-member/yangjing-xu/
   photo: /assets/images/photos/yangjing-xu.jpg
