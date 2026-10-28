@@ -43,11 +43,6 @@ items:
   date: "2010"
 # Added from the media exposure compilation (Oct 2026). Chinese-language items show an
 # English translation of the title; the original is in the comment above each one.
-- title: "Discovering health disparities: bridging the gap in the local community"
-  outlet: Yale Daily News
-  type: Quoted
-  date: "2024-01-30"
-  link: "https://yaledailynews.com/winter-symposium-2024/2024/01/30/discovering-health-disparities-bridging-the-gap-in-the-local-community/"
 - title: Aspire Fellows program prepares faculty for next phase of their career
   outlet: UGA Today
   type: Feature
