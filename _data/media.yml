@@ -43,6 +43,11 @@ items:
   date: "2010"
 # Added from the media exposure compilation (Oct 2026). Chinese-language items show an
 # English translation of the title; the original is in the comment above each one.
+- title: "Ozempic Is Taking Off With the World’s Largest Obese Population. (Hint: It Isn’t the U.S.)"
+  outlet: The Wall Street Journal
+  type: Quoted
+  date: "2024-02-19"
+  link: "https://www.wsj.com/health/pharma/ozempic-is-taking-off-with-the-worlds-largest-obese-population-hint-it-isnt-the-u-s-a7c2498c"
 - title: Aspire Fellows program prepares faculty for next phase of their career
   outlet: UGA Today
   type: Feature
