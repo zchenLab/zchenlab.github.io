@@ -4,7 +4,7 @@
 # "YYYY-MM-DD" to order items within the same month).
 # Leave `link` out to show an item without a link. `image` is an optional thumbnail
 # path, e.g. assets/images/media/xyz.jpg; without one a generated pattern is shown.
-intro: Commentaries, op-eds, columns and interviews in the media.
+intro: Commentaries, op-eds, columns, interviews and news coverage in the media.
 
 items:
 - title: "Crouching Trouble, Hidden Discrimination: The Predicament of Chinese Scientists in the United States"
@@ -41,3 +41,141 @@ items:
   outlet: China Health Review
   type: Interview
   date: "2010"
+# Added from the media exposure compilation (Oct 2026). Chinese-language items show an
+# English translation of the title; the original is in the comment above each one.
+- title: "Discovering health disparities: bridging the gap in the local community"
+  outlet: Yale Daily News
+  type: Quoted
+  date: "2024-01-30"
+  link: "https://yaledailynews.com/winter-symposium-2024/2024/01/30/discovering-health-disparities-bridging-the-gap-in-the-local-community/"
+- title: Aspire Fellows program prepares faculty for next phase of their career
+  outlet: UGA Today
+  type: Feature
+  date: "2025-05-02"
+  link: "https://news.uga.edu/aspire-fellows-program-prepares-faculty-for-next-phase-of-their-career/"
+- title: Heart disease deaths declining, but not for everyone
+  outlet: UGA Today
+  type: Quoted
+  date: "2023-02-21"
+  link: "https://news.uga.edu/heart-disease-deaths-declining-but-not-for-everyone/"
+- title: "Faculty Spotlight: Teaching continues to drive public health economist"
+  outlet: UGA College of Public Health
+  type: Profile
+  date: "2021-09-13"
+  link: "https://publichealth.uga.edu/faculty-spotlight-teaching-continues-to-drive-public-health-economist/"
+- title: Committee of 100 and University of Arizona Commence Joint Research into Race and Ethnicity in Science and Research
+  outlet: Committee of 100
+  type: Press release
+  date: "2021-06-23"
+  link: "https://www.committee100.org/media-center/committee-of-100-and-university-of-arizona-commence-joint-research-into-race-and-ethnicity-in-science-and-research-with-a-focus-on-chinese-american-scientists/"
+# 移民海关署（ICE）要做的Temporary Final Rule 是什么
+- title: What Is the Temporary Final Rule ICE Plans to Issue?
+  outlet: Meipian
+  type: Blog post
+  date: "2020-07-08"
+  link: "https://www.meipian8.cn/31ciutiz"
+- title: "Public Health in China: Bull’s Nose Ring Or Tail?"
+  outlet: China Currents
+  type: Article
+  date: "2020-06-03"
+  link: "https://www.chinacenter.net/2020/china-currents/19-2/public-health-in-china-bulls-nose-ring-or-tail/"
+# 疫后策|卫生政策专家：提高疾控权力关键在于提高专业话语权
+- title: "Health policy expert: the key to empowering the CDC is strengthening its professional voice"
+  outlet: The Paper
+  type: Interview
+  date: "2020-05-29"
+  link: "https://www.thepaper.cn/newsDetail_forward_7600266"
+- title: "US govt unlikely to take extreme measures during election year: US health economist"
+  outlet: Global Times
+  type: Interview
+  date: "2020-03-07"
+  link: "https://www.globaltimes.cn/content/1181853.shtml"
+# 南财快评：预防全球大流行病的可能，中国应该做好准备
+- title: China Should Prepare for a Possible Global Pandemic
+  outlet: 21st Century Business Herald
+  type: Commentary
+  date: "2020-02-27"
+  link: "https://m.21jingji.com/article/20200227/herald/4ca0bc71b72f5cfd99a96ace47b99051.html"
+# CDC的使命
+- title: The Mission of the CDC
+  outlet: 21st Century Business Herald
+  type: Quoted
+  date: "2020-02-04"
+  link: "https://m.21jingji.com/article/20200204/5c35a877866027a45f62c3aca16cbdba.html"
+# 对话陈茁：疾控系统失语，疫情结束后应向何处去？
+- title: "A Conversation with Zhuo Chen: The CDC system has gone silent. Where should it go after the epidemic?"
+  outlet: DXY (WeChat)
+  type: Interview
+  date: "2020-02"
+  link: "https://mp.weixin.qq.com/s/E-CrsJBfcL5K7i-eASfy6g"
+# 他们研究了 1 万名大爷大妈，发现爱打麻将的那些更快乐
+- title: Researchers studied 10,000 older adults and found that mahjong players are happier
+  outlet: DXY (WeChat)
+  type: News
+  date: "2019-10-10"
+  link: "https://mp.weixin.qq.com/s/1p_RCFO43_aAoWuzfE-Yeg"
+- title: Mahjong linked to improved mental health, lower risk of depression
+  outlet: StudyFinds
+  type: News
+  date: "2019-09-18"
+  link: "https://studyfinds.com/mahjong-linked-to-improved-mental-health-lower-risk-depression/"
+- title: Playing Mahjong can Help You Cope with Depression
+  outlet: Medindia
+  type: News
+  date: "2019-09-18"
+  link: "https://www.medindia.net/news/healthwatch/playing-mahjong-can-help-you-cope-with-depression-190373-1.htm"
+- title: Playing Mahjong linked to lower risk of depression
+  outlet: The Tribune (India)
+  type: News
+  date: "2019-09-18"
+  link: "https://www.tribuneindia.com/news/health/story/834531.html"
+- title: Mahjong Is Strongly Linked to Better Mental Health, Study Finds
+  outlet: Interesting Engineering
+  type: News
+  date: "2019-09-18"
+  link: "https://interestingengineering.com/health/mahjong-is-strongly-linked-to-better-mental-health-study-finds"
+- title: Science Says Playing Mahjong Could Supercharge Your Mental Health
+  outlet: Yahoo Lifestyle
+  type: News
+  date: "2019-09-18"
+  link: "https://www.yahoo.com/lifestyle/science-says-playing-board-game-151857698.html"
+- title: Feeling depressed? Mahjong might be the answer
+  outlet: UGA Today
+  type: Press release
+  date: "2019-09-17"
+  link: "https://news.uga.edu/feeling-depressed-mahjong-might-be-answer/"
+- title: Feeling depressed? Mahjong might be the answer
+  outlet: ScienceDaily
+  type: Press release
+  date: "2019-09-17"
+  link: "https://www.sciencedaily.com/releases/2019/09/190917115420.htm"
+- title: Feeling depressed? Mahjong might be the answer
+  outlet: EurekAlert! (AAAS)
+  type: Press release
+  date: "2019-09-17"
+  link: "https://www.eurekalert.org/news-releases/663902"
+- title: Feeling depressed? Mahjong might be the answer
+  outlet: Medical Xpress
+  type: Press release
+  date: "2019-09-17"
+  link: "https://medicalxpress.com/news/2019-09-depressed-mahjong.html"
+- title: Feeling depressed? Mahjong might be the answer
+  outlet: Neuroscience News
+  type: News
+  date: "2019-09-17"
+  link: "https://neurosciencenews.com/mahjong-depression-14928/"
+- title: Simple tile-based game may boost mental health
+  outlet: News-Medical.net
+  type: News
+  date: "2019-09-17"
+  link: "https://www.news-medical.net/news/20190917/Simple-tile-based-game-may-boost-mental-health.aspx"
+- title: Playing Mahjong, socializing can improve mental health among older Chinese
+  outlet: UGA College of Public Health
+  type: News
+  date: "2019-09-09"
+  link: "https://publichealth.uga.edu/playing-mahjong-can-improve-mental-health-among-older-adults/"
+- title: Review of The China-US Partnership to Prevent Spina Bifida
+  outlet: China Currents
+  type: Book review
+  date: "2016-01-29"
+  link: "https://www.chinacenter.net/2016/china-currents/15-1/review-of-the-china-us-partnership-to-prevent-spina-bifida/"
