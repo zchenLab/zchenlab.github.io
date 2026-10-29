@@ -30,6 +30,13 @@ trips:
       - src: assets/images/travel/bali-2025-heart.jpg
         caption: July 2025, Bali
 
+  - name: Taipei
+    place: Taipei, Taiwan
+    date: June 2024
+    photos:
+      - src: assets/images/travel/taipei-2024-youbike.jpg
+        caption: June 2024, Taipei
+
   - name: Ningbo
     place: Ningbo, China
     date: June 2024
