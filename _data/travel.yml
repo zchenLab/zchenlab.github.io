@@ -38,6 +38,13 @@ trips:
         caption: June 2024, Ningbo
         wide: true
 
+  - name: Xi'an
+    place: Xi'an, China
+    date: June 2024
+    photos:
+      - src: assets/images/travel/xian-2024.jpg
+        caption: June 2024, Xi'an
+
   - name: Hong Kong
     place: Hong Kong
     date: October 2023
