@@ -419,16 +419,6 @@ items:
     link: "https://www.clinicaladvisor.com/home/my-practice/physician-assistant-career-resources/pas-health-disparities/"
   - outlet: "The Buffalo News"
     link: "https://buffalonews.com/opinion/another-voice-rural-health-includes-mental-health-but-too-often-residents-suffer-in-silence/article_1238f53e-895d-11ee-a8a5-97901a754390.html"
-- title: "Negative Employment Changes During the COVID-19 Pandemic and Psychological Distress"
-  journal: "J Occup Environ Med"
-  type: Research coverage
-  date: "2021-11-22"
-  link: "https://doi.org/10.1097/jom.0000000000002325"
-  coverage:
-  - outlet: "Newswise"
-    link: "https://www.newswise.com/articles/ucla-led-research-finds-americans-suffering-psychological-distress-over-pandemic-related-job-loss"
-  - outlet: "News-Medical.net"
-    link: "https://www.news-medical.net/news/20211122/Pandemic-related-job-loss-associated-with-psychological-distress-among-US-adults.aspx"
 - title: "Racial-ethnic disparities in psychological distress during the COVID-19 pandemic in the United States: the role of experienced discrimination and perceived racial bias"
   journal: "BMC Public Health"
   type: Research coverage
