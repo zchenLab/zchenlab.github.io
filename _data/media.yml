@@ -313,22 +313,6 @@ items:
     link: "https://www.eurekalert.org/pub_releases/2021-05/uog-sfg052021.php"
   - outlet: "Laboratory Equipment"
     link: "https://www.laboratoryequipment.com/576108-Study-Finds-Gender-Pay-Gap-in-One-of-the-Government-s-Largest-Agencies/"
-- title: "Linguistic Isolation and Mortality in Older Mexican Americans: Findings from the Hispanic Established Populations Epidemiologic Studies of the Elderly"
-  journal: "Health Equity"
-  type: Research coverage
-  date: "2021-06-07"
-  link: "https://doi.org/10.1089/heq.2020.0139"
-  coverage:
-  - outlet: "Medical Xpress"
-    link: "https://medicalxpress.com/news/2021-07-language-isolation-affects-health-mexican.html?src_id=alt"
-  - outlet: "Newswise"
-    link: "https://www.newswise.com/articles/language-isolation-affects-health-of-mexican-americans"
-  - outlet: "Mirage News"
-    link: "https://www.miragenews.com/language-isolation-affects-health-of-mexican-594902/"
-  - outlet: "EurekAlert!"
-    link: "https://www.eurekalert.org/pub_releases/2021-07/uog-lia071321.php"
-  - outlet: "News-Medical.net"
-    link: "https://www.news-medical.net/news/20210713/Linguistic-isolation-impacts-health-outcomes-of-older-Mexican-Americans.aspx"
 - title: "Trends in Medical School Application and Matriculation Rates Across the United States From 2001 to 2015: Implications for Health Disparities"
   journal: "Academic Medicine"
   type: Research coverage
