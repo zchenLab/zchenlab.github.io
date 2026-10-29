@@ -86,6 +86,13 @@ trips:
       - src: assets/images/travel/scotland-2019-cliff.jpg
         caption: 2019, Scotland
 
+  - name: Ningbo
+    place: Ningbo, China
+    date: December 2017
+    photos:
+      - src: assets/images/travel/ningbo-2017-mahjong.jpg
+        caption: December 2017, bronze mahjong players in Ningbo
+
   - name: Shucheng
     place: Shucheng, Anhui, China
     photos:
