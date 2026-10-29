@@ -3,7 +3,8 @@
 # To add your own photos:
 #   1. Put the image files in assets/images/conferences/ (JPG or PNG; ~1600px wide is plenty).
 #   2. Add them under an event below with a `src` path and a caption. Photos show as
-#      landscape tiles; add `portrait: true` to a tall photo so the crop keeps the top (faces).
+#      landscape tiles; add `portrait: true` to a tall photo so the crop keeps the top (faces),
+#      or `wide: true` to a panoramic group photo so it shows uncropped.
 #   3. Add or remove events freely; newest first. `place` and `date` are optional.
 #      The Showcase card shows a slideshow of every photo here, in this order.
 intro: >-
@@ -158,9 +159,125 @@ events:
       - src: assets/images/conferences/georgia-asian-professors-meeting.jpg
         caption: August 2025, Georgia Asian Professors Meeting
 
+  - name: 2019 Global Young Scholars Forum on Health Management and the 2nd Jinling Forum on Health Policy and Management
+    place: Nanjing, China
+    date: June 14-16, 2019
+    photos:
+      - src: assets/images/conferences/jinling-forum-2019-stage.jpg
+        caption: June 2019, 2nd Jinling Forum on Health Policy and Management
+      - src: assets/images/conferences/jinling-forum-2019-group.jpg
+        caption: June 2019, 2019 Global Young Scholars Forum and 2nd Jinling Forum group photo
+        wide: true
+
+  - name: West Lake Forum
+    place: Hangzhou, China
+    date: June 2019
+    photos:
+      - src: assets/images/conferences/west-lake-forum-2019-hospital-visit.jpg
+        caption: June 2019, West Lake Forum hospital visit
+      - src: assets/images/conferences/chpams-dinner-2019.jpg
+        caption: June 2019, CHPAMS dinner
+
+  - name: Chinese Economists Society 2019 China Annual Conference & 5th Annual DUFE Xinghai Forum
+    place: Dalian, China
+    date: June 8-9, 2019
+    photos:
+      - src: assets/images/conferences/ces-dalian-2019-group.jpg
+        caption: June 2019, CES 2019 China Annual Conference & 5th DUFE Xinghai Forum
+        wide: true
+
+  - name: DUFE 5th Xinghai Forum & CES 2019 President's Forum
+    place: Dalian, China
+    date: June 7, 2019
+    photos:
+      - src: assets/images/conferences/dufe-xinghai-presidents-forum-2019.jpg
+        caption: June 2019, CES 2019 President's Forum, New Challenges for Economic Policy and Financial Stability
+        wide: true
+
+  - name: SWUFE School of Public Administration International Academic Advisory Committee Meeting
+    place: Chengdu, China
+    date: December 13, 2018
+    photos:
+      - src: assets/images/conferences/swufe-advisory-committee-2018.jpg
+        caption: December 2018, SWUFE School of Public Administration International Academic Advisory Committee
+
+  - name: Symposium on Chronic Disease Health Measurement and Disease Burden
+    date: December 2018
+    photos:
+      - src: assets/images/conferences/chronic-disease-symposium.jpg
+        caption: December 2018, Symposium on Chronic Disease Health Measurement and Disease Burden
+
+  - name: Health Economics Symposium
+    place: Nanjing Audit University, Nanjing, China
+    date: June 26, 2018
+    photos:
+      - src: assets/images/conferences/nau-health-econ-symposium-2018.jpg
+        caption: June 2018, Health Economics Symposium at Nanjing Audit University
+      - src: assets/images/conferences/nau-health-econ-symposium-2018-group.jpg
+        caption: June 2018, Health Economics Symposium group photo
+
+  - name: Chinese Economists Society 2018 China Annual Conference
+    place: Hefei University of Technology, Hefei, China
+    date: June 22-24, 2018
+    photos:
+      - src: assets/images/conferences/ces-hefei-2018-group.jpg
+        caption: June 2018, CES 2018 China Annual Conference group photo
+        wide: true
+
   - name: CES Conference
     place: Ningbo, China
     date: June 2018
     photos:
       - src: assets/images/conferences/ces-ningbo-meltzer-2018.jpg
         caption: June 2018, with David Meltzer in Ningbo
+      - src: assets/images/conferences/ces-ningbo-grossman-2018.jpg
+        caption: June 2018, presenting a keynote speaker plaque to Michael Grossman
+      - src: assets/images/conferences/ces-ningbo-2018-auditorium.jpg
+        caption: June 2018, with keynote speakers and attendees in Ningbo
+      - src: assets/images/conferences/ces-ningbo-2018-group.jpg
+        caption: June 2018, group photo in Ningbo
+
+  - name: Advanced Workshop on Writing Clinical Medicine and Public Health Research Papers
+    date: June 2018
+    photos:
+      - src: assets/images/conferences/paper-writing-workshop-2018.jpg
+        caption: June 2018, Advanced Workshop on Writing Clinical Medicine and Public Health Research Papers
+
+  - name: Group Photo
+    date: May 2016
+    photos:
+      - src: assets/images/conferences/group-photo-2016-05.jpg
+        caption: May 2016, group photo
+
+  - name: Yale School of Public Health Gathering
+    place: New Haven, CT
+    photos:
+      - src: assets/images/conferences/yale-leph-group.jpg
+        caption: Group photo at Yale's Laboratory of Epidemiology and Public Health
+
+  - name: CHPAMS Gathering
+    photos:
+      - src: assets/images/conferences/chpams-group-steps.jpg
+        caption: China Health Policy and Management Society (CHPAMS) group photo
+
+  - name: Workshop Group Photo
+    photos:
+      - src: assets/images/conferences/courtyard-group.jpg
+        caption: Workshop group photo
+
+  - name: Dinner with Colleagues
+    photos:
+      - src: assets/images/conferences/dinner-with-colleagues.jpg
+        caption: Dinner with colleagues
+        portrait: true
+
+  - name: UNNC Graduation with Prof. Fujia Yang
+    place: Ningbo, China
+    photos:
+      - src: assets/images/conferences/unnc-graduation-yang-fujia.jpg
+        caption: UNNC graduation with Prof. Fujia Yang
+
+  - name: CES Conference, China's Public Hospital Reform Session
+    photos:
+      - src: assets/images/conferences/ces-hospital-reform-panel.jpg
+        caption: CES Conference, China's Public Hospital Reform session

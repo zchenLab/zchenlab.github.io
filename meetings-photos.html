@@ -24,7 +24,7 @@ description: "Photos from conferences, workshops, seminars and meetings attended
     <div class="col-lg-4 col-sm-6 p-2">
         <figure class="card border-0 shadow-sm bg-white rounded-xl h-100 mb-0">
             <a href="{{ photo.src | relative_url }}" target="_blank">
-                <img src="{{ photo.src | relative_url }}" alt="{{ photo.caption | default: event.name | escape }}" class="img-fluid rounded-xl-top meetings-photo{% if photo.portrait %} meetings-photo-portrait{% endif %}" loading="lazy">
+                <img src="{{ photo.src | relative_url }}" alt="{{ photo.caption | default: event.name | escape }}" class="img-fluid rounded-xl-top meetings-photo{% if photo.portrait %} meetings-photo-portrait{% endif %}{% if photo.wide %} meetings-photo-wide{% endif %}" loading="lazy">
             </a>
             {% if photo.caption %}<figcaption class="px-3 py-2 small text-muted">{{ photo.caption }}</figcaption>{% endif %}
         </figure>
@@ -36,4 +36,5 @@ description: "Photos from conferences, workshops, seminars and meetings attended
 <style>
     .meetings-photo { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
     .meetings-photo-portrait { object-position: 50% 30%; }
+    .meetings-photo-wide { object-fit: contain; background: #f1f3f5; }
 </style>
