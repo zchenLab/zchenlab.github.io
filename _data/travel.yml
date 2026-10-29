@@ -29,6 +29,8 @@ trips:
         caption: July 2025, Bali
       - src: assets/images/travel/bali-2025-heart.jpg
         caption: July 2025, Bali
+      - src: assets/images/travel/bali-2025-uluwatu.jpg
+        caption: July 2025, sunset at Uluwatu, Bali
 
   - name: Taipei
     place: Taipei, Taiwan
@@ -51,6 +53,9 @@ trips:
     photos:
       - src: assets/images/travel/xian-2024.jpg
         caption: June 2024, Xi'an
+      - src: assets/images/travel/xian-2024-lanterns.jpg
+        caption: June 2024, lantern towers at dusk, Xi'an
+        wide: true
 
   - name: Hong Kong
     place: Hong Kong
@@ -92,6 +97,71 @@ trips:
     photos:
       - src: assets/images/travel/ningbo-2017-mahjong.jpg
         caption: December 2017, bronze mahjong players in Ningbo
+      - src: assets/images/travel/ningbo-2017-mahjong-museum.jpg
+        caption: December 2017, a bone-and-bamboo mahjong set at the mahjong museum, Ningbo
+        wide: true
+
+  - name: Incheon
+    place: Incheon, South Korea
+    photos:
+      - src: assets/images/travel/incheon-airport.jpg
+        caption: A robot guide at Incheon International Airport
+        wide: true
+
+  - name: University of Nottingham Ningbo China
+    place: Ningbo, China
+    photos:
+      - src: assets/images/travel/nottingham-ningbo.jpg
+        caption: At a University of Nottingham reception
+
+  - name: Wenchuan earthquake site
+    place: Yingxiu, Wenchuan, Sichuan, China
+    photos:
+      - src: assets/images/travel/wenchuan-yingxiu.jpg
+        caption: Buildings left standing after the 2008 earthquake, Yingxiu
+        wide: true
+
+  - name: London
+    place: London, UK
+    photos:
+      - src: assets/images/travel/london-kings-college.jpg
+        caption: Bush House, King's College London
+
+  - name: Athens, Georgia
+    place: Athens, Georgia
+    photos:
+      - src: assets/images/travel/athens-georgia-bulldog.jpg
+        caption: A painted bulldog, Athens, Georgia
+        wide: true
+
+  - name: At sea
+    place: Cruise
+    photos:
+      - src: assets/images/travel/cruise-sunset.jpg
+        caption: Sunset over the ship's wake
+        wide: true
+      - src: assets/images/travel/cruise-macaws.jpg
+        caption: Macaws on a shore stop
+
+  - name: Along the way
+    place: Various places
+    photos:
+      - src: assets/images/travel/moon-gate.jpg
+        caption: A moon gate in a garden wall
+        wide: true
+      - src: assets/images/travel/desert-cholla.jpg
+        caption: Cholla cactus in red rock country
+        wide: true
+      - src: assets/images/travel/white-squirrel.jpg
+        caption: A white squirrel
+        wide: true
+      - src: assets/images/travel/rooster.jpg
+        caption: A metal rooster in autumn
+      - src: assets/images/travel/allium.jpg
+        caption: Allium in bloom
+      - src: assets/images/travel/yellow-flowers.jpg
+        caption: Flowers through a fence
+        wide: true
 
   - name: Shucheng
     place: Shucheng, Anhui, China
