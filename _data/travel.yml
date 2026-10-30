@@ -101,18 +101,19 @@ trips:
         caption: December 2017, a bone-and-bamboo mahjong set at the mahjong museum, Ningbo
         wide: true
 
+  - name: Shanghai
+    place: Shanghai, China
+    date: September 19, 2017
+    photos:
+      - src: assets/images/travel/nottingham-ningbo.jpg
+        caption: With Former Olympic Gold Medalist, Yaping Deng, UoN Alumna, in Shanghai
+
   - name: Incheon
     place: Incheon, South Korea
     photos:
       - src: assets/images/travel/incheon-airport.jpg
         caption: A robot guide at Incheon International Airport
         wide: true
-
-  - name: Shanghai
-    place: Shanghai, China
-    photos:
-      - src: assets/images/travel/nottingham-ningbo.jpg
-        caption: With Former Olympic Gold Medalist, Yaping Deng, UoN Alumna, in Shanghai
 
   - name: Wenchuan earthquake site
     place: Yingxiu, Wenchuan, Sichuan, China
