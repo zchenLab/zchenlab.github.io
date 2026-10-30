@@ -108,11 +108,11 @@ trips:
         caption: A robot guide at Incheon International Airport
         wide: true
 
-  - name: University of Nottingham Ningbo China
-    place: Ningbo, China
+  - name: Shanghai
+    place: Shanghai, China
     photos:
       - src: assets/images/travel/nottingham-ningbo.jpg
-        caption: At a University of Nottingham reception
+        caption: With Former Olympic Gold Medalist, Yaping Deng, UoN Alumna, in Shanghai
 
   - name: Wenchuan earthquake site
     place: Yingxiu, Wenchuan, Sichuan, China
