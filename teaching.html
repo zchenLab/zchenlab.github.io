@@ -10,16 +10,33 @@ description: "Teaching by Zhuo (Adam) Chen at the University of Georgia: undergr
 
 {%- comment -%} Section list shared by the side navigation (desktop) and the "On this page" list (mobile). {%- endcomment -%}
 {%- capture teaching_nav -%}
+<a class="nav-link" href="#mentoring">Mentoring &amp; Advising</a>
 <a class="nav-link" href="#courses-taught">Courses Taught</a>
 <a class="nav-link" href="#study-abroad">Study Abroad</a>
 <a class="nav-link" href="#graduate-certificate">Graduate Certificate</a>
 <a class="nav-link" href="#course-development">Course Development</a>
 <a class="nav-link" href="#teaching-recognition">Recognition &amp; Grants</a>
 <a class="nav-link" href="#guest-lectures">Guest Lectures</a>
-<a class="nav-link" href="#mentoring">Mentoring &amp; Advising</a>
 {%- endcapture -%}
 
 {%- capture teaching_body -%}
+
+<!-- Mentoring -->
+<div id="mentoring" class="side-nav-section my-3 bg-white shadow-sm rounded-xl">
+    <h6 class="p-3 mb-0 border-bottom border-gray"><i class="fas fa-user-graduate"></i> Mentoring &amp; Advising
+        <a href="{{ '/group' | relative_url }}">(see the group <i class="fas fa-angle-double-right"></i>)</a>
+    </h6>
+    <ul class="px-4 py-2 mb-0">
+        {% for m in t.mentoring %}
+        <li class="py-1">{{ m }}</li>
+        {% endfor %}
+    </ul>
+    <p class="px-3 pb-3 mb-0">
+        My
+        <a target="_blank" href="{{ '/assets/files/Supervisor_Graduate_Student_Agreement.pdf' | relative_url }}"><i class="fas fa-file-pdf"></i> Supervisor–Graduate Student Agreement</a>
+        sets out what we each commit to (meetings, feedback, records, authorship) and how AI tools may be used in the research: follow institutional rules, declare AI use, understand what the AI did, and review what it produced.
+    </p>
+</div>
 
 <!-- Courses taught -->
 <div id="courses-taught" class="side-nav-section my-3 bg-white shadow-sm rounded-xl">
@@ -133,22 +150,6 @@ description: "Teaching by Zhuo (Adam) Chen at the University of Georgia: undergr
     </ul>
 </div>
 
-<!-- Mentoring -->
-<div id="mentoring" class="side-nav-section my-3 bg-white shadow-sm rounded-xl">
-    <h6 class="p-3 mb-0 border-bottom border-gray"><i class="fas fa-user-graduate"></i> Mentoring &amp; Advising
-        <a href="{{ '/group' | relative_url }}">(see the group <i class="fas fa-angle-double-right"></i>)</a>
-    </h6>
-    <ul class="px-4 py-2 mb-0">
-        {% for m in t.mentoring %}
-        <li class="py-1">{{ m }}</li>
-        {% endfor %}
-    </ul>
-    <p class="px-3 pb-3 mb-0">
-        My
-        <a target="_blank" href="{{ '/assets/files/Supervisor_Graduate_Student_Agreement.pdf' | relative_url }}"><i class="fas fa-file-pdf"></i> Supervisor–Graduate Student Agreement</a>
-        sets out what we each commit to (meetings, feedback, records, authorship) and how AI tools may be used in the research: follow institutional rules, declare AI use, understand what the AI did, and review what it produced.
-    </p>
-</div>
 {%- endcapture -%}
 
 {% include side-nav.html id="teaching-nav" links=teaching_nav body=teaching_body %}
