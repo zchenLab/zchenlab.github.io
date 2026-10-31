@@ -52,5 +52,5 @@ collections:
 # Statcounter "invisible tracking" code: sc_project (a number) and sc_security
 # (a short string). Leave blank to disable tracking.
 statcounter:
-  project:
-  security:
+  project: 13364265
+  security: "4dbe1264"
