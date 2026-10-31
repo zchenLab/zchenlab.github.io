@@ -47,3 +47,10 @@ collections:
   - news
   - showcase
   - Group
+
+# Private visit analytics (Statcounter, invisible). Fill in both values from the
+# Statcounter "invisible tracking" code: sc_project (a number) and sc_security
+# (a short string). Leave blank to disable tracking.
+statcounter:
+  project:
+  security:

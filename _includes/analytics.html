@@ -1,0 +1,14 @@
+{% comment %}
+  Private visit tracking (Statcounter, invisible mode: nothing is shown on the page).
+  Stats are viewed only in the Statcounter dashboard. Set the two IDs in _config.yml
+  under `statcounter:`. Nothing loads while they are blank or when building locally.
+{% endcomment %}
+{% if site.statcounter.project and site.statcounter.security and jekyll.environment == "production" %}
+<script>
+    var sc_project = {{ site.statcounter.project }};
+    var sc_invisible = 1;
+    var sc_security = "{{ site.statcounter.security }}";
+</script>
+<script src="https://www.statcounter.com/counter/counter.js" async></script>
+<noscript><img src="https://c.statcounter.com/{{ site.statcounter.project }}/0/{{ site.statcounter.security }}/1/" alt="" width="1" height="1" style="position:absolute;left:-9999px" referrerpolicy="no-referrer-when-downgrade"></noscript>
+{% endif %}
