@@ -16,7 +16,7 @@ authors:
   - "Ge Y"
   - "Ke Y"
   - "Martinez L"
-  - "Chen Z#"
+  - "Chen Z"
   - "Song S"
   - "Walker T"
   - "Chen X"
