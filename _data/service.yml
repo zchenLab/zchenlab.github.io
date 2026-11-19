@@ -31,6 +31,14 @@ sections:
 - title: Guest Editor
   icon: fas fa-feather-alt
   items:
+  - name: "Research Topic “<a href=\"https://www.frontiersin.org/research-topics/76139\">Public Health Advancement through Synergy in Healthcare, Health Insurance, and Pharmaceuticals</a>,” <i>Frontiers in Public Health</i>"
+    date: 2025–
+  - name: "Research Topic “<a href=\"https://www.frontiersin.org/research-topics/71135\">From Simulation to Implementation: Policy Tools and Practice Evaluation for One Health</a>,” <i>Frontiers in Public Health</i>"
+    date: 2025–
+  - name: "Research Topic “<a href=\"https://www.frontiersin.org/research-topics/53346\">Prevalent Diseases in Vulnerable Populations: Current Situation and Influencing Factors</a>,” <i>Frontiers in Public Health</i>"
+    date: 2023–2024
+  - name: "Research Topic “<a href=\"https://www.frontiersin.org/research-topics/36439\">Risk Communication and Community Engagement during Public Health Emergencies</a>,” <i>Frontiers in Public Health</i>"
+    date: 2022–2023
   - name: "Special issue on “Asian American, Native Hawaiian &amp; Pacific Islander Health,” <i>Health Equity</i>"
     date: 2022
   - name: "Special issue on “Ethical, Legal, and Social Implications of Precision Public Health in China,” <i>China CDC Weekly</i>"
