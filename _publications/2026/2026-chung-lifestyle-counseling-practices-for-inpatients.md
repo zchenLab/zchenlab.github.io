@@ -14,7 +14,7 @@ authors:
   - "Zhang D"
   - "Chen Z"
   - "Gallo S"
-  - "Rajbhandari-Thapa J"
+  - "Rajbhandari-Thapa J#"
 links:
   Paper: https://doi.org/10.1177/08901171261510545
 ---
