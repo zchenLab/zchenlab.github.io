@@ -1,7 +1,7 @@
 # Group members shown on the Group page (group.html).
 # Current students can have: name, url, program, institution, logo, photo, thesis, note, note_is_job.
 # `note_is_job: true` shows a briefcase icon before the note, for a current job/affiliation.
-# Alumni can have: name, url, photo, degree, year, thesis, role.
+# Alumni can have: name, url, photo, degree, year, thesis, note, role.
 # `photo` is optional; replace the placeholder with a real picture (e.g. /assets/images/photos/jane.jpg).
 # Without a `photo` line, initials are shown.
 
@@ -268,6 +268,14 @@ alumni:
   year: Spring 2023
   thesis: Dissertation/Thesis
   role: Current role, Affiliation
+- name: Carey Tyler
+  url: https://www.linkedin.com/in/carey-tyler
+  photo: /assets/images/photos/carey-tyler.jpg
+  degree: MPH, University of Georgia
+  year: Spring 2023
+  thesis: "Growth of Tele-stroke Services and Remote Patient Monitoring for Chronic Care Management among U.S. Hospitals, 2018–2020"
+  note: Graduate Research Assistant to Dr. Chen, College of Public Health, 2019–2023
+  role: Patient Access Lead, UCHealth Yampa Valley Medical Center
 - name: Victoria Burse
   photo: *placeholder
   degree: MPH, University of Georgia

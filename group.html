@@ -82,6 +82,7 @@ description: "The research group of Zhuo (Adam) Chen at the University of Georgi
                     <div class="ml-auto pl-3 text-muted no-break"><i>{{ member.year }}</i></div>
                 </div>
                 {% if member.thesis %}<div><i class="fas fa-book-open text-muted"></i> <i>{{ member.thesis }}</i></div>{% endif %}
+                {% if member.note %}<div class="text-muted"><i>{{ member.note }}</i></div>{% endif %}
                 {% if member.role %}<div class="text-muted"><i class="fas fa-briefcase"></i> {{ member.role }}</div>{% endif %}
             </div>
         </li>
