@@ -1,7 +1,7 @@
 ---
 title:          "Long COVID burden attributable to preexisting comorbidity: a retrospective cohort study"
 date:           2026-12-31 00:03:00 +0800
-selected:       false
+selected:       true
 pub:            "Lancet Reg Health Am"
 pub_date:       "2026"
 cover:          /assets/images/covers/topics/covid.svg
